@@ -1,0 +1,6 @@
+{
+  "name": "NOVA CART — Full-Stack Indian E-Commerce Platform",
+  "description": "Production-ready full-stack e-commerce marketplace featuring 8 categories, 30+ products in INR, deals, cart, multi-step checkout with COD and Razorpay simulation, order tracking, and an admin management suite.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
