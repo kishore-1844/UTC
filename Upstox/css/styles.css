@@ -1,0 +1,9 @@
+@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+
+html{scroll-behavior:smooth;scroll-padding-top:16px;}
+.one-page-section{min-height:100vh;}
+.one-page-section:target{scroll-margin-top:16px;}
+/* Keep the original fixed navigation visible while all four supplied tabs become one page. */
+
+#one-page-nav a{position:relative;}
+#one-page-nav a:hover{filter:brightness(1.08);}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Films — FilmLog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">filmlog<span>●</span></a>
+  <nav><a href="index.html">Home</a><a class="active" href="films.html">Films</a><a href="diary.html">Diary</a><a href="profile.html">Profile</a></nav>
+  <div class="header-actions"><button id="searchBtn" class="icon-btn">⌕</button><a href="login.html" class="login-link">Sign in</a></div>
+</header>
+
+<main class="container page">
+  <div class="page-title">
+    <div><p class="eyebrow">FILM DATABASE</p><h1>Films</h1><p>Discover movies to watch, rate and review.</p></div>
+    <select id="genreFilter"><option value="all">All genres</option><option>Drama</option><option>Science Fiction</option><option>Comedy</option><option>Thriller</option><option>Animation</option></select>
+  </div>
+  <div id="allFilms" class="movie-grid"></div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
