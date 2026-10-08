@@ -1,0 +1,15 @@
+@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+
+  html { scroll-behavior:smooth; }
+  body { background:#131313; }
+  .spa-page { display:none; }
+  .spa-page.active { display:block; }
+  .spa-nav-link { transition:all .2s ease; }
+  .spa-nav-link.active { color:#fff; background:#e50914; }
+  .spa-nav-link:not(.active):hover { background:#2a2a2a; color:#fff; }
+  @media (max-width: 640px) {
+    .desktop-nav { display:none !important; }
+    .mobile-nav { display:flex !important; }
+  }
+  .mobile-nav { display:none; }
+  .spa-page img { max-width:100%; }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film — FilmLog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">filmlog<span>●</span></a>
+  <nav><a href="index.html">Home</a><a class="active" href="films.html">Films</a><a href="diary.html">Diary</a><a href="profile.html">Profile</a></nav>
+  <div class="header-actions"><button id="searchBtn" class="icon-btn">⌕</button><a href="login.html" class="login-link">Sign in</a></div>
+</header>
+
+<main class="film-page">
+  <section id="filmHero" class="film-hero"></section>
+  <section class="container film-body">
+    <div class="review-form panel">
+      <p class="eyebrow">YOUR REVIEW</p>
+      <h2>What did you think?</h2>
+      <div id="stars" class="stars">☆ ☆ ☆ ☆ ☆</div>
+      <textarea id="reviewText" placeholder="Write your review..."></textarea>
+      <div class="review-actions"><button id="logBtn" class="primary-btn">Log film</button><span id="saveMessage"></span></div>
+    </div>
+    <div>
+      <p class="eyebrow">RECENT REVIEWS</p>
+      <div class="review-card"><b>Meera S.</b><span>★★★★★</span><p>Beautifully made and emotionally precise. One of those films that stays with you.</p></div>
+      <div class="review-card"><b>Arjun Rao</b><span>★★★★½</span><p>The craft is incredible. Loved the atmosphere and performances.</p></div>
+    </div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
