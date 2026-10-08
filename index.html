@@ -1,0 +1,133 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   APP HUB
+  </title>
+  <style>
+   *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:#171717;color:#fff}
+  body{font-family:'Iotalic','Arial',sans-serif;background:#171717;color:#f5f5f5;overflow-x:hidden;overflow-y:auto;user-select:none}
+  ::-webkit-scrollbar{width:7px}
+  ::-webkit-scrollbar-track{background:#171717}
+  ::-webkit-scrollbar-thumb{background:#363636;border-radius:10px}
+  ::-webkit-scrollbar-thumb:hover{background:#444}
+  .page{width:min(1280px,100%);margin:0 auto;padding:28px 28px 50px}
+  .header{display:flex;align-items:center;justify-content:space-between;padding:10px 0 18px;margin-bottom:28px;border-bottom:1px solid #303030}
+  .brand{display:flex;align-items:center;gap:11px;font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase}
+  .dot{width:8px;height:8px;border-radius:50%;background:#ddd;box-shadow:0 0 12px rgba(255,255,255,.15)}
+  .count{font-size:10px;letter-spacing:.18em;color:#8b8b8b;text-transform:uppercase}
+  .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+  .app-card{min-height:310px;border:1px solid #303030;border-radius:20px;background:#202020;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:24px;transition:transform .25s ease,border-color .25s ease,background .25s ease;overflow:hidden}
+  .app-card:hover{transform:translateY(-4px);border-color:#555;background:#242424}
+  .logo-wrap{width:100%;height:225px;display:flex;align-items:center;justify-content:center;padding:10px}
+  .logo-wrap img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;filter:none}
+  .app-name{width:100%;padding-top:17px;border-top:1px solid #303030;text-align:center;font-size:15px;font-weight:600;letter-spacing:.04em;color:#eee}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.app-card{min-height:290px}.logo-wrap{height:205px}}
+  @media(max-width:600px){.page{padding:20px 16px 40px}.header{margin-bottom:20px}.grid{grid-template-columns:1fr;gap:16px}.app-card{min-height:300px}.logo-wrap{height:230px}.count{display:none}}
+   .app-link{color:inherit;text-decoration:none;cursor:pointer}
+  .app-link:focus-visible{outline:2px solid #777;outline-offset:3px}
+  </style>
+ </head>
+ <body>
+  <main class="page">
+   <header class="header">
+    <div class="brand">
+     <span class="dot">
+     </span>
+     <span>
+      APP HUB
+     </span>
+    </div>
+    <div class="count">
+     10 APPS
+    </div>
+   </header>
+   <section aria-label="Apps" class="grid">
+    <a aria-label="MakeMyTrip" class="app-card app-link" href="assets/MakeMyTrip/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="MakeMyTrip logo" loading="lazy" src="assets/logos/MakeMyTrip.png"/>
+     </div>
+     <div class="app-name">
+      MakeMyTrip
+     </div>
+    </a>
+    <a aria-label="Upstox" class="app-card app-link" href="assets/Upstox/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="Upstox logo" loading="lazy" src="assets/logos/Upstox.jpg"/>
+     </div>
+     <div class="app-name">
+      Upstox
+     </div>
+    </a>
+    <a aria-label="Apple Music" class="app-card app-link" href="assets/Apple Music/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="Apple Music logo" loading="lazy" src="assets/logos/Apple_Music.png"/>
+     </div>
+     <div class="app-name">
+      Apple Music
+     </div>
+    </a>
+    <a aria-label="Letterboxd" class="app-card app-link" href="assets/Letterboxd/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="Letterboxd logo" loading="lazy" src="assets/logos/Letterboxd.jpg"/>
+     </div>
+     <div class="app-name">
+      Letterboxd
+     </div>
+    </a>
+    <a aria-label="Flipkart" class="app-card app-link" href="assets/Flipkart/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="Flipkart logo" loading="lazy" src="assets/logos/Flipkart.png"/>
+     </div>
+     <div class="app-name">
+      Flipkart
+     </div>
+    </a>
+    <a aria-label="Swiggy" class="app-card app-link" href="assets/Swiggy/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="Swiggy logo" loading="lazy" src="assets/logos/Swiggy.png"/>
+     </div>
+     <div class="app-name">
+      Swiggy
+     </div>
+    </a>
+    <a aria-label="Netflix" class="app-card app-link" href="assets/Netflix/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="Netflix logo" loading="lazy" src="assets/logos/Netflix.jpg"/>
+     </div>
+     <div class="app-name">
+      Netflix
+     </div>
+    </a>
+    <a aria-label="KFC" class="app-card app-link" href="assets/KFC/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="KFC logo" loading="lazy" src="https://cdn.sanity.io/images/kbqq3e0r/production/afcc23c7797d1ad1d55bd0e200e2128cfe163eba-4096x3802.png?q=100&amp;w=3840"/>
+     </div>
+     <div class="app-name">
+      KFC
+     </div>
+    </a>
+    <a aria-label="CREX" class="app-card app-link" href="assets/CREX/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="CREX logo" loading="lazy" src="assets/logos/CREX.png"/>
+     </div>
+     <div class="app-name">
+      CREX
+     </div>
+    </a>
+    <a aria-label="H&amp;M" class="app-card app-link" href="assets/H&amp;M/index.html" rel="noopener" target="_self">
+     <div class="logo-wrap">
+      <img alt="H&amp;M logo" loading="lazy" src="assets/logos/H_M.png"/>
+     </div>
+     <div class="app-name">
+      H&amp;M
+     </div>
+    </a>
+   </section>
+  </main>
+ </body>
+</html>

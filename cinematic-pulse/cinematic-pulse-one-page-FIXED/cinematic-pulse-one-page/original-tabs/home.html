@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#353534","on-surface-variant":"#e9bcb6","on-tertiary-fixed":"#271900","on-primary-fixed-variant":"#930007","primary-fixed-dim":"#ffb4aa","on-tertiary-fixed-variant":"#5d4200","primary":"#ffb4aa","outline-variant":"#5e3f3b","surface-container-highest":"#353534","on-error":"#690005","surface":"#131313","on-primary-container":"#fff7f6","tertiary-container":"#946b00","tertiary-fixed":"#ffdea5","tertiary":"#fbbc30","secondary":"#adc7ff","on-secondary-fixed-variant":"#004493","primary-fixed":"#ffdad5","error":"#ffb4ab","on-tertiary-container":"#fff7f0","on-secondary-fixed":"#001a41","on-secondary":"#002e68","background":"#131313","surface-tint":"#ffb4aa","on-surface":"#e5e2e1","on-primary":"#690003","primary-container":"#e50914","on-secondary-container":"#fefcff","surface-container-lowest":"#0e0e0e","inverse-surface":"#e5e2e1","secondary-fixed":"#d8e2ff","on-primary-fixed":"#410001","on-background":"#e5e2e1","error-container":"#93000a","tertiary-fixed-dim":"#fbbc30","secondary-fixed-dim":"#adc7ff","outline":"#af8782","inverse-on-surface":"#313030","on-error-container":"#ffdad6","inverse-primary":"#c0000c","surface-bright":"#393939","surface-container":"#201f1f","surface-container-low":"#1c1b1b","secondary-container":"#0070ea","surface-container-high":"#2a2a2a","surface-dim":"#131313","on-tertiary":"#412d00"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","margin":"3.5rem","gutter":"1.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},"fontFamily":{"body-md":["Manrope"],"label-lg":["Manrope"],"label-sm":["Manrope"],"headline-sm":["Space Grotesk"],"body-sm":["Manrope"],"display-xl":["Space Grotesk"],"label-md":["Manrope"],"headline-lg-mobile":["Space Grotesk"],"display-xl-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"body-lg":["Manrope"]},"fontSize":{"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-xl-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm shrink-0" data-path="home" href="#"><img alt="Cinematic Pulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface hidden sm:inline">Cinematic Pulse</span></a><nav class="hidden md:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm"><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm" data-path="home" href="#">HOME</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="movies" href="#">MOVIES</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="tv-shows" href="#">TV SHOWS</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="my-list" href="#">MY LIST</a></nav></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline pointer-events-none text-headline-sm">search</span><input class="w-64 xl:w-80 bg-surface-container-high text-on-surface placeholder:text-outline pl-10 pr-4 py-space-xs rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-on-surface transition-all" placeholder="Search movies, shows and genres..." type="search"/></div><button class="lg:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">search</span></button><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface animate-pulse"></span></button><div class="flex items-center gap-space-xs pl-space-xs shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxfkBwXrKc0KLDyLVM-JrrBMnXzfJ-l9QKo2CRA3PHJVgwdlhVLroiLkV_5P6Q-hKJQBFPOCmuFpsIdfQwO8iTDb6-5MIuyb9dsN2f3tNl7eyIIfPQq2Hg4-KQ-ya2Cpk5sUaFwWash946wF8evjeWFdVKg5o0TBRnVEHvFLeeDpWyrSIQNXWP80pZhcWr6CuFP1vrC9JoXwYula-RI4VwP19zmbCwWctfTXqu313ascJVCYO9GfFr5w"/></div><button aria-label="Open Menu" class="md:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" type="button"><span class="material-symbols-outlined block">menu</span></button></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Immersive Cinematic Hero Section -->
+<section class="relative w-full -mt-16 overflow-hidden min-h-[90vh] flex flex-col justify-end">
+<!-- Atmospheric Visual Scrim Backdrop -->
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Cinematic high budget sci-fi film still from Aetherion Zero Dawn showing a lone female environmental biomechanical engineer standing in an illuminated subterranean cavern surrounded by towering iridescent turquoise glowing crystal monoliths. Heavy volumetric particulate atmospheric haze, obsidian mineral surfaces, deep shadows, cinematic anamorphic lens flare with subtle crimson accent rim lighting. 8k resolution, IMAX ratio." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4VxRIwoY7wIagTdQaf-khGQ02jvf05mzdXPvh9uaFI78Tq9u8eQzfRHRPTpqdZhAPpuEz3bPnnqNe3psR0jyQ1P6t92QhG-mbJQfCusaJ39LmVrDOD5QCJ6WsjJZrPqMkqPnFNzECBHhCfld8ii9z1-ND15Z9JKGMuuN8OftZeCz4DLVNL0XU-eUuFLJZGN2cmxttRVordKeHLELLU8dWXeTJBAP2KFyNuQWbztV1BewVsZwPpohFkg')">
+</div>
+<!-- 4-Stop Deep Vignette Scrim (Non-Border Elevation) -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/80 via-35% via-surface/20 to-surface/90"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/60 to-transparent"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full px-margin-mobile lg:px-margin pt-32 pb-space-xl flex flex-col max-w-4xl space-y-space-md">
+<!-- Brand & Premiere Chip -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm tracking-widest uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container animate-ping"></span>
+          Original Premiere
+        </span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-outline">Cinematic Pulse Studio Exclusive</span>
+</div>
+<!-- Mega Display Title with Layered Contrast -->
+<h1 class="font-display-xl text-display-xl tracking-tight text-on-surface uppercase drop-shadow-2xl">
+        Aetherion: <span class="text-primary-container drop-shadow-[0_0_35px_rgba(229,9,20,0.6)]">Zero Dawn</span>
+</h1>
+<!-- High-Fidelity Specs & Metadata Bar -->
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs font-label-md text-label-md text-on-surface">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-headline-sm leading-none">9.5</span>
+</div>
+<span class="text-outline">/</span>
+<span class="text-on-surface">2025</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest font-label-sm text-label-sm text-on-surface">TV-MA</span>
+<span class="text-on-surface">2h 24m</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">4K UHD</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">DOLBY ATMOS</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-label-sm">SPATIAL AUDIO</span>
+</div>
+<!-- Narrative Synopsis -->
+<p class="font-body-lg text-body-lg text-on-surface max-w-2xl drop-shadow-md leading-relaxed">
+        Deep within an uncharted subterranean crystal basin, a lone biosphere architect uncovers an ancient biomechanical frequency capable of rewriting terrestrial climate codes.
+      </p>
+<!-- Action Button Group -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<button class="flex items-center gap-space-sm px-space-xl py-space-sm rounded bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-xl hover:scale-105 hover:bg-primary-container/90 transition-all duration-300" onclick="openMediaModal('Aetherion: Zero Dawn', 'Deep within an uncharted subterranean crystal basin, a lone biosphere architect uncovers an ancient biomechanical frequency capable of rewriting terrestrial climate codes.', '9.5', '2025', '2h 24m', 'TV-MA', 'Sci-Fi • Cyberpunk Mystery', 'Elena Vance, Dr. Silas Moore', '4K UHD, Dolby Atmos 7.1.4, Spatial HQ')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          Play Feature
+        </button>
+<button class="flex items-center gap-space-sm px-space-lg py-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors font-label-lg text-label-lg" onclick="toggleWatchlist(this, 'Aetherion: Zero Dawn')">
+<span class="material-symbols-outlined text-headline-sm">bookmark_add</span>
+          Add to Watchlist
+        </button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-highest/80 backdrop-blur text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" onclick="openMediaModal('Aetherion: Zero Dawn', 'Deep within an uncharted subterranean crystal basin, a lone biosphere architect uncovers an ancient biomechanical frequency capable of rewriting terrestrial climate codes.', '9.5', '2025', '2h 24m', 'TV-MA', 'Sci-Fi • Cyberpunk Mystery', 'Elena Vance, Dr. Silas Moore', '4K UHD, Dolby Atmos 7.1.4, Spatial HQ')">
+<span class="material-symbols-outlined text-headline-sm">info</span>
+          Overview
+        </button>
+</div>
+</div>
+</section>
+<!-- Interactive Search / Filter Strip -->
+<section class="relative z-20 w-full px-margin-mobile lg:px-margin py-space-md bg-surface-container-low shadow-sm">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto w-full md:w-auto pb-1 md:pb-0 scrollbar-none">
+<button class="genre-pill active px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md transition-all whitespace-nowrap" onclick="filterGenre('all')">All Releases</button>
+<button class="genre-pill px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md whitespace-nowrap" onclick="filterGenre('sci-fi')">Sci-Fi &amp; Cyberpunk</button>
+<button class="genre-pill px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md whitespace-nowrap" onclick="filterGenre('action')">Action Noir</button>
+<button class="genre-pill px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md whitespace-nowrap" onclick="filterGenre('drama')">Original Dramas</button>
+<button class="genre-pill px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md whitespace-nowrap" onclick="filterGenre('4k')">IMAX Enhanced</button>
+</div>
+<div class="flex items-center justify-between md:justify-end w-full md:w-auto gap-space-md font-body-sm text-body-sm text-outline">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span>Adaptive Master Audio Active</span>
+</div>
+<div class="hidden sm:flex items-center gap-1 text-on-surface font-label-sm text-label-sm uppercase tracking-widest">
+<span>Sort: Curated High-Bitrate</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Feed Stack: Curated Horizontal Cinematic Rails -->
+<div class="w-full flex flex-col space-y-space-xl py-space-xl overflow-hidden">
+<!-- Shelf 1: Trending Across Pulse (Numbered Ranked Rails) -->
+<section class="w-full px-margin-mobile lg:px-margin space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">Trending Across Pulse</h2>
+<span class="font-label-sm text-label-sm tracking-widest text-primary font-bold uppercase">Top 6 Today</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll back" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('trending-row', -380)">
+<span class="material-symbols-outlined block">chevron_left</span>
+</button>
+<button aria-label="Scroll forward" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('trending-row', 380)">
+<span class="material-symbols-outlined block">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-space-lg overflow-x-auto scroll-smooth scrollbar-none pb-space-sm items-center" id="trending-row">
+<!-- Ranked Card #1: Chrono Pulse -->
+<div class="movie-card group shrink-0 relative flex items-end w-[290px] sm:w-[330px] h-[200px] rounded overflow-hidden bg-surface-container cursor-pointer transition-all duration-300 hover:scale-105 shadow-md" onclick="openMediaModal('Chrono Pulse', 'A rogue temporal analyst discovers that milliseconds are being siphoned from human perception to fuel an off-world cognitive grid.', '9.3', '2025', '1h 58m', 'TV-MA', 'Cyber-Thriller', 'Kaito Tanaka, Sarah Sterling', 'Dolby Vision • Atmos')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Cinematic frame of a neon-drenched Tokyo high-rise rooftop in the rain, a detective in a high-tech synthetic overcoat looking down at a holographic chronological distortion device floating between their fingers. Deep cobalt blue, fiery neon cyan, and reflective asphalt." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBKWXtEQcJbH9Lsen43ttr4LPH6Q-Om1iY_PeCPl2v5zgNaQyRA__vbBNe0Ffxtivtmux8VVrJ0J17LXbD5X7jTJgIx1S2bOCXUYVITaGgWDgSeJgwE9y7DqRVdZmWLRa2XWsWDyMevxAYyBSXSLvmkSOhGaWVm4nKeVhfRWl-G9GFnHOwJLOYNJpH4K89lVsWgflKW1zE-G5Mv9ThRCdb3r6L14kPJyU0Ff49ZWEFkpe8OGYgNP05jcw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<span class="absolute -bottom-4 left-2 font-display-xl text-[120px] font-black leading-none text-surface-container-lowest/80 select-none mix-blend-overlay">1</span>
+<div class="relative z-10 p-space-md w-full flex justify-between items-end">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm tracking-wider text-tertiary font-bold uppercase">98% Match</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Chrono Pulse</h3>
+<p class="font-body-sm text-body-sm text-outline">Action Noir • 1h 58m</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Ranked Card #2: Valkyrie Drift -->
+<div class="movie-card group shrink-0 relative flex items-end w-[290px] sm:w-[330px] h-[200px] rounded overflow-hidden bg-surface-container cursor-pointer transition-all duration-300 hover:scale-105 shadow-md" onclick="openMediaModal('Valkyrie Drift', 'Hypersonic interceptor pilots navigate an electromagnetic storm over the Arctic Shelf while being hunted by an autonomous combat swarm.', '9.1', '2024', '2h 12m', 'PG-13', 'Aviation Sci-Fi', 'Astrid Lind, Marcus Vance', 'IMAX 4K • Spatial Audio')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Futuristic sleek matte-black stealth jet flying through an intense aurora borealis storm over arctic glaciers with twin glowing crimson jet exhausts cutting through freezing fog and vapor cones. Cinematic cinematic lighting with ultra crisp details." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWrLen88S_Wd1pPNlrfG4YFXGFpH1LjmU1yh2hHks-xgHXRQKhf_RQHQTiojI2uAmINFJmhAMh6apk1gRweXIxytLTF93eDcd3qa6f-wQcjYQ_kmrqTiLNLAdSCrHMJ0lCjCfBZl4vr4iZSZGKtEJr9ZekA9TNA40BYP6LeIffMuI6vRqUqpU2Z76kzo853gC9gaL3VaQRwfYB7Zs8t07dU8ny0cr1kNKjznvmxEkPNBPWY5yqKRANvg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<span class="absolute -bottom-4 left-2 font-display-xl text-[120px] font-black leading-none text-surface-container-lowest/80 select-none mix-blend-overlay">2</span>
+<div class="relative z-10 p-space-md w-full flex justify-between items-end">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm tracking-wider text-tertiary font-bold uppercase">95% Match</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Valkyrie Drift</h3>
+<p class="font-body-sm text-body-sm text-outline">Aviation Sci-Fi • 2h 12m</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Ranked Card #3: The Obsidian Protocol -->
+<div class="movie-card group shrink-0 relative flex items-end w-[290px] sm:w-[330px] h-[200px] rounded overflow-hidden bg-surface-container cursor-pointer transition-all duration-300 hover:scale-105 shadow-md" onclick="openMediaModal('The Obsidian Protocol', 'An encrypted vault under the Swiss Alps reveals coordinates to orbital black sites that have operated without state oversight for 40 years.', '8.9', '2025', '2h 05m', 'TV-MA', 'Espionage Thriller', 'Claire Beaumont, Julian Thorne', 'Dolby Atmos • 4K')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Dramatic interior of an ultra-modern brutalist concrete bunker vault with glowing obsidian servers, server coolant mist, a lone operative in tactical gear studying a massive amber command terminal interface. Sharp contrast and cold moody lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDVzsH7j-zfk-KA9Nv-zDZsENioztFFt-SH5-vE7mzfFGhWZxU-U5k8PBwIi0H_SE72Alir-teZ7ClzyQTEqyC_tzxXTpmuGYcPf43kqiPafEfJ8haFBoxJHI0ftmD-fImWr4_TRcWtDT0wW2rAqKkK7-fu5XdD6HtTwAAOtuD2tBafX2zIC2ruNqDSWa-_M1SA-0jtWQCw_beJ7QAEeSHNog9FYCUHPc1gxu-4dJCPvvoDcuA_xbxuJQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<span class="absolute -bottom-4 left-2 font-display-xl text-[120px] font-black leading-none text-surface-container-lowest/80 select-none mix-blend-overlay">3</span>
+<div class="relative z-10 p-space-md w-full flex justify-between items-end">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm tracking-wider text-tertiary font-bold uppercase">92% Match</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">The Obsidian Protocol</h3>
+<p class="font-body-sm text-body-sm text-outline">Espionage • 2h 05m</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Ranked Card #4: Echoes of Kyoto -->
+<div class="movie-card group shrink-0 relative flex items-end w-[290px] sm:w-[330px] h-[200px] rounded overflow-hidden bg-surface-container cursor-pointer transition-all duration-300 hover:scale-105 shadow-md" onclick="openMediaModal('Echoes of Kyoto', 'In a quiet bamboo enclave, an audio restoration engineer tunes into lost magnetic frequencies recorded during the Meiji transition.', '9.4', '2024', '1h 47m', 'PG-13', 'Atmospheric Mystery', 'Ren Takahashi, Mei Lin', 'Binaural Master Audio')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Misty nighttime Kyoto bamboo grove with lantern light reflecting in puddles of rain water, an antique sound collector listening through oversized brass acoustic headphones beneath an oiled paper umbrella. Soft amber light contrasting deep emerald foliage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtGWNvT64kzOPBvt6IFW05WrL6hNlbyFiTZMMQXrJqDuqahymt0r4fC2UKRiqVdAg6feV3-fqVvu-lEYbksCpmbD9QRBHPQJfhslx4S5RYiE_LF_KD0KxIXQ7Hwoe-YcuBKiL6UmYyfLxvWatm8Lms0bk45wqOlCsPVi28FCEUINx6ZRNhzxew4c29CJgq0lTlGMefFelcEv0MOito5l20LtoRPAmU4udkzq5voukTaqdXYZ84Bc1Teg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<span class="absolute -bottom-4 left-2 font-display-xl text-[120px] font-black leading-none text-surface-container-lowest/80 select-none mix-blend-overlay">4</span>
+<div class="relative z-10 p-space-md w-full flex justify-between items-end">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm tracking-wider text-tertiary font-bold uppercase">97% Match</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Echoes of Kyoto</h3>
+<p class="font-body-sm text-body-sm text-outline">Mystery • 1h 47m</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Ranked Card #5: Solaris Breach -->
+<div class="movie-card group shrink-0 relative flex items-end w-[290px] sm:w-[330px] h-[200px] rounded overflow-hidden bg-surface-container cursor-pointer transition-all duration-300 hover:scale-105 shadow-md" onclick="openMediaModal('Solaris Breach', 'When solar flares shatter planetary energy shields, a specialized orbital maintenance crew undertakes a suicide mission to replace the primary corona coils.', '8.8', '2025', '2h 19m', 'TV-MA', 'Sci-Fi Disaster', 'Commander Jason Ruiz', '4K IMAX • Dolby Atmos')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Massive orbital solar containment ring in low orbit around an enormous solar flare eruption, coronal mass ejection casting blinding golden-orange solar rays and molten lens flares across space station hulls and spacewalk astronauts." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDw_UQRPgQkYzVCexszns0XmEPhuoBa_C6p1Q3uChv-AYDxBl_CPnOXdKpt9zQU8C34cz-HhdhAnuYilkkuYZDy2XugxA3NSyoQ5Ymkhwu2-7krsfANdhgYMrMomk1RJg7mHbqDZ0sYMnXyzPpDqjtvspoRyKZaq2JNdcEWHS6LqNucwob77HE9yVh_P4BxBdI0Y68P_0P3ZHVx_2QMO0lmo4elggK6F3ldvAsAhSbTR2huAJDPJ-7KJQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<span class="absolute -bottom-4 left-2 font-display-xl text-[120px] font-black leading-none text-surface-container-lowest/80 select-none mix-blend-overlay">5</span>
+<div class="relative z-10 p-space-md w-full flex justify-between items-end">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm tracking-wider text-tertiary font-bold uppercase">89% Match</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Solaris Breach</h3>
+<p class="font-body-sm text-body-sm text-outline">Sci-Fi Epic • 2h 19m</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Ranked Card #6: Hyperion Gate -->
+<div class="movie-card group shrink-0 relative flex items-end w-[290px] sm:w-[330px] h-[200px] rounded overflow-hidden bg-surface-container cursor-pointer transition-all duration-300 hover:scale-105 shadow-md" onclick="openMediaModal('Hyperion Gate', 'Archaeologists excavating a forgotten martian canal network trigger a stargate mechanism pointing toward the core of the Perseus Arm.', '9.0', '2024', '2h 31m', 'TV-MA', 'Deep Space Epic', 'Tariq Al-Mansoor, Naomi Cross', 'Master UHD • 7.1')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Ancient colossal sandstone stargate portal structure buried in Martian red sands, glowing with violet gravitational vortex energy, astronauts in rugged exploration spacesuits looking up in complete awe. Dust devils and twin moons in background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdKLGMt8h5TntWD28CICSj0vLlsNHCKNt2TlJd33Nf45KB31GnAGqfm-cf99o6O-LP2XMedihK-RNXMxaz-hrO-fYAAX14_5gkvlLPYg2kZl10yPjzhm821P_4sVNYg0tNDR9oPJBbRMgL5L4vZk6-D-sOjxaykuxX_hCbJ4W6zLpboNV7-ZV97UTmJQj2XQ7HTRdrt88FVSgu-lnHQcyOQPp_lHg-DDU7HFIFTofE1Vq2Ow36CeoG2g')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/40 to-transparent"></div>
+<span class="absolute -bottom-4 left-2 font-display-xl text-[120px] font-black leading-none text-surface-container-lowest/80 select-none mix-blend-overlay">6</span>
+<div class="relative z-10 p-space-md w-full flex justify-between items-end">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm tracking-wider text-tertiary font-bold uppercase">91% Match</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Hyperion Gate</h3>
+<p class="font-body-sm text-body-sm text-outline">Deep Space • 2h 31m</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity shadow-lg">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Shelf 2: Continue Your Stream (Progress bars with primary red) -->
+<section class="w-full px-margin-mobile lg:px-margin space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">Continue Your Stream</h2>
+<p class="font-body-sm text-body-sm text-outline">Jump back into your high-bitrate sessions</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll back" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('continue-row', -380)">
+<span class="material-symbols-outlined block">chevron_left</span>
+</button>
+<button aria-label="Scroll forward" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('continue-row', 380)">
+<span class="material-symbols-outlined block">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-space-lg overflow-x-auto scroll-smooth scrollbar-none pb-space-sm" id="continue-row">
+<!-- Continue Card 1: Subterfuge: Berlin Echo -->
+<div class="movie-card group shrink-0 w-[300px] sm:w-[360px] bg-surface-container rounded overflow-hidden shadow-lg transition-all duration-300 hover:scale-[1.02]">
+<div class="relative w-full aspect-video bg-cover bg-center cursor-pointer" data-alt="Cold War espionage surveillance van interior in Berlin at night, reel to reel tape recorders spinning, green phosphor oscilloscope monitors casting glow on audio technician wearing headphones. Rain streaks on windshield, muted teal and black tones." onclick="openMediaModal('Subterfuge: Berlin Echo', 'A clandestine listening post beneath the Friedrichstraße metro detects an unauthorized frequency that predates the division of the city.', '9.1', '2024', '1h 52m', 'TV-MA', 'Espionage Noir', 'Klaus Weber, Hannah Arendt II', 'Dolby Atmos')" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrW056t9zg1c0vvKf0s7p6Q8Y1WXYfwl8GToN8xXgvbyA-BdawOiGRacZamscbvnOf8dhBhKFbIGFsbvmHTQYFFGNrQymovd5O420NfyM4xPOEPgrCK8aJv8QKk3f9e18i8H5wbXegBzYk0CmivF3WP0_og96jH4lEZ_BwKZPwkGPh62mowRZ816vYSn2TI7BpX6x-_xR-qnGsDibHjYCuPPMXdZhu2PpdcoBj5tmM8InEyIB8aXigrw')">
+<div class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-transparent transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-dim/80 backdrop-blur border border-surface-variant flex items-center justify-center text-on-surface group-hover:scale-110 group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Progress Bar Track -->
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-variant">
+<div class="h-full bg-primary-container w-[72%]"></div>
+</div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="text-primary font-bold">1h 14m left</span>
+<span>S1 : E4 • 'The Iron Tape'</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Subterfuge: Berlin Echo</h3>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-outline">Action &amp; Psychological Drama</span>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 text-outline hover:text-on-surface transition-colors" onclick="toggleWatchlist(this, 'Subterfuge: Berlin Echo')" title="Manage watchlist">
+<span class="material-symbols-outlined text-body-lg">check_circle</span>
+</button>
+<button class="p-1 text-outline hover:text-on-surface transition-colors" onclick="openMediaModal('Subterfuge: Berlin Echo', 'A clandestine listening post beneath the Friedrichstraße metro detects an unauthorized frequency that predates the division of the city.', '9.1', '2024', '1h 52m', 'TV-MA', 'Espionage Noir', 'Klaus Weber', 'Dolby Atmos')" title="Information">
+<span class="material-symbols-outlined text-body-lg">info</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Continue Card 2: Quantum Drift -->
+<div class="movie-card group shrink-0 w-[300px] sm:w-[360px] bg-surface-container rounded overflow-hidden shadow-lg transition-all duration-300 hover:scale-[1.02]">
+<div class="relative w-full aspect-video bg-cover bg-center cursor-pointer" data-alt="High tech particle accelerator control room with red holographic warning signs blinking, scientists frantically typing while a vortex of glowing blue Cherenkov radiation swirls within a magnetic vacuum chamber. Dramatic cinematic lighting and contrast. " onclick="openMediaModal('Quantum Drift', 'When an underground particle ring experiences an uncontained synchronization burst, two researchers are split across parallel 12-hour timelines.', '8.9', '2025', '2h 10m', 'PG-13', 'Sci-Fi Thriller', 'Dr. Aris Vance, Lena Bell', '4K UHD • Spatial')" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARME5CxnWUE4HVKbGwmdvFp-twQQ5apJx8V7WxK_qOLUWh3j0WD3iUwctWqbuMKZyjzcpmvwc6tO961-niiJGu99N2_DzTSxllpAjW_XSMYyne33ipgouI6vTnvfdWuZ-Qb7GSn8bLbF1xiEODsMWjdEaaHljjHffqAzri2B5QzIYnrHV57-JrfBs97tCSu0VF453XAPPhS5_GD5w2kCzn_MNgV_mJjfrtEmZzGLeLAxJ2PguTndzpew')">
+<div class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-transparent transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-dim/80 backdrop-blur border border-surface-variant flex items-center justify-center text-on-surface group-hover:scale-110 group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Progress Bar Track -->
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-variant">
+<div class="h-full bg-primary-container w-[45%]"></div>
+</div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="text-primary font-bold">1h 05m left</span>
+<span>Movie • Resume Playback</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Quantum Drift</h3>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-outline">Physics Thriller • 4K</span>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 text-outline hover:text-on-surface transition-colors" onclick="toggleWatchlist(this, 'Quantum Drift')" title="Manage watchlist">
+<span class="material-symbols-outlined text-body-lg">bookmark</span>
+</button>
+<button class="p-1 text-outline hover:text-on-surface transition-colors" onclick="openMediaModal('Quantum Drift', 'When an underground particle ring experiences an uncontained synchronization burst, two researchers are split across parallel 12-hour timelines.', '8.9', '2025', '2h 10m', 'PG-13', 'Sci-Fi Thriller', 'Dr. Aris Vance', '4K UHD')" title="Information">
+<span class="material-symbols-outlined text-body-lg">info</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Continue Card 3: Void Architect -->
+<div class="movie-card group shrink-0 w-[300px] sm:w-[360px] bg-surface-container rounded overflow-hidden shadow-lg transition-all duration-300 hover:scale-[1.02]">
+<div class="relative w-full aspect-video bg-cover bg-center cursor-pointer" data-alt="Massive architectural habitat in outer space under zero gravity construction with giant laser welding rigs creating glowing orange seams against the starfield, a master designer floating in a tethered observation cupola. Epic scale, cinematic sci fi." onclick="openMediaModal('Void Architect', 'An aging spatial engineer is tasked with dismantling a dead orbital mega-structure before its decay orbit triggers catastrophe across the lunar colonies.', '9.2', '2024', '2h 14m', 'TV-MA', 'Hard Sci-Fi', 'Harlan Kross, Mia Thorne', 'IMAX Enhanced')" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD_88LCRd-Jcm5pdlLuov2NqmkC5RIvjQGSafrR8JnSmhLsah4YRqwtUcKFHDbUbkf2oY_NnV6x67cIkpKrsk4WejJ8T8IiRKVHl54haiK6MwlyeMWY2J9x9M22Np-DQFA4DEjO-_nvwlzZN6OQrrCujpKx-P61o6_TnQQncky_QTPjaLOUq68Ne9MJbI4Aor2-uC3pDbxg4juqpnf2N47gEUK5euu-bi3fB-kmAUzNnUgsA8EOI46UDg')">
+<div class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-transparent transition-colors flex items-center justify-center">
+<div class="w-12 h-12 rounded-full bg-surface-dim/80 backdrop-blur border border-surface-variant flex items-center justify-center text-on-surface group-hover:scale-110 group-hover:bg-primary-container group-hover:text-on-primary-container transition-all">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+<!-- Progress Bar Track -->
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-surface-variant">
+<div class="h-full bg-primary-container w-[88%]"></div>
+</div>
+</div>
+<div class="p-space-md space-y-space-xs">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="text-primary font-bold">16m left</span>
+<span>Finale • Chapter 8</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface truncate">Void Architect</h3>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-outline">Architectural Epic • 2h 14m</span>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 text-outline hover:text-on-surface transition-colors" onclick="toggleWatchlist(this, 'Void Architect')" title="Manage watchlist">
+<span class="material-symbols-outlined text-body-lg">bookmark</span>
+</button>
+<button class="p-1 text-outline hover:text-on-surface transition-colors" onclick="openMediaModal('Void Architect', 'An aging spatial engineer is tasked with dismantling a dead orbital mega-structure before its decay orbit triggers catastrophe across the lunar colonies.', '9.2', '2024', '2h 14m', 'TV-MA', 'Hard Sci-Fi', 'Harlan Kross', 'IMAX Enhanced')" title="Information">
+<span class="material-symbols-outlined text-body-lg">info</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Shelf 3: Popular Feature Films (16:9 Landscape Media Cards) -->
+<section class="w-full px-margin-mobile lg:px-margin space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">Popular Feature Films</h2>
+<span class="font-label-sm text-label-sm text-outline uppercase">Global Curation</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll back" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('popular-row', -380)">
+<span class="material-symbols-outlined block">chevron_left</span>
+</button>
+<button aria-label="Scroll forward" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('popular-row', 380)">
+<span class="material-symbols-outlined block">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-space-lg overflow-x-auto scroll-smooth scrollbar-none pb-space-sm" id="popular-row">
+<!-- Film 1: Midnight Cipher -->
+<div class="movie-card group shrink-0 w-[280px] sm:w-[320px] bg-surface-container rounded overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:scale-105" onclick="openMediaModal('Midnight Cipher', 'In 1980s Bucharest, a black-market radio DJ secretly broadcasts microcode that decodes clandestine satellite telemetry across the Iron Curtain.', '8.8', '2024', '1h 55m', 'R', 'Cold War Thriller', 'Victor Dan, Irina Popescu', 'Stereo Master &amp; Atmos')">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Moody cinematic interior of an illegal underground radio transmitter station with vintage tube microphones, amber vacuum dials glowing in darkness, cigarettes smoking in ashtrays, cassette tapes neatly stacked against raw brick walls." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5rt31gGBfMeVzsGEgLbow2opk86h6x9qtAOetdwnuX_8XxuWesiN0juBaguN0xc2ual94ec2PWq7NJRXtJ0m-Ekvs_B6wFpHES0h_awSJYtaUqKg3sPf8_QNj2ZGp6tPrUS0hxj9BsWQa9mpgVFIAaq7uC7yFLTtIScy3GKGth0LZ1GEMUQif5NGXPAEyGdFExGYhrO_cnzzn0yS-I0q2WnbEkaRXwJDTU9kqjRSae4fhfKWlKpWyzg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-dim/80 backdrop-blur font-label-sm text-label-sm text-on-surface">4K UHD</div>
+</div>
+<div class="p-space-md space-y-1">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 8.8 RATING</span>
+<span class="text-outline font-label-sm text-label-sm">1h 55m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Midnight Cipher</h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">In 1980s Bucharest, a black-market radio DJ broadcasts microcode telemetry.</p>
+</div>
+</div>
+<!-- Film 2: Starlight Odyssey -->
+<div class="movie-card group shrink-0 w-[280px] sm:w-[320px] bg-surface-container rounded overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:scale-105" onclick="openMediaModal('Starlight Odyssey', 'A deep space survey probe crew encounters a massive derelict bioship whose dormant ecological interior has evolved its own synthetic apex predators.', '9.3', '2025', '2h 28m', 'TV-MA', 'Sci-Fi Survival', 'Amara Patel, Soren Kael', '4K IMAX • Dolby Atmos')">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Breathtaking wide interior shot of an alien biological spaceship interior showing a bio-luminescent forest floating under zero gravity with glowing spores drifting between crystalline branches, astronauts in illuminated EVA suits exploring carefully." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3-E1mFAjMubozkEzszMDpnAgVkaUugTjkJBeqlPmiqPEkTRcBRJVEgSGzhyZANvrw6_Bd_yplAnNx75rBiZa1KKcchr4mHwI8p8rfTl6O4SCxCcZcJvS_9M9SQjRATS5_tErGNhinw_xJ-RV8l--WvZ-88MO7SqKJ70laudBySKnLO0-JovmXdJI3kgmRidJcQ5Nj6p82Y657pQblL1WJdgqz_55nzKON3GxTGxRpyepo5jiWSjoSCg')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-dim/80 backdrop-blur font-label-sm text-label-sm text-on-surface">IMAX</div>
+</div>
+<div class="p-space-md space-y-1">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.3 RATING</span>
+<span class="text-outline font-label-sm text-label-sm">2h 28m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Starlight Odyssey</h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">A survey probe encounters a dormant bioship with self-evolving apex predators.</p>
+</div>
+</div>
+<!-- Film 3: Abyssal Depth -->
+<div class="movie-card group shrink-0 w-[280px] sm:w-[320px] bg-surface-container rounded overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:scale-105" onclick="openMediaModal('Abyssal Depth', 'Seven miles beneath the Mariana Trench, an automated geothermal drilling station pierces a pocket of prehistoric liquid methane harboring bioluminescent intelligence.', '9.0', '2024', '2h 08m', 'TV-MA', 'Underwater Horror Sci-Fi', 'Captain Rhys Sterling', 'Dolby Atmos Spatial')">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Deep ocean submersible submarine floodlights piercing through pitch-black oceanic abyssal waters revealing a titanic underwater trench canyon with geometric thermal vent structures pulsing with organic bioluminescent violet light. High tension and deep pressure atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAkMrl4YQrusJgNRMHv7lXQGIaCn-7r6Ca69DMb8yLy6qDMNG0Na7dECaRnkyU-m1Jxd_TRxS4umb99GhOoObHd5LeRJhKAmRYB71Xe_j-3GpfHJMCqkdaFFqYM1U9Sr264o5Et_utTCLUKzwSwOcnQKk_9cWMVJf4PAEMrSWVJXUFUzh93FSHUJzwJj61IC1kwfOnbMySR0AFFxE728iH7YgA751awdHNFXRJZj4tuZ9ZUTIf1ugQ8A')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-dim/80 backdrop-blur font-label-sm text-label-sm text-on-surface">4K HDR</div>
+</div>
+<div class="p-space-md space-y-1">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.0 RATING</span>
+<span class="text-outline font-label-sm text-label-sm">2h 08m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Abyssal Depth</h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">Seven miles down, automated drilling pierces a pocket of sentient organisms.</p>
+</div>
+</div>
+<!-- Film 4: The Crystalline Realm -->
+<div class="movie-card group shrink-0 w-[280px] sm:w-[320px] bg-surface-container rounded overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:scale-105" onclick="openMediaModal('The Crystalline Realm', 'In an alternate dimension where matter freezes into optical prisms, an exiled chronomancer seeks the focal shard to rebuild his shattered homeworld.', '9.2', '2025', '2h 02m', 'PG-13', 'High Fantasy Sci-Fi', 'Kaelen Valdor, Saffron Grey', 'Spatial Atmos')">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Surreal landscape composed entirely of towering hexagonal clear quartz and obsidian crystal spires reflecting fractured prismatic rainbow light from twin binary suns in the sky, a figure clad in flowing chromatic armor standing at a precipice." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDAkIvpM1FaLU1jybHoxt7N_WKiXsud2BSmQ3X6WpEcsKkgGzPfxygzTua9X7DDYSUdW_R_4niW7Gw90zSgxAVH_3Bjr1_CtnkeG-0lFmhJ9Bd5mrTV5CU0HfLkNRzQRGb-LBLZ4xbxwPt1DdyMWemqMO24cXianTuFZXMi7vwg78iA5EJTLPLfMCKx0_yhpxWCYHZtejkBa9QL2s8ucpYA_j1FGxRouNQfcVfpkkyjXgVCuJiTz8iRNA')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute top-2 right-2 px-1.5 py-0.5 rounded bg-surface-dim/80 backdrop-blur font-label-sm text-label-sm text-on-surface">4K MASTER</div>
+</div>
+<div class="p-space-md space-y-1">
+<div class="flex items-center justify-between">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.2 RATING</span>
+<span class="text-outline font-label-sm text-label-sm">2h 02m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">The Crystalline Realm</h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">An exiled chronomancer seeks the focal shard across a prism-frozen reality.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Shelf 4: Curated For You (2:3 Vertical Movie Posters with Instant Overlays) -->
+<section class="w-full px-margin-mobile lg:px-margin space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">Curated For You</h2>
+<p class="font-body-sm text-body-sm text-outline">Tailored algorithm matching your cinematic preference profile</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll back" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('curated-row', -300)">
+<span class="material-symbols-outlined block">chevron_left</span>
+</button>
+<button aria-label="Scroll forward" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('curated-row', 300)">
+<span class="material-symbols-outlined block">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-space-md overflow-x-auto scroll-smooth scrollbar-none pb-space-sm" id="curated-row">
+<!-- Poster 1: Neon Syndicate -->
+<div class="movie-card group shrink-0 relative w-[170px] sm:w-[210px] aspect-[2/3] rounded overflow-hidden bg-surface-container cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105" onclick="openMediaModal('Neon Syndicate', 'An undercover enforcer inside a synthetic neural-cartel must preserve his humanity while uploading military grade personality splices.', '9.6', '2025', '2h 15m', 'TV-MA', 'Cyberpunk Action', 'Renzo Rossi, Maya Lin', '4K UHD • Dolby Atmos')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Vertical movie poster featuring a solitary hitman with a cybernetic glowing eye standing under neon drenched rain in an overcrowded megacity alleyway, holographic advertisements reflecting on wet asphalt, ultra sharp film grain, magenta and dark obsidian palette." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnTQgW9j22XNeYITSV_fr2zrSAQqX2Yf-PH-OASLS_4Ura-qvhgXdjbF1_dYa0E91S1Zdhcva1LKY1S1wqeU8p4BUBG5y4hZZ3jN_vOe9XNwgc4dSsA9xx05OohxDWSVx_wdh1xPTa6svF9JQDKrie54g3Q8guJxZ9Os8FPwVJ64aUqtuFbfh81KWOnRNIZy9SOlvAzoYV5ukJ2ltBABpyjmwDwpoxcA127vm40FsG_syadFBRkyToLw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">98% MATCH</div>
+<div class="relative z-10 h-full p-space-md flex flex-col justify-end">
+<div class="space-y-0.5">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.6</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Neon Syndicate</h3>
+<p class="font-body-sm text-body-sm text-outline">Cyberpunk • 2025</p>
+</div>
+<!-- Quick Actions on Hover -->
+<div class="pt-space-sm flex items-center gap-space-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-body-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur text-on-surface flex items-center justify-center hover:scale-110 transition-transform" onclick="event.stopPropagation(); toggleWatchlist(this, 'Neon Syndicate')">
+<span class="material-symbols-outlined text-body-lg">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Poster 2: Shadow of Carthage -->
+<div class="movie-card group shrink-0 relative w-[170px] sm:w-[210px] aspect-[2/3] rounded overflow-hidden bg-surface-container cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105" onclick="openMediaModal('Shadow of Carthage', 'An alternate historical epic where the Carthaginian Empire deployed geothermal war engines to reshape the Mediterranean coastline.', '9.4', '2024', '2h 40m', 'R', 'Historical Epic', 'Tahar Rahim, Sofia Boutella', 'Dolby Atmos • 7.1')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Epic cinematic movie poster of an ancient bronze and steam powered war engine marching along Mediterranean limestone cliffs overlooking an armada of war galleys burning in the distance, dramatic sunset with fiery orange clouds and dust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCyR8rdSxc5p0AazNom9qdVN3mNtdgnJeqEiwm4rOm-zQFM-wQ3qBAPWnaNX2VQYN5watjFJgfcQpz4nNm2GGaqJwpEdRCKBG1cwhE2EPqYHxwG0-Z-9a_ZBk55tNp_42eoJqZzNyIqlvEjD1Q2zpsp2BfXbGeL48P_-qYAI4eCLHTUcjS16jR2QTDT8WUG5YoRrsjCTfAJ022YJwBicx-hzLSTms7suCR1gZX0eMuKK5Tcm3QdTPv5GQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">96% MATCH</div>
+<div class="relative z-10 h-full p-space-md flex flex-col justify-end">
+<div class="space-y-0.5">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.4</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Shadow of Carthage</h3>
+<p class="font-body-sm text-body-sm text-outline">Epic • 2024</p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-body-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur text-on-surface flex items-center justify-center hover:scale-110 transition-transform" onclick="event.stopPropagation(); toggleWatchlist(this, 'Shadow of Carthage')">
+<span class="material-symbols-outlined text-body-lg">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Poster 3: The Kepler Sequence -->
+<div class="movie-card group shrink-0 relative w-[170px] sm:w-[210px] aspect-[2/3] rounded overflow-hidden bg-surface-container cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105" onclick="openMediaModal('The Kepler Sequence', 'A mathematical prodigy working at the deep-array radio dish deciphers an algorithmic pulse transmitted from the Trappist-1 system.', '9.1', '2025', '2h 01m', 'PG-13', 'Sci-Fi Drama', 'Dr. Naomi Chen', '4K UHD')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Atmospheric vertical poster of an enormous radio telescope observatory dish under a brilliant Milky Way star-filled night sky in the Atacama desert, mathematical equations and golden Fibonacci spirals overlaid subtly in the star dust." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDna1JK7l3wnC7kT_t9N1Qb4brXVsqCmSfm45EKrUJScm0dNM3BFUA66CQBRl1jVmW-i3OF3zHr3Af1k12FyerJ4J8oiXXDX_ZWUREd40uyQ_yjZtB6p2xgmaLgnbUiZ-pqgL5dV5Oob1Mn-M-2CFThVkuLo6x6U3RKlE-BPKLosiNJaKm_5NYcINEc5Y_oeT2nuE9JBgiiXQW4nJ_0Hec9hFSnf40RTsVBHVvAF-u9V-pviUl0abjOLQ')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">94% MATCH</div>
+<div class="relative z-10 h-full p-space-md flex flex-col justify-end">
+<div class="space-y-0.5">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.1</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Kepler Sequence</h3>
+<p class="font-body-sm text-body-sm text-outline">Mystery • 2025</p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-body-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur text-on-surface flex items-center justify-center hover:scale-110 transition-transform" onclick="event.stopPropagation(); toggleWatchlist(this, 'The Kepler Sequence')">
+<span class="material-symbols-outlined text-body-lg">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Poster 4: Obsidian Blade -->
+<div class="movie-card group shrink-0 relative w-[170px] sm:w-[210px] aspect-[2/3] rounded overflow-hidden bg-surface-container cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105" onclick="openMediaModal('Obsidian Blade', 'A master swordsmith in a post-collapse neo-feudal citadel crafts a monomolecular katana to challenge the synthetic warlord regime.', '9.5', '2024', '1h 59m', 'TV-MA', 'Action Cyber-Chivalry', 'Kenjiro Sato, Chloe Mercier', 'Spatial Master')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Vertical poster of a traditional cybernetic samurai standing on a pagoda overlook overlooking a sprawling dystopian megacity at twilight, holding a glowing razor-sharp pitch black obsidian blade that crackles with static electricity." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP1HAxvYo1mN-WL3RfALdFs6f3gHbTDSFBDMbbcltA4-iolHd_Rnmh5kqiQFz6uLzfriXAXO8JeBEkirTF6MKgFTkbr93gNvppGhJLlbusdeTFVSHNpfyYWiZjReDTR1AfAaHq4kVhlgra8HAID1mT-APcPgB7X8M0fvWUa0D6orG3MmfQduQ8A1eOlEMVrDYfNfi5fSPkSCJk2THCGFqmwEcpl9VY1wEO5nT2cpmFUQfpiaLstlnj0Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">99% MATCH</div>
+<div class="relative z-10 h-full p-space-md flex flex-col justify-end">
+<div class="space-y-0.5">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.5</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Obsidian Blade</h3>
+<p class="font-body-sm text-body-sm text-outline">Action • 2024</p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-body-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur text-on-surface flex items-center justify-center hover:scale-110 transition-transform" onclick="event.stopPropagation(); toggleWatchlist(this, 'Obsidian Blade')">
+<span class="material-symbols-outlined text-body-lg">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Poster 5: Deep Horizon 2199 -->
+<div class="movie-card group shrink-0 relative w-[170px] sm:w-[210px] aspect-[2/3] rounded overflow-hidden bg-surface-container cursor-pointer shadow-lg transition-transform duration-300 hover:scale-105" onclick="openMediaModal('Deep Horizon 2199', 'Colonists on Saturn moon Titan discover that the liquid hydrocarbon lakes conceal ancient automated submersibles from a lost human cycle.', '9.2', '2025', '2h 22m', 'PG-13', 'Space Sci-Fi', 'Evan Cole, Samantha Cruz', 'Dolby Atmos')">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Vertical movie poster of an astronaut explorer walking along the orange methane shoreline of Titan, Saturn and its gigantic rings looming in the hazy amber atmosphere overhead, glowing robotic vehicles exploring the dark oil lakes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBacD843vCM3ZBodmDIBYtIo-g3-upwmAhFRl_92NEbraNCSnYemO_UNLjNfVveBptQsV9IN_NpdLDCxBsmtM9tQawxWmqSBYfKZNRyrNcyKRCpO5uWGRdNvhe3byOtrkZ8YRucvUWGLECF3Ff-qr0ZkzPBfdsKHP9MXXiRxTHMUue-yp57RWcy197srcOK7rICLmBQq034RjNwthYgepyAJCn7o4J85Dtr5xY6ZX4xm2ZMjoHhICta3Q')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/30 to-transparent"></div>
+<div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">93% MATCH</div>
+<div class="relative z-10 h-full p-space-md flex flex-col justify-end">
+<div class="space-y-0.5">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">★ 9.2</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Deep Horizon</h3>
+<p class="font-body-sm text-body-sm text-outline">Hard Sci-Fi • 2025</p>
+</div>
+<div class="pt-space-sm flex items-center gap-space-xs opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<button class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-body-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<button class="w-8 h-8 rounded-full bg-surface-bright/80 backdrop-blur text-on-surface flex items-center justify-center hover:scale-110 transition-transform" onclick="event.stopPropagation(); toggleWatchlist(this, 'Deep Horizon 2199')">
+<span class="material-symbols-outlined text-body-lg">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Shelf 5: New Premieres This Week (Featuring Red 'NEW' Badges) -->
+<section class="w-full px-margin-mobile lg:px-margin space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-baseline gap-space-sm">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">New Premieres This Week</h2>
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase">Fresh Master Copies</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll back" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('premieres-row', -380)">
+<span class="material-symbols-outlined block">chevron_left</span>
+</button>
+<button aria-label="Scroll forward" class="p-space-xs rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRow('premieres-row', 380)">
+<span class="material-symbols-outlined block">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-space-lg overflow-x-auto scroll-smooth scrollbar-none pb-space-sm" id="premieres-row">
+<!-- Premiere 1: The Bio-Hacker of Zurich -->
+<div class="movie-card group shrink-0 w-[280px] sm:w-[320px] bg-surface-container rounded overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:scale-105" onclick="openMediaModal('The Bio-Hacker of Zurich', 'An underground synthetic biologist discovers how to reverse human neural decay, sparking an unacknowledged war across Swiss financial houses.', '9.1', '2025', '1h 56m', 'TV-MA', 'Cyber Biotech Thriller', 'Dr. Max Fischer, Elise Graf', '4K UHD • Atmos')">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Futuristic high-tech sterile cleanroom laboratory in Zurich with glass centrifuge chambers filled with fluorescent green cellular liquid, a scientist wearing polarized protective goggles observing DNA strands floating in holographic 3D." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBX4Udu7aqXYz1WG1m73rg_8PuKgCQ9C4jAp23gaQn6LU5tLkpxO2zUIoGzMATGF1uiEdMmSEjyM4lNgU_nDxzJKViquGv_DyBWJbE5eaf0XtQTX5zDVNRyhmJef9_ZZu1tXSrbJOnaSE9dQYexocNHrguIzt1oWw_cLsmZN6JHvB_zI2dPo5_d9xhT3NGE4O03m8E3PT3ZQNV61uW6sl1U3zyqUgdynSRKsR-uSbXnJr1HGI5Pji3_tA')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-extrabold uppercase tracking-wider">NEW</span>
+<div class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-dim/80 backdrop-blur font-label-sm text-label-sm text-on-surface">PREMIERE</div>
+</div>
+<div class="p-space-md space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="text-tertiary font-bold">★ 9.1</span>
+<span>1h 56m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">The Bio-Hacker of Zurich</h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">An underground synthetic biologist discovers a cure for neural decay.</p>
+</div>
+</div>
+<!-- Premiere 2: Neon Mirage: Las Vegas 2088 -->
+<div class="movie-card group shrink-0 w-[280px] sm:w-[320px] bg-surface-container rounded overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:scale-105" onclick="openMediaModal('Neon Mirage: Las Vegas 2088', 'A retired synthetic memory detective is called back to solve a heist where 50,000 gamblers had their victory recollections erased from existence.', '9.4', '2025', '2h 11m', 'TV-MA', 'Neo-Noir Mystery', 'Dante Cruz, Roxanne Rivers', '4K UHD • Spatial')">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Towering holographic neon casino pyramids in a futuristic Cyberpunk Las Vegas desert under a dark purple storm cloud sky, flying hover vehicles streaming in light trails along elevated highways." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDkDgmeT4YgMH99SLPkQFSyMxcSTR_7p93fJUYYgg_TiP0bao-oZiIiDjmlbhZuWOIt7mDrZldDo_X1_KWYepewsAkkb--uhjNAOShl6MrGAcEZnvhZ7-SwycbPp9Vgl10iHTMCJ0eLao2zuDjbjew5BKsqMUB_wKxuUdrx4VNv11myXPUO5TSni_wvEptNh0jtO4R4v7pXaAIh3E1DRpLstm3CJG4v2e9aPiBFrKWdVywJbQ7D3yp-4g')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-extrabold uppercase tracking-wider">NEW</span>
+<div class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-dim/80 backdrop-blur font-label-sm text-label-sm text-on-surface">PREMIERE</div>
+</div>
+<div class="p-space-md space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="text-tertiary font-bold">★ 9.4</span>
+<span>2h 11m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Neon Mirage: Las Vegas</h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">A memory detective investigates the total wipe of 50,000 casino gamblers.</p>
+</div>
+</div>
+<!-- Premiere 3: Solar Wind 4 -->
+<div class="movie-card group shrink-0 w-[280px] sm:w-[320px] bg-surface-container rounded overflow-hidden shadow-md cursor-pointer transition-all duration-300 hover:scale-105" onclick="openMediaModal('Solar Wind 4', 'A solar sailing race across the asteroid belt turns into an international rescue operation when a solar coronal shockwave disables communications.', '8.9', '2025', '2h 04m', 'PG-13', 'Adventure Sci-Fi', 'Kip Larson, Maya Lin', 'Dolby Atmos')">
+<div class="relative w-full aspect-video bg-cover bg-center" data-alt="Magnificent gossamer light sail yacht catching the solar winds in deep space near Jupiter, sails reflecting shimmering gold and platinum light against the starfield with distant asteroid silhouettes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCH2_lbeHhNLHTPyu1W_EV1s1sXOjZcpTKOs2XzYMfE7Ir9ToxP89mUBGadTLXnZKfU3zZ3u7kyvZDDPTaCXXdeyR5T4HVhDvw-C5NjboPIuZemGFeVbV1nRzTuGbt_fXroNrliwRhdO_HUBCitcJswMy1yChWxsGoJ9jzeaLkuhFAgzOquKjcdAYFU3un6GDPZ6GVQHVfHgvhJSaL6_XcAUIqHM69c7hpClOH7IbiK2YedkzO5u9g6vA')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-extrabold uppercase tracking-wider">NEW</span>
+<div class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-dim/80 backdrop-blur font-label-sm text-label-sm text-on-surface">PREMIERE</div>
+</div>
+<div class="p-space-md space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span class="text-tertiary font-bold">★ 8.9</span>
+<span>2h 04m</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">Solar Wind 4</h3>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">A solar sailing race across the asteroid belt turns into a high stakes rescue.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Interactive Rich Movie Detail Modal (High-Fidelity Glassmorphic Overlay) -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-space-md backdrop-blur-xl bg-surface-dim/85" id="media-modal">
+<div class="relative w-full max-w-3xl bg-surface-container rounded-xl overflow-hidden shadow-2xl flex flex-col max-h-[90vh]">
+<!-- Modal Header Banner -->
+<div class="relative h-64 sm:h-72 w-full bg-cover bg-center shrink-0" data-alt="Wide epic cinematic screen preview of an original sci-fi feature film, glowing energy cores, dramatic atmospheric lighting, high fidelity dark film still." id="modal-banner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD7_yoMkomciVu_f7F-eKCFTcFCGhYgKPGsbCYUs_4J7ckMP6_ULCaeHENFxtj9uxmbN3OLu_SeK37pDAZpRWiwwpVBe_x3dJwRNqTXxKEhwM2s67A2UePCR5Y5h8vOHbT73JXZYACOAWQTnufAevPnRHygQ2crz6X4IFh_kirtWJdeslXNS1wmvtYNgTblK8xJsGOcJynSEbupOOCA_eMvGtNdyCv-pogDGhl-VArQ3rEqxuqO6WuTYQ')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-transparent"></div>
+<button class="absolute top-4 right-4 w-10 h-10 rounded-full bg-surface-dim/80 backdrop-blur text-on-surface hover:text-primary hover:bg-surface-bright flex items-center justify-center transition-all z-20" onclick="closeMediaModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<div class="absolute bottom-4 left-6 right-6">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold" id="modal-rating-badge">9.5 RATING</span>
+<h2 class="font-display-xl-mobile sm:font-headline-lg text-display-xl-mobile sm:text-headline-lg text-on-surface uppercase tracking-tight pt-1" id="modal-title">Title Placeholder</h2>
+</div>
+</div>
+<!-- Modal Body Content -->
+<div class="p-space-lg overflow-y-auto space-y-space-md">
+<!-- Specs Bar -->
+<div class="flex flex-wrap items-center gap-space-sm text-outline font-label-md text-label-md">
+<span class="text-on-surface font-semibold" id="modal-year">2025</span>
+<span>•</span>
+<span id="modal-duration">2h 10m</span>
+<span>•</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm" id="modal-maturity">TV-MA</span>
+<span>•</span>
+<span class="text-primary font-semibold" id="modal-genre">Action Noir</span>
+<span>•</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm" id="modal-audio">Dolby Atmos</span>
+</div>
+<!-- Synopsis -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed" id="modal-synopsis">
+          Synopsis detailed overview text will load here dynamically upon interaction.
+        </p>
+<!-- Cast & Audio Details Bento -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded bg-surface-container-high space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Starring Cast</span>
+<p class="font-body-sm text-body-sm text-on-surface" id="modal-cast">Elena Vance, Dr. Silas Moore</p>
+</div>
+<div class="p-space-md rounded bg-surface-container-high space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Audio &amp; Master Spec</span>
+<p class="font-body-sm text-body-sm text-on-surface">4K UHD Master (Bitrate: 48 Mbps), Dolby Atmos, Spatial Binaural</p>
+</div>
+</div>
+<!-- Modal Action Footer -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md border-t border-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-sm px-space-xl py-space-sm rounded bg-primary-container text-on-primary-container font-label-lg text-label-lg hover:scale-105 hover:bg-primary-container/90 transition-all shadow-md" onclick="simulatePlayback()">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Stream in Ultra 4K
+            </button>
+<button class="p-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors" id="modal-watchlist-btn" onclick="toggleModalWatchlist(this)" title="Add to Watchlist">
+<span class="material-symbols-outlined text-headline-sm">bookmark_add</span>
+</button>
+<button class="p-space-sm rounded bg-surface-container-high text-on-surface hover:bg-surface-bright transition-colors" onclick="toggleLike(this)" title="Like Feature">
+<span class="material-symbols-outlined text-headline-sm">thumb_up</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm tracking-widest text-outline uppercase">Cinematic Pulse DRM Secured</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification System -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-space-sm px-space-lg py-space-sm rounded bg-surface-container-highest text-on-surface shadow-2xl pointer-events-none" id="toast-notify">
+<span class="material-symbols-outlined text-primary" id="toast-icon">check_circle</span>
+<span class="font-label-md text-label-md" id="toast-msg">Added to your Watchlist</span>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    // Smooth Horizontal Scroll Handler for Discovery Rails
+    function scrollRow(rowId, offset) {
+      const row = document.getElementById(rowId);
+      if (row) {
+        row.scrollBy({ left: offset, behavior: 'smooth' });
+      }
+    }
+
+    // Dynamic Modal Handlers
+    function openMediaModal(title, synopsis, rating, year, duration, maturity, genre, cast, audio) {
+      document.getElementById('modal-title').textContent = title;
+      document.getElementById('modal-synopsis').textContent = synopsis;
+      document.getElementById('modal-rating-badge').textContent = '★ ' + rating + ' RATING';
+      document.getElementById('modal-year').textContent = year;
+      document.getElementById('modal-duration').textContent = duration;
+      document.getElementById('modal-maturity').textContent = maturity;
+      document.getElementById('modal-genre').textContent = genre;
+      document.getElementById('modal-cast').textContent = cast;
+      
+      const modal = document.getElementById('media-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMediaModal() {
+      const modal = document.getElementById('media-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    // Modal click-outside backdrop dismiss
+    document.getElementById('media-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeMediaModal();
+      }
+    });
+
+    // Toast Notifications
+    function showToast(message, icon = 'check_circle') {
+      const toast = document.getElementById('toast-notify');
+      const toastMsg = document.getElementById('toast-msg');
+      const toastIcon = document.getElementById('toast-icon');
+      
+      toastMsg.textContent = message;
+      toastIcon.textContent = icon;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Watchlist Quick-Toggle Action
+    function toggleWatchlist(btn, title) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon.textContent === 'bookmark_add' || icon.textContent === 'bookmark') {
+        icon.textContent = 'bookmark_added';
+        btn.classList.add('text-primary');
+        showToast(`Saved '${title}' to My List`, 'bookmark_added');
+      } else {
+        icon.textContent = 'bookmark';
+        btn.classList.remove('text-primary');
+        showToast(`Removed '${title}' from My List`, 'bookmark_remove');
+      }
+    }
+
+    function toggleModalWatchlist(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const title = document.getElementById('modal-title').textContent;
+      if (icon.textContent === 'bookmark_add') {
+        icon.textContent = 'bookmark_added';
+        btn.classList.add('text-primary');
+        showToast(`Saved '${title}' to My List`, 'bookmark_added');
+      } else {
+        icon.textContent = 'bookmark_add';
+        btn.classList.remove('text-primary');
+        showToast(`Removed '${title}' from My List`, 'bookmark_remove');
+      }
+    }
+
+    function toggleLike(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon.style.fontVariationSettings.includes("'FILL' 1")) {
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-primary');
+      } else {
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.add('text-primary');
+        showToast('Feedback noted: We will recommend more like this', 'thumb_up');
+      }
+    }
+
+    function simulatePlayback() {
+      const title = document.getElementById('modal-title').textContent;
+      closeMediaModal();
+      showToast(`Initializing 4K Master stream for '${title}'...`, 'stream');
+    }
+
+    // Quick Genre Filter Pill Interactions
+    function filterGenre(genre) {
+      const pills = document.querySelectorAll('.genre-pill');
+      pills.forEach(pill => {
+        pill.classList.remove('bg-primary-container', 'text-on-primary-container');
+        pill.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+
+      const activeEventPill = window.event ? window.event.currentTarget : null;
+      if (activeEventPill) {
+        activeEventPill.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        activeEventPill.classList.add('bg-primary-container', 'text-on-primary-container');
+      }
+
+      showToast(`Showing titles filtered by: ${genre.toUpperCase()}`, 'filter_list');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant py-space-xl text-on-surface-variant"><div class="w-full px-margin-mobile lg:px-margin mx-auto space-y-space-xl"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg pb-space-lg border-b border-surface-container-high"><div class="flex items-center gap-space-sm"><img alt="Cinematic Pulse Logo" class="h-7 w-auto object-contain opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-wider uppercase">Cinematic Pulse</span></div><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-sm text-label-sm tracking-widest text-outline uppercase">Download Apps</span><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">tv</span>Smart TV</a><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">phone_iphone</span>Mobile &amp; Tablet</a></div></div><div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-space-lg font-body-sm text-body-sm"><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Top Genres</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Action &amp; Adventure</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Sci-Fi &amp; Cyberpunk</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Documentary Exclusives</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Noir &amp; Crime Thrillers</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Award-Winning Dramas</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Audio &amp; Subtitles</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Dolby Atmos Calibration</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Spatial Audio Hub</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subtitles &amp; Closed Captions</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Descriptive Video Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Multi-Language Dubs</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Help Center</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Account &amp; Billing</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Supported Streaming Devices</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Speed &amp; Playback Diagnostic</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Parental Lock Controls</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Support Desk</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Legal &amp; Privacy</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subscriber Agreement</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Cookie Preferences</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Corporate Governance</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-surface-container-high font-body-sm text-body-sm text-outline"><p>© 2025 Cinematic Pulse Entertainment, Inc. All rights reserved.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Ultra 4K HDR Streaming Active</span></div></div></div></footer><div class="fixed inset-0 pointer-events-none z-[100]" id="modal-root"></div></body></html>

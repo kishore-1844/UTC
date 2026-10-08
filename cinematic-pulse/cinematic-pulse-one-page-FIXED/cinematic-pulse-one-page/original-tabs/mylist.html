@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#353534","on-surface-variant":"#e9bcb6","on-tertiary-fixed":"#271900","on-primary-fixed-variant":"#930007","primary-fixed-dim":"#ffb4aa","on-tertiary-fixed-variant":"#5d4200","primary":"#ffb4aa","outline-variant":"#5e3f3b","surface-container-highest":"#353534","on-error":"#690005","surface":"#131313","on-primary-container":"#fff7f6","tertiary-container":"#946b00","tertiary-fixed":"#ffdea5","tertiary":"#fbbc30","secondary":"#adc7ff","on-secondary-fixed-variant":"#004493","primary-fixed":"#ffdad5","error":"#ffb4ab","on-tertiary-container":"#fff7f0","on-secondary-fixed":"#001a41","on-secondary":"#002e68","background":"#131313","surface-tint":"#ffb4aa","on-surface":"#e5e2e1","on-primary":"#690003","primary-container":"#e50914","on-secondary-container":"#fefcff","surface-container-lowest":"#0e0e0e","inverse-surface":"#e5e2e1","secondary-fixed":"#d8e2ff","on-primary-fixed":"#410001","on-background":"#e5e2e1","error-container":"#93000a","tertiary-fixed-dim":"#fbbc30","secondary-fixed-dim":"#adc7ff","outline":"#af8782","inverse-on-surface":"#313030","on-error-container":"#ffdad6","inverse-primary":"#c0000c","surface-bright":"#393939","surface-container":"#201f1f","surface-container-low":"#1c1b1b","secondary-container":"#0070ea","surface-container-high":"#2a2a2a","surface-dim":"#131313","on-tertiary":"#412d00"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","margin":"3.5rem","gutter":"1.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},"fontFamily":{"body-md":["Manrope"],"label-lg":["Manrope"],"label-sm":["Manrope"],"headline-sm":["Space Grotesk"],"body-sm":["Manrope"],"display-xl":["Space Grotesk"],"label-md":["Manrope"],"headline-lg-mobile":["Space Grotesk"],"display-xl-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"body-lg":["Manrope"]},"fontSize":{"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-xl-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm shrink-0" data-path="home" href="#"><img alt="Cinematic Pulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface hidden sm:inline">Cinematic Pulse</span></a><nav class="hidden md:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm"><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="home" href="#">HOME</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="movies" href="#">MOVIES</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="tv-shows" href="#">TV SHOWS</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm" data-path="my-list" href="#">MY LIST</a></nav></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline pointer-events-none text-headline-sm">search</span><input class="w-64 xl:w-80 bg-surface-container-high text-on-surface placeholder:text-outline pl-10 pr-4 py-space-xs rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-on-surface transition-all" placeholder="Search movies, shows and genres..." type="search"/></div><button class="lg:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">search</span></button><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface animate-pulse"></span></button><div class="flex items-center gap-space-xs pl-space-xs shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxfkBwXrKc0KLDyLVM-JrrBMnXzfJ-l9QKo2CRA3PHJVgwdlhVLroiLkV_5P6Q-hKJQBFPOCmuFpsIdfQwO8iTDb6-5MIuyb9dsN2f3tNl7eyIIfPQq2Hg4-KQ-ya2Cpk5sUaFwWash946wF8evjeWFdVKg5o0TBRnVEHvFLeeDpWyrSIQNXWP80pZhcWr6CuFP1vrC9JoXwYula-RI4VwP19zmbCwWctfTXqu313ascJVCYO9GfFr5w"/></div><button aria-label="Open Menu" class="md:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" type="button"><span class="material-symbols-outlined block">menu</span></button></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Field -->
+<div class="relative w-full overflow-hidden px-margin-mobile lg:px-margin py-space-xl">
+<div class="absolute -top-32 left-1/4 w-96 h-96 bg-primary-container/15 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute top-10 right-10 w-72 h-72 bg-tertiary-container/10 rounded-full blur-[100px] pointer-events-none"></div>
+<!-- Header Section -->
+<div class="relative flex flex-col gap-space-lg mb-space-xl">
+<!-- Title & Subtitle Stack -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-space-xs max-w-2xl">
+<div class="inline-flex items-center gap-2 px-space-sm py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+            Personal Media Library
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight drop-shadow-[0_0_25px_rgba(229,9,20,0.45)]">
+            My Watchlist
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Your personalized collection of saved cinema, series, and downloaded offline media.
+          </p>
+</div>
+<!-- Offline Storage Indicator Pill (Desktop/Header) -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-md min-w-[280px]">
+<div class="flex items-center justify-between text-on-surface font-label-md text-label-md mb-2">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-headline-sm text-primary">download_for_offline</span>
+              Offline Storage
+            </span>
+<span class="text-on-surface-variant">18.4 / 128 GB</span>
+</div>
+<div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 14.375%;"></div>
+</div>
+<div class="flex justify-between items-center mt-2 font-label-sm text-label-sm text-outline">
+<span>2 Offline Titles</span>
+<span class="text-tertiary">109.6 GB Available</span>
+</div>
+</div>
+</div>
+<!-- Controls & Filter Rails -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-sm">
+<!-- Segmented Filter Tabs -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="filter-tab px-space-md py-space-xs rounded bg-primary-container text-on-primary-container font-label-lg text-label-lg shadow-sm transition-all hover:opacity-95" data-filter="all" type="button">
+            All Saved <span class="ml-1 opacity-80">(8)</span>
+</button>
+<button class="filter-tab px-space-md py-space-xs rounded bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all" data-filter="film" type="button">
+            Feature Films <span class="ml-1 text-on-surface-variant">(5)</span>
+</button>
+<button class="filter-tab px-space-md py-space-xs rounded bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all" data-filter="series" type="button">
+            TV Series <span class="ml-1 text-on-surface-variant">(3)</span>
+</button>
+<button class="filter-tab px-space-md py-space-xs rounded bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all inline-flex items-center gap-1.5" data-filter="downloaded" type="button">
+<span class="material-symbols-outlined text-headline-sm text-secondary">download_done</span>
+            Downloaded Offline <span class="ml-0.5 text-on-surface-variant">(2)</span>
+</button>
+</div>
+<!-- Action Dropdown & Clear Trigger -->
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<!-- Sort Dropdown Container -->
+<div class="relative inline-block text-left">
+<div class="flex items-center bg-surface-container-high rounded px-space-md py-space-xs text-on-surface font-label-md text-label-md gap-2">
+<span class="material-symbols-outlined text-headline-sm text-on-surface-variant">sort</span>
+<span class="text-on-surface-variant">Sort:</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer pr-1" id="sort-select">
+<option class="bg-surface-container-highest text-on-surface" value="recent">Recently Added</option>
+<option class="bg-surface-container-highest text-on-surface" value="rating">Highest Rating</option>
+<option class="bg-surface-container-highest text-on-surface" value="title">Title (A-Z)</option>
+<option class="bg-surface-container-highest text-on-surface" value="size">Storage Size</option>
+</select>
+</div>
+</div>
+<!-- Clear Watchlist Modal Trigger -->
+<button class="flex items-center gap-1.5 px-space-md py-space-xs rounded bg-surface-container-high hover:bg-surface-variant text-on-surface-variant hover:text-error font-label-md text-label-md transition-colors" id="btn-clear-watchlist" type="button">
+<span class="material-symbols-outlined text-headline-sm">delete_sweep</span>
+<span>Clear Watchlist</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Active Media Grid (4-Column Desktop) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter transition-all duration-300" id="media-grid">
+<!-- Card 1 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="film" data-downloaded="true">
+<!-- Thumbnail & Scrim -->
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Aetherion Zero Dawn cinematic movie poster showing a massive ruined starship resting in a crimson desert landscape under twin rings, atmospheric sci-fi lighting with neon red ambient reflections and deep black shadows in cinematic 8k." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBddpCLQ7aFyuBmDBqFNTBpyI0rOcydkJQ5rMqMR8OnXOGHN1i7tnfUWa5UqMqqP4s-deRNypqtsAfe4K3lTnny7epctDj7wheRkdOd_8Nijoof0hjFoixCZAzWG8IQhU7g8sJxWCsP9VGDNqbCr4T7rPMxS42mlZ1mqWu45pHa2tJk_8SLXpIJMvNFT0k9ObE_kRhxjtOtczDpCjsrAbcIIxtqJWtUhq5k0zGjN3XB5bz1-gKpNgM7Cg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<!-- Badges Bar -->
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Original Film</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm flex items-center gap-0.5" title="Downloaded 4.8 GB">
+<span class="material-symbols-outlined text-[12px]">download_done</span> 4.8GB
+            </span>
+</div>
+<!-- Quick Remove Button -->
+<button aria-label="Remove Aetherion: Zero Dawn from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<!-- Play Overlay Hover Trigger -->
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play Aetherion: Zero Dawn" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Meta Content Body -->
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Sci-Fi • Adventure</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                9.5
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Aetherion: Zero Dawn
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Beyond the colonized fringe, an awakened derelict station triggers an interstellar distress signal that defies spacetime.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 2h 24m</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">HDR10+</span>
+</div>
+<!-- Bottom Action Row -->
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Play
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="film" data-downloaded="false">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="The Obsidian Protocol movie key art featuring a silhouette of a solitary operative standing before an illuminated underground data vault lined with black glass server towers and red volumetric laser beams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSUVERfdivWGzeqLOq1RIucEeNsLXVJSeXPVE1x2LfUMfL5RQKimeIGpBZvQiTO4XKJS8OgLALc6yJZ3nHQNxAAlCjBNWFN3XzBpTlmjxZ_G-hF_g-N5YNhZyIO33Z_6oQWTzj4HCGsM88A39nwBVTFyUDARg5L66g77DP4GyI5WVjbhCDd80Wqk0ZusWVqqE8Cn9k51edeLklfvz3lEHl9gBB1v2gwIPn4JNfqzOXOQ4MfhiwnpNQqw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Original Thriller</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<button aria-label="Remove The Obsidian Protocol from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play The Obsidian Protocol" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Espionage • Cyber-Thriller</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                9.2
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              The Obsidian Protocol
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              A black-budget intelligence agency discovers its synthetic predictive engine is executing covert operations without authorization.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 1h 58m</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Dolby Vision</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Play
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="series" data-downloaded="false">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Subterfuge Berlin Echo television series key banner showing mist-covered Brandenburg Gate at night with fractured neon reflections, surveillance crosshairs, and cold blue noir tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZCPqjrVWygaGRkhWPwPRErw4gkh52Ftcv3D1qIIFK4VvkE98u6NV03bcwlyICjqemIJipP1Tl24eQgKzTxwDMHbpaCaw8ZU19MD2XagXf7dIPdWF3-hIgzQl0bO3m_RkCPjejAjBnFNAucgeVcqq5XrAGawWqZAGTyr9GlwLKJ7GscqRjdAZL1IYjIndoSr_bLNHOxgHEOsH_otVIenJ5jqY5o_TrmtOzxIBzKe8t-L4znBDZ8jaWSQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Series</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<button aria-label="Remove Subterfuge: Berlin Echo from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play Subterfuge: Berlin Echo" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Political Thriller</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                9.4
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Subterfuge: Berlin Echo
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Diplomatic cables leak across divided embassies while a rogue handler races to neutralize a deep-cover double agent.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">tv</span> Season 2 • 8 Episodes</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Spatial Audio</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Resume S2:E1
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="film" data-downloaded="false">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Valkyrie Drift cinematic action poster showing high performance aerodynamic hypercars speeding down a rain-slicked Scandinavian mountain pass at dusk with streak tail-lights and sparks." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7X23yJy2PAbs82LZb1v_8y9dobQtqBydVGiO9KqYmU42BsFpeJ8t-2zl0oCW55w3XZ6PgKOEpy5urqom_Z2-0yv7Tzhj30LrN4ECaa_S_Yogc7_7EQmhhINEllHFlvViKrMHvUkHYl3E6lTjWv4DEgpC08aofvn6dG78ADvwVjC7zQu5GFbx6TReKE1qrvbCXMmLVTjI3Jaunsc4vO5sg5mKRG9Eo5enQyE8NM5hu7YFhS9wq-h6d5Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Action Film</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<button aria-label="Remove Valkyrie Drift from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play Valkyrie Drift" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Action • Motorsport</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                8.9
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Valkyrie Drift
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Illegal midnight endurance racing through sub-zero fjords pushes experimental hydrogen prototypes and human endurance past breaking limits.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 2h 12m</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Atmos 7.1</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Play
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 5 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="film" data-downloaded="false">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Echoes of Kyoto neo-noir film banner showing lantern-lit rainy alleyway in Gion with deep violet and crimson puddles, an enigmatic private investigator with umbrella looking backward." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUITwQW7S028GGx7mqRb9_RoYr2Kzu7NJqbms-d8bVYAHSXa5kGI8gBLK91Uf5anuJbtUXaXRnn-7pRy7DMpKqs21FCwLQliPz2ebm_Q5kxIbiSe5DPuJHeUYd481OLPv6nA6UMPGGzBpQfaiu54pTKBVsSvPXUVUWdYWiOPPTlsZslRoU7SZ_OTlN7LlVvhtkp4qQGdO6ALuJ4ajx22_pQ7QKJh7R4jyqV8DQySZdDUvjwBZBAzHDYg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Neo-Noir Film</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<button aria-label="Remove Echoes of Kyoto from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play Echoes of Kyoto" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Noir • Mystery</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                9.1
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Echoes of Kyoto
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              A private detective searching for an art restorer uncovers antique counterfeit scrolls that conceal encrypted corporate banking ledgers.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 2h 05m</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">IMAX Enhanced</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Play
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 6 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="series" data-downloaded="true">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="The Silicon Network series promotional visual depicting a modern high-rise boardroom overlooking San Francisco fog with glowing holographic financial tickers and intense dramatic silhouettes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDICS7wpbiHzUvRBeQbrugJ_P8muTu5gzD2iD88MPRZGkHjSIU7AVda_dFKQUb1T9zYlzO4cUFm8SX3l8LyAx0LYamQmpNMyzOGIRZ2p7oIcHpSebLLii_sl4_01PiH8bBXIEOPEaDFKNzscgAfF0X3OAuyzHbdCWqZhpHTnDiGbvIdnjsByzOaU1Rb9soRjs0bNN6Gj7XtBc7_3pkcqS5b7GYVexzwPcQ9d61_-GWL68LPJdqE758jg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Drama Series</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm flex items-center gap-0.5" title="Downloaded 13.6 GB">
+<span class="material-symbols-outlined text-[12px]">download_done</span> 13.6GB
+            </span>
+</div>
+<button aria-label="Remove The Silicon Network from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play The Silicon Network" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Drama • Tech Titan</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                9.6
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              The Silicon Network
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              Inside the cutthroat boardroom battles and predatory venture acquisitions defining the quantum computing supremacy arms race.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">tv</span> Season 3 • 10 Episodes</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Dolby Vision</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Resume S3:E4
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 7 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="film" data-downloaded="false">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Solaris Breach science fiction feature film showing a massive research probe penetrating a crystalline solar flare with glowing golden and ruby plasma corona reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNhPjWAPohqq76xA2FVF9E2FRYM-Emabi5OF6NYrrDDzpE_3Q2IABu8CKHbLyRgCWRuaQNRiKAXofZvaC2hagLC1Sz9UE4r9OOtMHuVtgaME175fZjl6jXp_3d4UmrupoV1UcwjiGM0i024BnWRCDErdTprMX0cirPPpGqFEZ8mrsz0fsYmvnuntJwSkZXlJDHAtuj_Wgiaum2pw7RMLvrR-x1k2F2SzqKpRJigHQ8EN6_lxsW1Zhcyg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Sci-Fi Film</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<button aria-label="Remove Solaris Breach from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play Solaris Breach" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Sci-Fi • Thriller</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                8.8
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Solaris Breach
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              When an uncharted sun erupts with artificial cadence, an expedition astronaut team is trapped within its graviton wake.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">schedule</span> 2h 30m</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">HDR10+</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Play
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+<!-- Card 8 -->
+<article class="media-card group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-1.5" data-category="series" data-downloaded="false">
+<div class="relative aspect-[16/10] w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Cerebral Nexus sci-fi psychological series teaser showing a human head silhouette constructed of pulsing bioluminescent neural filaments and floating crystalline fragments against pitch black background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7y4Tgff-yCgTki9tOGa2b95coq__tkdkGUcHQ0OvDYyWT3A5KObiP9GMu4V6WD5s28at_7nkn1wr5zbrsqgSuJDADelhm93Pok5zkqe96yegysZDjTK5VoPBVyPzKGANPvFY25WXwcXOgUI91Fn189DLV-RkxWRcjl3ht403uikvuMwDfO4_5wS8Gw21K5sIrrqLdh1IPIfXIu78fTE4rUKaVJXT5cgNq3sdiP2uZbqx-go2YBUiL7A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/30 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase tracking-wide">Sci-Fi Series</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm font-bold">4K UHD</span>
+</div>
+<button aria-label="Remove Cerebral Nexus from list" class="btn-remove-item absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 hover:bg-primary-container text-on-surface hover:text-on-primary-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-surface-container-lowest/40 backdrop-blur-[2px]">
+<button aria-label="Play Cerebral Nexus" class="w-12 h-12 rounded-full bg-primary-container hover:scale-110 text-on-primary-container flex items-center justify-center shadow-xl transition-transform" type="button">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Psychological • Mystery</span>
+<span class="flex items-center gap-1 text-tertiary font-bold">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                9.0
+              </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+              Cerebral Nexus
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+              A synthetic memory archivist discovers fabricated childhood recollections deliberately implanted across hundreds of high-ranking diplomats.
+            </p>
+</div>
+<div class="pt-space-xs flex items-center justify-between font-label-md text-label-md text-outline">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">tv</span> Season 1 • 6 Episodes</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Dolby Atmos</span>
+</div>
+<div class="pt-space-xs grid grid-cols-2 gap-2">
+<button class="flex items-center justify-center gap-1.5 py-1.5 rounded bg-on-surface hover:bg-primary-fixed text-inverse-surface font-label-md text-label-md font-bold transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Play S1:E1
+            </button>
+<button class="flex items-center justify-center gap-1 py-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+              Details
+            </button>
+</div>
+</div>
+</article>
+</div>
+<!-- Empty State Template Container (Hidden by default, exposed on clear/zero state) -->
+<div class="hidden flex-col items-center justify-center py-20 px-4 text-center max-w-lg mx-auto" id="empty-state">
+<div class="relative w-28 h-28 mb-space-lg flex items-center justify-center">
+<!-- Abstract Ambient glow behind reel -->
+<div class="absolute inset-0 rounded-full bg-primary-container/20 blur-2xl"></div>
+<!-- High-Contrast Inline Film Reel Graphic -->
+<svg class="relative w-24 h-24 text-on-surface-variant/40" fill="none" stroke="currentColor" viewbox="0 0 96 96">
+<circle class="text-surface-variant" cx="48" cy="48" r="42" stroke-dasharray="6 4" stroke-width="3"></circle>
+<circle class="text-outline-variant" cx="48" cy="48" r="32" stroke-width="2"></circle>
+<circle class="text-surface-container-high" cx="48" cy="48" fill="currentColor" r="12"></circle>
+<circle class="text-surface-container-highest" cx="48" cy="24" fill="currentColor" r="6"></circle>
+<circle class="text-surface-container-highest" cx="48" cy="72" fill="currentColor" r="6"></circle>
+<circle class="text-surface-container-highest" cx="24" cy="48" fill="currentColor" r="6"></circle>
+<circle class="text-surface-container-highest" cx="72" cy="48" fill="currentColor" r="6"></circle>
+<!-- Bookmark Ribbons -->
+<path d="M60 20 L60 62 L48 54 L36 62 L36 20 Z" fill="#E50914" opacity="0.9" stroke="none"></path>
+</svg>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-space-xs">
+        Your watchlist is currently empty
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mb-space-lg">
+        Discover award-winning movies and television to queue for later viewing.
+      </p>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-xl py-space-xs rounded bg-primary-container hover:bg-primary-container/90 text-on-primary-container font-label-lg text-label-lg transition-transform hover:scale-105 shadow-lg flex items-center gap-2" id="btn-explore-catalog" type="button">
+<span class="material-symbols-outlined text-headline-sm">explore</span>
+          Explore Catalog
+        </button>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" id="btn-restore-sample" type="button">
+          Restore Sample Library
+        </button>
+</div>
+</div>
+<!-- Storage Management Drawer Info -->
+<div class="mt-space-xl p-space-lg rounded-xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">speed</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Auto-Download Next Episodes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Seamlessly pre-load queued series episodes on Wi-Fi and automatically delete viewed files.</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="px-space-md py-space-xs rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" type="button">
+          Storage Settings
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initWatchlistInteractions() {
+    const tabs = document.querySelectorAll('.filter-tab');
+    const cards = document.querySelectorAll('.media-card');
+    const removeButtons = document.querySelectorAll('.btn-remove-item');
+    const clearBtn = document.getElementById('btn-clear-watchlist');
+    const emptyState = document.getElementById('empty-state');
+    const mediaGrid = document.getElementById('media-grid');
+    const restoreBtn = document.getElementById('btn-restore-sample');
+
+    function checkEmptyStatus() {
+      const visibleCards = Array.from(cards).filter(c => !c.classList.contains('hidden') && c.style.display !== 'none');
+      const totalNonDeleted = Array.from(cards).filter(c => !c.dataset.removed);
+      if (totalNonDeleted.length === 0) {
+        mediaGrid.classList.add('hidden');
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        mediaGrid.classList.remove('hidden');
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    // Filter Tab Switching
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => {
+          t.classList.remove('bg-primary-container', 'text-on-primary-container');
+          t.classList.add('bg-surface-container-high', 'text-on-surface');
+        });
+        tab.classList.remove('bg-surface-container-high', 'text-on-surface');
+        tab.classList.add('bg-primary-container', 'text-on-primary-container');
+
+        const filter = tab.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          if (card.dataset.removed) return;
+          if (filter === 'all') {
+            card.style.display = 'flex';
+          } else if (filter === 'film') {
+            card.style.display = card.getAttribute('data-category') === 'film' ? 'flex' : 'none';
+          } else if (filter === 'series') {
+            card.style.display = card.getAttribute('data-category') === 'series' ? 'flex' : 'none';
+          } else if (filter === 'downloaded') {
+            card.style.display = card.getAttribute('data-downloaded') === 'true' ? 'flex' : 'none';
+          }
+        });
+        checkEmptyStatus();
+      });
+    });
+
+    // Remove single item with fade
+    removeButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.media-card');
+        if (!card) return;
+        card.style.transition = 'all 0.3s ease';
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.95)';
+        setTimeout(() => {
+          card.style.display = 'none';
+          card.dataset.removed = "true";
+          checkEmptyStatus();
+        }, 300);
+      });
+    });
+
+    // Clear All Watchlist
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        if (confirm('Are you sure you want to clear your entire watchlist?')) {
+          cards.forEach(card => {
+            card.dataset.removed = "true";
+            card.style.display = 'none';
+          });
+          checkEmptyStatus();
+        }
+      });
+    }
+
+    // Restore library demo
+    if (restoreBtn) {
+      restoreBtn.addEventListener('click', () => {
+        cards.forEach(card => {
+          delete card.dataset.removed;
+          card.style.opacity = '1';
+          card.style.transform = 'none';
+          card.style.display = 'flex';
+        });
+        // reset tab to All
+        const allTab = document.querySelector('[data-filter="all"]');
+        if (allTab) allTab.click();
+        checkEmptyStatus();
+      });
+    }
+
+    // Sort select handler
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+      sortSelect.addEventListener('change', (e) => {
+        const value = e.target.value;
+        const currentCards = Array.from(cards);
+        if (value === 'title') {
+          currentCards.sort((a, b) => {
+            const tA = a.querySelector('h2').textContent.trim();
+            const tB = b.querySelector('h2').textContent.trim();
+            return tA.localeCompare(tB);
+          });
+          currentCards.forEach(c => mediaGrid.appendChild(c));
+        }
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant py-space-xl text-on-surface-variant"><div class="w-full px-margin-mobile lg:px-margin mx-auto space-y-space-xl"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg pb-space-lg border-b border-surface-container-high"><div class="flex items-center gap-space-sm"><img alt="Cinematic Pulse Logo" class="h-7 w-auto object-contain opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-wider uppercase">Cinematic Pulse</span></div><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-sm text-label-sm tracking-widest text-outline uppercase">Download Apps</span><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">tv</span>Smart TV</a><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">phone_iphone</span>Mobile &amp; Tablet</a></div></div><div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-space-lg font-body-sm text-body-sm"><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Top Genres</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Action &amp; Adventure</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Sci-Fi &amp; Cyberpunk</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Documentary Exclusives</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Noir &amp; Crime Thrillers</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Award-Winning Dramas</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Audio &amp; Subtitles</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Dolby Atmos Calibration</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Spatial Audio Hub</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subtitles &amp; Closed Captions</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Descriptive Video Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Multi-Language Dubs</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Help Center</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Account &amp; Billing</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Supported Streaming Devices</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Speed &amp; Playback Diagnostic</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Parental Lock Controls</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Support Desk</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Legal &amp; Privacy</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subscriber Agreement</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Cookie Preferences</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Corporate Governance</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-surface-container-high font-body-sm text-body-sm text-outline"><p>© 2025 Cinematic Pulse Entertainment, Inc. All rights reserved.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Ultra 4K HDR Streaming Active</span></div></div></div></footer><div class="fixed inset-0 pointer-events-none z-[100]" id="modal-root"></div></body></html>

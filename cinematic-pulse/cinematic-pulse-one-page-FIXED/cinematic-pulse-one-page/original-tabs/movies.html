@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#353534","on-surface-variant":"#e9bcb6","on-tertiary-fixed":"#271900","on-primary-fixed-variant":"#930007","primary-fixed-dim":"#ffb4aa","on-tertiary-fixed-variant":"#5d4200","primary":"#ffb4aa","outline-variant":"#5e3f3b","surface-container-highest":"#353534","on-error":"#690005","surface":"#131313","on-primary-container":"#fff7f6","tertiary-container":"#946b00","tertiary-fixed":"#ffdea5","tertiary":"#fbbc30","secondary":"#adc7ff","on-secondary-fixed-variant":"#004493","primary-fixed":"#ffdad5","error":"#ffb4ab","on-tertiary-container":"#fff7f0","on-secondary-fixed":"#001a41","on-secondary":"#002e68","background":"#131313","surface-tint":"#ffb4aa","on-surface":"#e5e2e1","on-primary":"#690003","primary-container":"#e50914","on-secondary-container":"#fefcff","surface-container-lowest":"#0e0e0e","inverse-surface":"#e5e2e1","secondary-fixed":"#d8e2ff","on-primary-fixed":"#410001","on-background":"#e5e2e1","error-container":"#93000a","tertiary-fixed-dim":"#fbbc30","secondary-fixed-dim":"#adc7ff","outline":"#af8782","inverse-on-surface":"#313030","on-error-container":"#ffdad6","inverse-primary":"#c0000c","surface-bright":"#393939","surface-container":"#201f1f","surface-container-low":"#1c1b1b","secondary-container":"#0070ea","surface-container-high":"#2a2a2a","surface-dim":"#131313","on-tertiary":"#412d00"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","margin":"3.5rem","gutter":"1.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},"fontFamily":{"body-md":["Manrope"],"label-lg":["Manrope"],"label-sm":["Manrope"],"headline-sm":["Space Grotesk"],"body-sm":["Manrope"],"display-xl":["Space Grotesk"],"label-md":["Manrope"],"headline-lg-mobile":["Space Grotesk"],"display-xl-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"body-lg":["Manrope"]},"fontSize":{"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-xl-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm shrink-0" data-path="home" href="#"><img alt="Cinematic Pulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface hidden sm:inline">Cinematic Pulse</span></a><nav class="hidden md:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm"><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="home" href="#">HOME</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm" data-path="movies" href="#">MOVIES</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="tv-shows" href="#">TV SHOWS</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="my-list" href="#">MY LIST</a></nav></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline pointer-events-none text-headline-sm">search</span><input class="w-64 xl:w-80 bg-surface-container-high text-on-surface placeholder:text-outline pl-10 pr-4 py-space-xs rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-on-surface transition-all" placeholder="Search movies, shows and genres..." type="search"/></div><button class="lg:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">search</span></button><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface animate-pulse"></span></button><div class="flex items-center gap-space-xs pl-space-xs shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxfkBwXrKc0KLDyLVM-JrrBMnXzfJ-l9QKo2CRA3PHJVgwdlhVLroiLkV_5P6Q-hKJQBFPOCmuFpsIdfQwO8iTDb6-5MIuyb9dsN2f3tNl7eyIIfPQq2Hg4-KQ-ya2Cpk5sUaFwWash946wF8evjeWFdVKg5o0TBRnVEHvFLeeDpWyrSIQNXWP80pZhcWr6CuFP1vrC9JoXwYula-RI4VwP19zmbCwWctfTXqu313ascJVCYO9GfFr5w"/></div><button aria-label="Open Menu" class="md:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" type="button"><span class="material-symbols-outlined block">menu</span></button></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full">
+<!-- Top Movie Spotlight Hero -->
+<section class="relative w-full overflow-hidden -mt-16 pt-16 bg-surface-container-lowest">
+<div class="absolute inset-0 bg-cover bg-center opacity-45 scale-105 transition-transform duration-1000 ease-out" data-alt="Cinematic high contrast wide movie still of The Neon Alchemist featuring a mysterious cyberpunk synthesizer scientist in a rainy neo-noir Tokyo street bathed in hyper-saturated neon amber, crimson red and cyan reflections with sharp lens flare and misty shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3C9zWcspd1z4VkMRH6r3Pheys31DrqogPZzGEPqrk5Jz4qaUlQMPNioV-euXq8lqNnT5Wr4K0VYnVlWW5nMuftbLHcDYXsFuMOK54Ypoin0wrsivcadVPIgP36-hk4fsvaPZei6hG6lnBnT5USsWaMLmoVO0jcugadtJrhdodbqbNZk2gTcR-2JinAM84Zf9QirbjchfbUZ4eGhZpB6PchogNIvEzFdfm36ZCHBIzJxhK1YYs0BgKRw')">
+</div>
+<!-- Cinematic multi-stop gradient scrims -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
+<div class="relative z-10 w-full px-margin-mobile lg:px-margin pt-16 pb-14 md:pb-24 max-w-7xl">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container-high/80 backdrop-blur-md mb-space-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-fixed">Featured Premiere</span>
+</div>
+<div class="max-w-3xl space-y-space-md">
+<div class="flex items-center gap-space-sm flex-wrap text-on-surface-variant font-label-md text-label-md">
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">UHD 4K</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">DOLBY ATMOS</span>
+<span>•</span>
+<span class="text-tertiary flex items-center gap-1 font-headline-sm text-label-lg">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span> 9.2
+          </span>
+<span>•</span>
+<span class="text-on-surface">2024</span>
+<span>•</span>
+<span class="text-on-surface-variant">2h 18m</span>
+<span>•</span>
+<span class="text-primary-fixed">Sci-Fi / Thriller</span>
+</div>
+<h1 class="font-display-xl text-display-xl-mobile lg:text-display-xl uppercase text-on-surface tracking-tight font-headline-lg">
+          The Neon Alchemist
+        </h1>
+<p class="font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-2xl line-clamp-3">
+          In a decaying megacity run on synthetic neurotransmitters, an unlicensed bio-chemist unearths an organic formula that can rewrite human consciousness—making him the target of both sovereign mega-corps and augmented syndicate syndics.
+        </p>
+<!-- CTAs -->
+<div class="flex items-center gap-space-md pt-space-sm">
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-on-primary-container text-surface-container-lowest font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-xl hover:scale-105 active:scale-95" onclick="openMovieDetails('The Neon Alchemist')" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play Now</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-high/70 backdrop-blur-md text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-all shadow-md active:scale-95" onclick="toggleToast('Added &quot;The Neon Alchemist&quot; to My List')" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>My List</span>
+</button>
+<button aria-label="Movie details" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container-high/60 backdrop-blur-md text-on-surface hover:text-on-primary-container hover:bg-primary-container transition-all" onclick="openMovieDetails('The Neon Alchemist')" type="button">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter & Catalog Main Section -->
+<section class="w-full px-margin-mobile lg:px-margin py-space-xl max-w-7xl mx-auto space-y-space-lg">
+<!-- Header Bar with Filters and Controls -->
+<div class="flex flex-col gap-space-md pb-space-sm">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Cinematic Catalog</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight">Movies</h2>
+</div>
+<!-- Filter Search & Sort Controls -->
+<div class="flex items-center flex-wrap gap-space-sm">
+<!-- In-Page Fast Filter Input -->
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">filter_list</span>
+<input class="w-48 sm:w-60 bg-surface-container-high text-on-surface placeholder:text-outline pl-9 pr-3 py-1.5 rounded font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-highest transition-all" id="movieSearchInput" oninput="handleMovieSearch(this.value)" placeholder="Filter by title..." type="text"/>
+</div>
+<!-- Sort Dropdown -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-high text-on-surface font-label-md text-label-md pl-space-md pr-8 py-2 rounded focus:outline-none cursor-pointer hover:bg-surface-container-highest transition-colors" id="sortSelect" onchange="handleSortChange(this.value)">
+<option value="popularity">Sort: Popularity</option>
+<option value="rating">Sort: Rating (Highest)</option>
+<option value="release">Sort: Release Date (Newest)</option>
+<option value="az">Sort: Title (A-Z)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-outline text-[16px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Genre Pills -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-space-xs scrollbar-none" id="genrePillContainer">
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary-container shadow-md" onclick="filterGenre('All', this)">
+          All
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Action', this)">
+          Action
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Comedy', this)">
+          Comedy
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Drama', this)">
+          Drama
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Thriller', this)">
+          Thriller
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Sci-Fi', this)">
+          Sci-Fi
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Horror', this)">
+          Horror
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Adventure', this)">
+          Adventure
+        </button>
+<button class="genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high" onclick="filterGenre('Animation', this)">
+          Animation
+        </button>
+</div>
+</div>
+<!-- Active Filter Feedback & Count -->
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+<div id="resultsCount">Showing 11 movies</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>4K HDR Enhanced Catalogs Active</span>
+</div>
+</div>
+<!-- Movies Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-space-md" id="moviesGrid">
+<!-- Cards will be rendered and updated here -->
+</div>
+<!-- Empty State Container -->
+<div class="hidden flex-col items-center justify-center py-20 text-center space-y-space-md" id="emptyState">
+<span class="material-symbols-outlined text-outline text-display-xl">movie_filter</span>
+<div class="space-y-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">No titles matched your query</h3>
+<p class="font-body-sm text-body-sm text-outline max-w-sm">Try resetting filters or searching for alternative genre keywords.</p>
+</div>
+<button class="px-space-md py-space-xs rounded bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors" onclick="resetFilters()" type="button">
+        Reset All Filters
+      </button>
+</div>
+<!-- Editorial Spotlight Banner / Collection Strip -->
+<div class="rounded-xl overflow-hidden bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-lg md:p-space-xl flex flex-col md:flex-row items-center justify-between gap-space-lg shadow-xl">
+<div class="space-y-space-xs max-w-xl">
+<span class="px-space-sm py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm uppercase tracking-wider">Director Retrospective</span>
+<h3 class="font-headline-md text-headline-md text-on-surface tracking-tight">The Architecture of Suspense</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Explore mind-bending architectural thrillers, temporal paradoxes, and hyper-real cyber landscapes meticulously curated with 7.1 Surround Audio tracks.
+        </p>
+</div>
+<button class="shrink-0 px-space-lg py-space-sm rounded bg-surface-container-highest text-on-surface font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all flex items-center gap-space-xs shadow-md" onclick="filterGenre('Sci-Fi', null)" type="button">
+<span>Explore Sci-Fi Vault</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- High-Fidelity Movie Detail Modal -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-space-md sm:p-space-lg bg-surface-container-lowest/80 backdrop-blur-xl" id="movieModal">
+<div class="relative w-full max-w-3xl rounded-xl bg-surface-container-low shadow-2xl overflow-hidden max-h-[921px] flex flex-col">
+<!-- Modal Close Button -->
+<button aria-label="Close modal" class="absolute top-4 right-4 z-20 w-9 h-9 rounded-full bg-surface-container-lowest/70 backdrop-blur-md text-on-surface hover:text-on-primary-container hover:bg-primary-container flex items-center justify-center transition-all" onclick="closeMovieModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Modal Hero Image Preview Scrim -->
+<div class="relative w-full h-56 sm:h-72 shrink-0 bg-surface-container-highest">
+<div class="w-full h-full bg-cover bg-center" id="modalPosterBg"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<div class="absolute bottom-4 left-6 right-6 flex items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 rounded bg-surface-container" id="modalYear">2024</span>
+<span class="font-label-sm text-label-sm text-primary px-1.5 py-0.5 rounded bg-surface-container" id="modalGenre">Sci-Fi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant px-1.5 py-0.5 rounded bg-surface-container">4K ULTRA HD</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile sm:text-headline-lg text-on-surface tracking-tight font-headline-md" id="modalTitle">
+              Movie Title
+            </h2>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded bg-surface-container-highest/90 text-tertiary font-label-lg text-label-lg shrink-0">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span id="modalRating">9.1</span>
+</div>
+</div>
+</div>
+<!-- Modal Body Content -->
+<div class="p-space-lg sm:p-space-xl overflow-y-auto space-y-space-lg flex-1">
+<!-- Action Row -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-space-xs px-space-lg py-space-sm rounded bg-on-primary-container text-surface-container-lowest font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-all shadow-md" onclick="playMovieAction()" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Resume (0:00)</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors" onclick="toggleToast('Item toggled in My List')" type="button">
+<span class="material-symbols-outlined text-[20px]">bookmark_add</span>
+<span>Add to My List</span>
+</button>
+<button class="w-10 h-10 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest flex items-center justify-center transition-colors" onclick="toggleToast('Link copied to clipboard')" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+</button>
+</div>
+<!-- Synopsis -->
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Synopsis</span>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed" id="modalSynopsis">
+            Detailed storyline preview goes here.
+          </p>
+</div>
+<!-- Metadata Bento Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md bg-surface-container p-space-md rounded-lg">
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">Starring Cast</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium" id="modalCast">Elena Cruz, Marcus Vance, Kenji Sato</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">Audio / Subtitles</span>
+<span class="font-body-sm text-body-sm text-on-surface">Dolby Atmos (EN, ES, FR, DE, JA)</span>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-outline uppercase">Maturity Rating</span>
+<span class="font-body-sm text-body-sm text-on-surface">TV-MA / R (Violence, Language)</span>
+</div>
+</div>
+<!-- Trailer Preview Teaser -->
+<div class="space-y-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Official Teaser Preview</span>
+<div class="relative w-full h-40 bg-surface-container-highest rounded-lg overflow-hidden flex items-center justify-center group cursor-pointer" onclick="toggleToast('Playing Official Trailer HD...')">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 group-hover:scale-105 transition-transform duration-500" data-alt="High tech cinematic control room with holograms and red security alert glow reflecting on glass screens" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCuvThlgWgBFwdDbZvVbMnMSG_YgvT9sRNTUhP6KoMDfOFGPatzrJE4DXgtPIzmRN2RG_oEuoiWR5h9SUSyAYAYCm-dTwwiDe3kKgaR4gIyPHUCmb28udAIR99SvTNvE0KgKa5CXWyxDiFa78fZvtMZOC6IsD9p6VWDQCGLL1u6A10xRBnlk77SWy3INIlNPjMVAiEUh_1QiYf9LleJRxQLXQ481hPUJTAL0Q75dgJWh3I85fDqWxPQew')"></div>
+<div class="relative z-10 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+<span class="absolute bottom-2 right-3 font-label-sm text-label-sm bg-surface-container-lowest/80 px-2 py-0.5 rounded text-on-surface">2:14</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-16 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="px-space-md py-space-sm rounded bg-surface-container-highest text-on-surface flex items-center gap-space-sm shadow-2xl font-label-md text-label-md">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span id="toastMessage">Action completed</span>
+</div>
+</div>
+</div>
+<script>
+  // Comprehensive Movie Catalog Data
+  const moviesCatalog = [
+    {
+      id: "m1",
+      title: "The Neon Alchemist",
+      year: "2024",
+      genre: "Sci-Fi",
+      rating: "9.2",
+      popularity: 99,
+      imageAlt: "Futuristic neon-drenched cityscape with an alchemist in glowing chrome goggles brewing luminous quantum formulas in rain, dark cinematic tone",
+      synopsis: "In a decaying megacity run on synthetic neurotransmitters, an unlicensed bio-chemist unearths an organic formula that can rewrite human consciousness—making him the target of both sovereign mega-corps and augmented syndicate syndics.",
+      cast: "Cillian Zhao, Tessa Miller, David Kaluuya"
+    },
+    {
+      id: "m2",
+      title: "Silent Echo",
+      year: "2024",
+      genre: "Thriller",
+      rating: "8.9",
+      popularity: 94,
+      imageAlt: "Dark acoustic isolation chamber with intense moody amber spot lighting and sound visualizer waves on monolithic charcoal walls",
+      synopsis: "A deaf cryptanalyst stationed in an arctic listening post detects an encrypted sonic broadcast originating from beneath three miles of sub-glacial bedrock.",
+      cast: "Anya Taylor, Joel Kinnaman, Mads Mikkelsen"
+    },
+    {
+      id: "m3",
+      title: "Velocity Zero",
+      year: "2023",
+      genre: "Action",
+      rating: "8.8",
+      popularity: 91,
+      imageAlt: "Hyper-speed hypercar racing through an abandoned salt flat at dusk with supersonic red vapor trails and heat mirages",
+      synopsis: "When a zero-emission experimental kinetic engine is stolen, a dishonored tactical pilot has 18 hours across the Eurasian highway spine to intercept the courier.",
+      cast: "Idris Elba, Michelle Rodriguez, Sung Kang"
+    },
+    {
+      id: "m4",
+      title: "The Architect's Dilemma",
+      year: "2024",
+      genre: "Drama",
+      rating: "9.1",
+      popularity: 96,
+      imageAlt: "Brutalist glass and concrete sky-pavilion overlooking misty pine mountains under twilight with cold minimal architecture lighting",
+      synopsis: "Commissioned to design an impenetrable subterranean fortress for the planet's wealthiest elite, an eccentric architect hides an inescapable flaw within the blueprints.",
+      cast: "Jeremy Strong, Rebecca Ferguson, Alexander Skarsgard"
+    },
+    {
+      id: "m5",
+      title: "Crimson Peak: Dawn",
+      year: "2023",
+      genre: "Horror",
+      rating: "8.6",
+      popularity: 88,
+      imageAlt: "Gothic snowy mountain peak under a blood red moon with fog rolling through ancient blackened stone ruins and dim lantern light",
+      synopsis: "A high-altitude scientific expedition uncovers the petrified remains of a prehistoric entity that feeds on fear and collective memory.",
+      cast: "Mia Goth, Willem Dafoe, Bill Skarsgard"
+    },
+    {
+      id: "m6",
+      title: "Quantum Drift",
+      year: "2024",
+      genre: "Sci-Fi",
+      rating: "9.0",
+      popularity: 95,
+      imageAlt: "Cosmic space rift with swirling purple and golden relativistic matter bending light around a sleek titanium explorer ship",
+      synopsis: "A rogue warp-drive test strand strands five astro-physicists in a fractured dimension where each choice spawns physical duplicates of their ship.",
+      cast: "Oscar Isaac, Gemma Chan, Hiroyuki Sanada"
+    },
+    {
+      id: "m7",
+      title: "The Last Ronin",
+      year: "2024",
+      genre: "Action",
+      rating: "9.3",
+      popularity: 98,
+      imageAlt: "Cyberpunk armored samurai standing on a neon rain soaked steel pagoda overlooking a futuristic metropolis skyline with electric katanas",
+      synopsis: "In 2099 Neo-Kyoto, the last bio-mechanically enhanced honor guard undertakes a solitary vendetta against the autonomous AI tribunal that betrayed his master.",
+      cast: "Ken Watanabe, Karen Fukuhara, Lewis Tan"
+    },
+    {
+      id: "m8",
+      title: "Interstellar Rift",
+      year: "2023",
+      genre: "Adventure",
+      rating: "8.7",
+      popularity: 89,
+      imageAlt: "Deep space nebula showing an ancient colossal ring gate orbiting an alien gas giant planet with radiant violet atmospheric rings",
+      synopsis: "Deep salvage operatives stumble upon a dormant wormhole beacon dating back three billion years, suddenly activating towards unknown galaxy clusters.",
+      cast: "Pedro Pascal, Florence Pugh, Daniel Kaluuya"
+    },
+    {
+      id: "m9",
+      title: "Midnight Velocity",
+      year: "2024",
+      genre: "Action",
+      rating: "8.5",
+      popularity: 84,
+      imageAlt: "Subway tunnel with high speed maglev train leaving light trails under red emergency lighting and sparks flying from rail tracks",
+      synopsis: "A federal marshal trapped inside a runaway automated freight train must neutralize seven competing mercenary squads before it impacts the central station.",
+      cast: "John Boyega, Karl Urban, Mary Elizabeth Winstead"
+    },
+    {
+      id: "m10",
+      title: "Ghost Protocol 7",
+      year: "2023",
+      genre: "Thriller",
+      rating: "8.8",
+      popularity: 90,
+      imageAlt: "Overhead surveillance drone view of an illuminated European plaza in darkness with laser scopes and tactical shadows",
+      synopsis: "A black-budget cyber espionage team discovers their own AI defense algorithm has initiated a preemptive blackout on global financial centers.",
+      cast: "Michael Fassbender, Ana de Armas, Mark Strong"
+    },
+    {
+      id: "m11",
+      title: "Cyber Knight",
+      year: "2024",
+      genre: "Animation",
+      rating: "8.9",
+      popularity: 92,
+      imageAlt: "Stylized animation frame of a chrome-plated knight in neo-gothic armor wielding a plasma blade against a mechanical dragon under acid rain",
+      synopsis: "An animated epic where medieval legends are re-imagined in a retro-future kingdom where knights wield cold fusion armaments against self-replicating leviathans.",
+      cast: "Steven Yeun, Hailee Steinfeld, Giancarlo Esposito"
+    }
+  ];
+
+  // Active filter state
+  let currentGenre = "All";
+  let currentSearch = "";
+  let currentSort = "popularity";
+
+  // DOM Elements
+  const gridContainer = document.getElementById("moviesGrid");
+  const emptyState = document.getElementById("emptyState");
+  const resultsCount = document.getElementById("resultsCount");
+  const movieModal = document.getElementById("movieModal");
+
+  // Initial render
+  renderMovies();
+
+  function renderMovies() {
+    let filtered = moviesCatalog.filter(movie => {
+      const matchGenre = currentGenre === "All" || movie.genre.toLowerCase() === currentGenre.toLowerCase();
+      const matchSearch = movie.title.toLowerCase().includes(currentSearch.toLowerCase()) || 
+                          movie.genre.toLowerCase().includes(currentSearch.toLowerCase());
+      return matchGenre && matchSearch;
+    });
+
+    // Sorting
+    filtered.sort((a, b) => {
+      if (currentSort === "popularity") return b.popularity - a.popularity;
+      if (currentSort === "rating") return parseFloat(b.rating) - parseFloat(a.rating);
+      if (currentSort === "release") return parseInt(b.year) - parseInt(a.year);
+      if (currentSort === "az") return a.title.localeCompare(b.title);
+      return 0;
+    });
+
+    // Update Counter
+    resultsCount.textContent = `Showing ${filtered.length} movie${filtered.length === 1 ? '' : 's'}`;
+
+    if (filtered.length === 0) {
+      gridContainer.innerHTML = "";
+      emptyState.classList.remove("hidden");
+      emptyState.classList.add("flex");
+      return;
+    }
+
+    emptyState.classList.add("hidden");
+    emptyState.classList.remove("flex");
+
+    gridContainer.innerHTML = filtered.map(movie => `
+      <div 
+        class="group relative flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:bg-surface-container-high cursor-pointer"
+        onclick="openMovieDetails('${escapeJsString(movie.title)}')">
+        
+        <!-- Poster Thumbnail (2:3 Aspect ratio container) -->
+        <div class="relative w-full aspect-[2/3] bg-surface-container-highest overflow-hidden">
+          <img 
+            src="placeholder" 
+            data-alt="${escapeHtml(movie.imageAlt)}" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            alt="${escapeHtml(movie.title)} poster"
+          />
+          
+          <!-- Rating Spec Pill -->
+          <div class="absolute top-2 right-2 flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md text-tertiary font-label-sm text-label-sm">
+            <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            <span>${movie.rating}</span>
+          </div>
+
+          <!-- Quality Badge -->
+          <div class="absolute top-2 left-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase">
+            4K UHD
+          </div>
+
+          <!-- Hover Overlay with Actions -->
+          <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-space-md">
+            <div class="flex items-center gap-2 mb-2">
+              <button 
+                type="button" 
+                onclick="event.stopPropagation(); playMovieAction('${escapeJsString(movie.title)}')"
+                class="flex-1 flex items-center justify-center gap-1 py-1.5 rounded bg-on-primary-container text-surface-container-lowest font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-colors shadow">
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+                <span>Play</span>
+              </button>
+              
+              <button 
+                type="button" 
+                onclick="event.stopPropagation(); toggleToast('Added &quot;${escapeJsString(movie.title)}&quot; to My List')"
+                title="Add to My List"
+                class="w-8 h-8 rounded bg-surface-container-high/90 text-on-surface hover:text-primary hover:bg-surface-container-highest flex items-center justify-center transition-colors">
+                <span class="material-symbols-outlined text-[18px]">add</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Meta Details Section -->
+        <div class="p-space-sm flex flex-col flex-1 justify-between gap-1">
+          <div>
+            <div class="flex items-center justify-between text-outline font-label-sm text-label-sm">
+              <span>${movie.year}</span>
+              <span class="text-on-surface-variant">${movie.genre}</span>
+            </div>
+            <h4 class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate mt-0.5 group-hover:text-primary transition-colors">
+              ${escapeHtml(movie.title)}
+            </h4>
+          </div>
+        </div>
+      </div>
+    `).join("");
+  }
+
+  // Genre Filter Handler
+  function filterGenre(genre, btnElem) {
+    currentGenre = genre;
+    
+    // Update button visual styles
+    document.querySelectorAll(".genre-btn").forEach(btn => {
+      btn.className = "genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high";
+    });
+
+    if (btnElem) {
+      btnElem.className = "genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary-container shadow-md";
+    } else {
+      // Find matching button if triggered programmatically
+      const found = Array.from(document.querySelectorAll(".genre-btn")).find(b => b.textContent.trim().toLowerCase() === genre.toLowerCase());
+      if (found) {
+        found.className = "genre-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary-container text-on-primary-container shadow-md";
+      }
+    }
+
+    renderMovies();
+  }
+
+  // Search Input Handler
+  function handleMovieSearch(query) {
+    currentSearch = query;
+    renderMovies();
+  }
+
+  // Sort Dropdown Handler
+  function handleSortChange(sortKey) {
+    currentSort = sortKey;
+    renderMovies();
+  }
+
+  // Reset Filters
+  function resetFilters() {
+    currentGenre = "All";
+    currentSearch = "";
+    currentSort = "popularity";
+    document.getElementById("movieSearchInput").value = "";
+    document.getElementById("sortSelect").value = "popularity";
+    
+    const allBtn = document.querySelector(".genre-btn");
+    filterGenre('All', allBtn);
+  }
+
+  // Modal Open Handler
+  function openMovieDetails(title) {
+    const movie = moviesCatalog.find(m => m.title.toLowerCase() === title.toLowerCase()) || moviesCatalog[0];
+    
+    document.getElementById("modalTitle").textContent = movie.title;
+    document.getElementById("modalYear").textContent = movie.year;
+    document.getElementById("modalGenre").textContent = movie.genre;
+    document.getElementById("modalRating").textContent = movie.rating;
+    document.getElementById("modalSynopsis").textContent = movie.synopsis;
+    document.getElementById("modalCast").textContent = movie.cast;
+
+    const modalBg = document.getElementById("modalPosterBg");
+    modalBg.style.backgroundImage = "url('placeholder')";
+    modalBg.setAttribute("data-alt", movie.imageAlt);
+
+    movieModal.classList.remove("hidden");
+    movieModal.classList.add("flex");
+    document.body.style.overflow = "hidden";
+  }
+
+  // Modal Close Handler
+  function closeMovieModal() {
+    movieModal.classList.add("hidden");
+    movieModal.classList.remove("flex");
+    document.body.style.overflow = "";
+  }
+
+  // Close modal when clicking backdrop
+  movieModal.addEventListener("click", function(e) {
+    if (e.target === movieModal) {
+      closeMovieModal();
+    }
+  });
+
+  // Action feedback Toast
+  let toastTimer = null;
+  function toggleToast(message) {
+    const toast = document.getElementById("toastNotification");
+    const msgEl = document.getElementById("toastMessage");
+    msgEl.textContent = message;
+
+    clearTimeout(toastTimer);
+    toast.classList.remove("translate-y-16", "opacity-0");
+    toast.classList.add("translate-y-0", "opacity-100");
+
+    toastTimer = setTimeout(() => {
+      toast.classList.add("translate-y-16", "opacity-0");
+      toast.classList.remove("translate-y-0", "opacity-100");
+    }, 2800);
+  }
+
+  function playMovieAction(title) {
+    const targetTitle = title || document.getElementById("modalTitle").textContent;
+    toggleToast(`Streaming "${targetTitle}" in Dolby Vision 4K...`);
+  }
+
+  // Escape helper for safe innerHTML injection
+  function escapeHtml(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function escapeJsString(str) {
+    return String(str).replace(/'/g, "\\'");
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant py-space-xl text-on-surface-variant"><div class="w-full px-margin-mobile lg:px-margin mx-auto space-y-space-xl"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg pb-space-lg border-b border-surface-container-high"><div class="flex items-center gap-space-sm"><img alt="Cinematic Pulse Logo" class="h-7 w-auto object-contain opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-wider uppercase">Cinematic Pulse</span></div><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-sm text-label-sm tracking-widest text-outline uppercase">Download Apps</span><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">tv</span>Smart TV</a><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">phone_iphone</span>Mobile &amp; Tablet</a></div></div><div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-space-lg font-body-sm text-body-sm"><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Top Genres</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Action &amp; Adventure</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Sci-Fi &amp; Cyberpunk</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Documentary Exclusives</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Noir &amp; Crime Thrillers</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Award-Winning Dramas</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Audio &amp; Subtitles</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Dolby Atmos Calibration</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Spatial Audio Hub</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subtitles &amp; Closed Captions</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Descriptive Video Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Multi-Language Dubs</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Help Center</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Account &amp; Billing</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Supported Streaming Devices</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Speed &amp; Playback Diagnostic</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Parental Lock Controls</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Support Desk</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Legal &amp; Privacy</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subscriber Agreement</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Cookie Preferences</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Corporate Governance</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-surface-container-high font-body-sm text-body-sm text-outline"><p>© 2025 Cinematic Pulse Entertainment, Inc. All rights reserved.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Ultra 4K HDR Streaming Active</span></div></div></div></footer><div class="fixed inset-0 pointer-events-none z-[100]" id="modal-root"></div></body></html>

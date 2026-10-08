@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Space+Grotesk:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-variant":"#353534","on-surface-variant":"#e9bcb6","on-tertiary-fixed":"#271900","on-primary-fixed-variant":"#930007","primary-fixed-dim":"#ffb4aa","on-tertiary-fixed-variant":"#5d4200","primary":"#ffb4aa","outline-variant":"#5e3f3b","surface-container-highest":"#353534","on-error":"#690005","surface":"#131313","on-primary-container":"#fff7f6","tertiary-container":"#946b00","tertiary-fixed":"#ffdea5","tertiary":"#fbbc30","secondary":"#adc7ff","on-secondary-fixed-variant":"#004493","primary-fixed":"#ffdad5","error":"#ffb4ab","on-tertiary-container":"#fff7f0","on-secondary-fixed":"#001a41","on-secondary":"#002e68","background":"#131313","surface-tint":"#ffb4aa","on-surface":"#e5e2e1","on-primary":"#690003","primary-container":"#e50914","on-secondary-container":"#fefcff","surface-container-lowest":"#0e0e0e","inverse-surface":"#e5e2e1","secondary-fixed":"#d8e2ff","on-primary-fixed":"#410001","on-background":"#e5e2e1","error-container":"#93000a","tertiary-fixed-dim":"#fbbc30","secondary-fixed-dim":"#adc7ff","outline":"#af8782","inverse-on-surface":"#313030","on-error-container":"#ffdad6","inverse-primary":"#c0000c","surface-bright":"#393939","surface-container":"#201f1f","surface-container-low":"#1c1b1b","secondary-container":"#0070ea","surface-container-high":"#2a2a2a","surface-dim":"#131313","on-tertiary":"#412d00"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter-mobile":"0.75rem","margin":"3.5rem","gutter":"1.5rem","space-lg":"1.5rem","margin-mobile":"1rem","space-sm":"0.5rem","space-xl":"2.5rem"},"fontFamily":{"body-md":["Manrope"],"label-lg":["Manrope"],"label-sm":["Manrope"],"headline-sm":["Space Grotesk"],"body-sm":["Manrope"],"display-xl":["Space Grotesk"],"label-md":["Manrope"],"headline-lg-mobile":["Space Grotesk"],"display-xl-mobile":["Space Grotesk"],"headline-md":["Space Grotesk"],"headline-lg":["Space Grotesk"],"body-lg":["Manrope"]},"fontSize":{"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.04em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"display-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"display-xl-mobile":["38px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md border-b border-surface-variant"><div class="h-16 w-full px-margin-mobile lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm shrink-0" data-path="home" href="#"><img alt="Cinematic Pulse Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface hidden sm:inline">Cinematic Pulse</span></a><nav class="hidden md:flex items-center gap-space-sm" data-active-classes="bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm"><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="home" href="#">HOME</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="movies" href="#">MOVIES</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary-container font-label-lg text-label-lg rounded px-space-md py-space-xs shadow-sm" data-path="tv-shows" href="#">TV SHOWS</a><a class="px-space-md py-space-xs font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors rounded" data-path="my-list" href="#">MY LIST</a></nav></div><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline pointer-events-none text-headline-sm">search</span><input class="w-64 xl:w-80 bg-surface-container-high text-on-surface placeholder:text-outline pl-10 pr-4 py-space-xs rounded font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-on-surface transition-all" placeholder="Search movies, shows and genres..." type="search"/></div><button class="lg:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">search</span></button><button aria-label="Notifications" class="relative p-space-xs text-on-surface-variant hover:text-on-surface rounded-full transition-colors" type="button"><span class="material-symbols-outlined block">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface animate-pulse"></span></button><div class="flex items-center gap-space-xs pl-space-xs shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxfkBwXrKc0KLDyLVM-JrrBMnXzfJ-l9QKo2CRA3PHJVgwdlhVLroiLkV_5P6Q-hKJQBFPOCmuFpsIdfQwO8iTDb6-5MIuyb9dsN2f3tNl7eyIIfPQq2Hg4-KQ-ya2Cpk5sUaFwWash946wF8evjeWFdVKg5o0TBRnVEHvFLeeDpWyrSIQNXWP80pZhcWr6CuFP1vrC9JoXwYula-RI4VwP19zmbCwWctfTXqu313ascJVCYO9GfFr5w"/></div><button aria-label="Open Menu" class="md:hidden p-space-xs text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" type="button"><span class="material-symbols-outlined block">menu</span></button></div></div></header><main class="w-full pt-16 bg-surface min-h-[calc(100vh-4rem)]"><div class="flex flex-col w-full text-on-surface">
+<!-- Spotlight Hero Section Bleeding Top -->
+<section class="relative w-full -mt-16 overflow-hidden bg-surface-container-lowest">
+<!-- Hero Backdrop Imagery with Scrims -->
+<div class="absolute inset-0 w-full h-full">
+<div class="w-full h-full bg-cover bg-center opacity-45 scale-105 transform duration-1000 ease-out" data-alt="Cinematic high contrast dark sci-fi thriller scene with sleek corporate glass highrises illuminated by crimson red and icy cyan neon signs at midnight, rain streaked panoramic view, brooding boardroom silhouette, ultra-detailed 8k resolution, cinematic lighting with glowing red reflections" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBdKjjdJLn7zeMz43H1s_4rmw5hBk8IZAZk4Jt56V6DEZTjWUHy-b30ITUYnYfeLy0gFKPEvblYWENUwatY3PaLDYn4AA9dkec3QWZQ7pVBrG9yJloi16Fb_9GSHSXlXh2VPnttVOiVzne8Aj2QWVRZQxFq-7XHBi6y68UNoweYxQektuXTtJOEW2vmDPMY1a2yZRucViowV3RSoR-KlpwFa8jghB4lfrmZAzjStVYM-QfNSS7ikgJkSA')"></div>
+<!-- Complex Gradient Scrim: Top Header Clearance, Left Readability, Bottom Seamless Bleed -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent w-full lg:w-3/4"></div>
+<div class="absolute top-0 inset-x-0 h-32 bg-gradient-to-b from-surface via-surface/80 to-transparent"></div>
+</div>
+<!-- Spotlight Content Container -->
+<div class="relative z-10 pt-28 pb-16 px-margin-mobile lg:px-margin max-w-7xl flex flex-col justify-end min-h-[640px] lg:min-h-[720px]">
+<!-- Series Tagline & Season Indicator -->
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-widest font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+          New Season Out Now
+        </span>
+<span class="px-space-sm py-0.5 rounded bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold tracking-wider">
+          4K HDR · DOLBY ATMOS
+        </span>
+</div>
+<!-- Main Spotlight Title -->
+<h1 class="font-display-xl text-display-xl-mobile lg:text-display-xl text-on-surface uppercase tracking-tight max-w-4xl drop-shadow-2xl">
+        The Silicon Syndicate
+      </h1>
+<p class="font-headline-sm text-headline-sm text-primary tracking-wide mb-space-md font-medium">
+        SEASON 3: RECURSIVE COLLAPSE
+      </p>
+<!-- Badges & Metadata Row -->
+<div class="flex flex-wrap items-center gap-space-md mb-space-md text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-1 bg-surface-container-high/90 px-space-sm py-1 rounded text-tertiary">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-bold text-on-surface">9.6</span>
+<span class="text-outline text-label-sm">/ 10</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-outline-variant font-label-sm text-label-sm">18+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-body-sm text-primary">layers</span>
+          3 Seasons
+        </span>
+<span class="text-outline">•</span>
+<span>10 New Episodes</span>
+<span class="text-outline">•</span>
+<span class="text-on-surface">Cyber-Thriller · Corporate Noir</span>
+</div>
+<!-- Synopsis -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl line-clamp-3 leading-relaxed">
+        With the sentient neural hedge fund sovereign and uncontained, former engineer Kael Mercer enters a ruthless alliance with underground data cartels to orchestrate an artificial blackout before the global exchange is consumed from within.
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md">
+<button class="flex items-center gap-space-sm px-space-lg py-3 rounded bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider hover:scale-[1.03] transition-transform shadow-xl active:scale-95" onclick="openSeriesModal('The Silicon Syndicate', 'Season 3', '9.6', '18+', 'Cyber-Thriller', '3 Seasons')">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+          Play S3:E1
+        </button>
+<button class="flex items-center gap-space-sm px-space-lg py-3 rounded bg-surface-container-high/80 backdrop-blur-md text-on-surface font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-container-highest transition-colors active:scale-95" id="heroListBtn" onclick="toggleMyList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+<span>Add to My List</span>
+</button>
+<button class="flex items-center justify-center w-12 h-12 rounded bg-surface-container-high/60 backdrop-blur-md text-on-surface hover:text-primary transition-colors ml-auto sm:ml-0" onclick="openSeriesModal('The Silicon Syndicate', 'Season 3', '9.6', '18+', 'Cyber-Thriller', '3 Seasons')" title="More Information &amp; Episode Guide">
+<span class="material-symbols-outlined">info</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Filter Hub & Genre Navigation Bar -->
+<section class="sticky top-16 z-30 w-full bg-surface/95 backdrop-blur-md py-space-md px-margin-mobile lg:px-margin shadow-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Title & Overline -->
+<div class="flex items-baseline gap-space-md">
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight">
+          TV Shows &amp; Series
+        </h2>
+<span class="hidden sm:inline font-label-sm text-label-sm text-outline uppercase tracking-widest">
+          Curated Catalog · 4,120+ Series
+        </span>
+</div>
+<!-- Quick Series Type Selectors -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-primary-container text-on-primary-container transition-all" onclick="filterGenre('All Series', this)">
+          All Series
+        </button>
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="filterGenre('Binge-Worthy', this)">
+          Binge-Worthy
+        </button>
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="filterGenre('Drama', this)">
+          Drama
+        </button>
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="filterGenre('Sci-Fi &amp; Fantasy', this)">
+          Sci-Fi &amp; Fantasy
+        </button>
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="filterGenre('Docuseries', this)">
+          Docuseries
+        </button>
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="filterGenre('Crime', this)">
+          Crime
+        </button>
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="filterGenre('Comedy', this)">
+          Comedy
+        </button>
+<button class="genre-pill px-space-md py-1.5 rounded font-label-md text-label-md uppercase tracking-wider shrink-0 bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all" onclick="filterGenre('Anime', this)">
+          Anime
+        </button>
+</div>
+</div>
+</section>
+<!-- Horizontal Rail 1: Popular Series -->
+<section class="py-space-xl px-margin-mobile lg:px-margin space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-primary-container rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm tracking-wide text-on-surface">Popular Series</h3>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll left" class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRail('popular-rail', -600)">
+<span class="material-symbols-outlined text-headline-sm">chevron_left</span>
+</button>
+<button aria-label="Scroll right" class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRail('popular-rail', 600)">
+<span class="material-symbols-outlined text-headline-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Overflowing Scrollable Shelf -->
+<div class="flex gap-space-md overflow-x-auto no-scrollbar scroll-smooth pb-4 pt-2 -mx-2 px-2" id="popular-rail">
+<!-- Card 1: The Silicon Syndicate -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic glowing neon red cyber terminal in a dark control room overlooking high tech Tokyo skyscapers at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY7M-vYgBDFLTWX3N4a-98Tb83L7wCc2fpNUeqpLGZSm03eL5HjDwxMPnv8XzsiQ97d9CFqL0xQNwuUbGXwh3-9JnIwYdFx1jkYSUhi1faslMFLXTIj6q7oTDme5XLjulI4ppDRB4hxvzenU67Hryp3rOb9npqRMB4acDWcspMTJkfpAXXdlOq9NDxDJsulaCTSBJo7UBvE_oEjPonRJFfH9aCZArhyVCt1NtNghXVz326uBGhI3w5vA"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">
+            3 Seasons
+          </span>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+            4K Ultra HD
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.6 Match
+            </span>
+<span class="text-outline text-label-sm">2024 · 30 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">The Silicon Syndicate</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Autonomous algorithms battle human syndicates for absolute surveillance supremacy.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('The Silicon Syndicate', 'Season 3', '9.6', '18+', 'Cyber-Thriller', '3 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2: Dark Net Protocol -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Underground bunker full of glowing green terminal monitors displaying streaming encrypted cryptography data with shadowy hacker figures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvlAp1bKa819dWI2VZRxWMnCTlpvi7kHKDJj7d_YZcGicaBAyYYHKTjb0xfro_dPJ2_i5fjqzoiQU5MN_jUlmHWDnukGRKzecI564VueHis7zoDb6kQHu1uqLdUSZ4x4HTYmfJyi068w54uz7zM3p3M12TDrjyuCE2B2WtlxGIBHTiH54sg242Vo43XoiOhCO5gdr8kxKV7YB14TmdGNKUzx0Qy-eovVwj_Nx5dtfNxVOU-tFsxJ8e_A"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            4 Seasons
+          </span>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+            HDR10
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.3 Match
+            </span>
+<span class="text-outline text-label-sm">2023 · 36 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Dark Net Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">An international task force investigates a decentralized syndicate using zero-day exploits.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Dark Net Protocol', 'Season 4', '9.3', '16+', 'Techno-Crime', '4 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Dynasty of Shadows -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Victorian gothic grand ballroom draped in deep velvet crimson curtains, flickering candelabras and aristocratic silhouettes plotting in darkness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv5vPIPrJU6FfAKxdx4V9S_vm8y4wp2VGhZg1y1l75X1YvkQPHR-klGzwVrGTf7w4Uc8e95yW948ff5mgE86ydJzwAv_ywz3DY2n0GQMz8aQ-RkDl4s9Sq_KIstMqGHUSnxJyV7rpMPYK-x8-Wdr3Sf0c0bmRKjrp3BgjXCuZIKN7LwKg-mGo5dpDEjRQ4epXNhYR2vXmpqx6t5qNsReiWaAvir5er_vNUt698XZk7A-yiOlzejbvZhQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            2 Seasons
+          </span>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+            Dolby Vision
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.5 Match
+            </span>
+<span class="text-outline text-label-sm">2024 · 16 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Dynasty of Shadows</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">An industrialist family in 1890s London conceals a horrifying occult pact behind imperial wealth.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Dynasty of Shadows', 'Season 2', '9.5', '18+', 'Gothic Drama', '2 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4: Parallel 42 -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Atmospheric split reality landscape showing a misty snowy Siberian pine forest on one half and a blazing desert solar array on the other" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKs_TjPyQRgvINEz_LB0Zw_wya1MfYbUtJ08XF5NnvqQwtiyhEL0GB0OXNjBEF2C1r_wp2F-4zxzqCdKSeQStI1ihix6wIyx56ZeBua_EsJRqCdd6l_GUdQ_ch16RrLFMtzvoqfYERe_7g3bDqzhgerKiqAsaYs9t_ySzdumo8-ZsoQCks4UHAG8rUiu8bJ1y8qAV00Kdqd24AEuw50zlgUR8JifkfB3mwLKEGYQ0mpT733qLDNxnISQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            3 Seasons
+          </span>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+            4K HDR
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.1 Match
+            </span>
+<span class="text-outline text-label-sm">2022 · 24 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Parallel 42</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">A dimensional fracture at the 42nd parallel links two disparate timelines with opposing physics.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Parallel 42', 'Season 3', '9.1', '16+', 'Sci-Fi Mystery', '3 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5: The Hive -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Dystopian subterranean biosphere with millions of stacked capsule apartments illuminated by ambient amber bioluminescence" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9vFbUL7xYWhVANViBB4cPxXQXMAvymI_MYRGTiZ602WapQMsS5FMslTGjS3C7oz05aY_wfsrno-dpvdg-ullKhsZz255h92ZFJzKjg3L4s4SmDsH43kWX5CmoIDc_fgDM5ATCCEmwL-F4o6FrLVEXXE7DIW4rzx0tPy_BfVBJQGHgU3waG4ke5RR9bCZy6f8MFfnW9uV7mrdqoBFOCJoInP2RrNSXO55vpxSWSNC8WwWXSPrKnYZ4gQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            5 Seasons
+          </span>
+<span class="absolute bottom-2 right-2 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+            4K UHD
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.4 Match
+            </span>
+<span class="text-outline text-label-sm">2021 · 50 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">The Hive</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Earth's last remaining multi-level underground society confronts resource starvation and rebellion.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('The Hive', 'Season 5', '9.4', '18+', 'Sci-Fi Dystopia', '5 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Horizontal Rail 2: Trending Series -->
+<section class="py-space-xl px-margin-mobile lg:px-margin space-y-space-md bg-surface-container-lowest/50">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-secondary rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm tracking-wide text-on-surface">Trending Series</h3>
+<span class="ml-2 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Updated hourly</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll left" class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRail('trending-rail', -600)">
+<span class="material-symbols-outlined text-headline-sm">chevron_left</span>
+</button>
+<button aria-label="Scroll right" class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRail('trending-rail', 600)">
+<span class="material-symbols-outlined text-headline-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Shelf Track -->
+<div class="flex gap-space-md overflow-x-auto no-scrollbar scroll-smooth pb-4 pt-2 -mx-2 px-2" id="trending-rail">
+<!-- Arcane Echoes -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Mystical cyberpunk alchemy laboratory with floating luminous purple glyphs and ornate steam brass mechanical gears" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo26hSTwmm6mkgoSYaNhuBdFDt4j-gVjOZemU1ziv5fGy7-kxEC5gFkUA57630N-hEHIje31iV-2zz9W94XZC79qANjLqeLqIE2SU_8G7FroYgyb-bIAanfeU1kCimZF8AFhbDbHiqpPtinATfmjHxSArxn_XOrWrKRHWsiBdfnFxKqKC_TvOJJikj5HMUWUvt_j7QDczHXKRwVpmTvdICNTEK6g8WoUU_7-bJC7y7WQK8XTcvFFBdtA"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            2 Seasons
+          </span>
+<span class="absolute top-2 right-2 flex items-center gap-1 px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-label-sm">trending_up</span> #1 Today
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.7 Match
+            </span>
+<span class="text-outline text-label-sm">2024 · 18 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Arcane Echoes</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Sisters stranded across separated enchanted twin cities fight for an ancient power source.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Arcane Echoes', 'Season 2', '9.7', '14+', 'Fantasy Action', '2 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Subterfuge -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Moody cinematic European embassy courtyard in rain, secret service agent in trenchcoat observing diplomats through binoculars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8cFfNq7bU251sPVtXkPldlEGvRB8D8T2YHZW67QYg-1TE7KvNBMw_03yV8x4lEp_JWkFPpfHVjo6Oe_FWP5kO9OBrdoa8sf5x7fV7nnewWhoC1p1T0H1n5UJkJcnZxreeNrF_VN5T4tOIsH3jj-_6JUoihMZ6JtRNfWGmYrPlIEgBr-RBdKiu-wKy5Mqsw9riibEF2wqIQQ0KirRWU4LZnmiMbY-Yc5KKrnuGEwups5Kmva52H480VA"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            1 Season (8 Eps)
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.2 Match
+            </span>
+<span class="text-outline text-label-sm">2024 · 8 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Subterfuge</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">A deep-cover diplomat discovers her husband is operating a covert shadow agency in Geneva.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Subterfuge', 'Season 1', '9.2', '16+', 'Espionage Thriller', '1 Season')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Neon Boulevard -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="1980s retro synthwave Miami night boulevard with palm tree silhouettes, chrome sports car tail lights reflecting on wet tarmac" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxA02VzKr1fx5osSnTnwfJ45rv5C_dfgJerdX4c0-cnsOrRAqP5cgokJQJMQp4OD3CoJ0Qh3frwKbbzk0qAEeoCS9HsXT22yVgZuM_isGEsmp805wUASgOzvzU-EvIY_5tOK53Cyw0TFhrULU7fp6r-IV58O80SEOTMqZtiNPFXr12hPz5hGAOtgpJ3w6v-4mN_Sl1ds-hocoSbeW3cShuEK7xHf4zlPaXoO8k-pH40hBO96E2bfX70A"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            3 Seasons
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 8.9 Match
+            </span>
+<span class="text-outline text-label-sm">2023 · 28 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Neon Boulevard</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Two undercover detectives plunge into a neon-soaked underworld of nightlife and narcotics.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Neon Boulevard', 'Season 3', '8.9', '18+', 'Neo-Noir Crime', '3 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Zero Hour -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intense high-stakes naval operations deck with red tactical alerts and radar displays showing approaching geopolitical crisis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDawYJEWhGa2x01TpukeE7WFCUJg_z2je0Vdc4tOkZcxvA043JZf0FPWTqTDzj5Hs36TaOG-_E7jxj0oINslf39lv_3iXsLyM_C8FOvIKdb7ZbNP6sLP-HsE71pfLacoZHyBlsd_MdFEvmqwEioUpdkUxKphN1v926_8UxyzkD3xXfTxkByqaJlaJFB7yc8a8k8tVHoFEqREYhg9mQn2_gcGzF_lniY8EMy-xAEQ7wWdw7EcKhxRG5nQw"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            2 Seasons
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.0 Match
+            </span>
+<span class="text-outline text-label-sm">2024 · 20 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Zero Hour</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Real-time narrative tracking commanders during a global missile defense breach.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Zero Hour', 'Season 2', '9.0', '16+', 'Military Suspense', '2 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Cerebral -->
+<div class="group relative flex-none w-72 lg:w-80 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-video w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract neuro-synaptic brain scan visual representation with glowing electric blue and gold synapses firing inside a human consciousness chamber" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCofaKDdgy43fzu0AKWUlvU6r3rKtoJcfVWaCvrAfCN1A2-wXYH6bAfyI_FEnbuWrBcMbdydNmKserXHen6xdtZsmxlW-rNL0ci9Z5T5ykJZVuy2qgxc7TtxiENH310Krq74JKUG57TQZmUsIe5DgVQ2OzVQxQY-od0s17VolI_eKZGYb_ibvkf6KW61OpLO1joGImbmuT3ErFWBx1xzp1cvq47SjTwsLaQ4QozBHfIDb7Q6alqsF5e6A"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">
+            1 Season (10 Eps)
+          </span>
+</div>
+<div class="p-space-md space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span> 9.5 Match
+            </span>
+<span class="text-outline text-label-sm">2024 · 10 eps</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Cerebral</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">A psychologist uses memory extraction gear to solve crimes inside victim memories.</p>
+<div class="pt-2 flex items-center justify-between">
+<button class="flex items-center gap-1 text-primary hover:text-on-surface font-label-md text-label-md" onclick="openSeriesModal('Cerebral', 'Season 1', '9.5', '18+', 'Psychological Sci-Fi', '1 Season')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+              Watch Now
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Horizontal Rail 3: New Releases Grid / Spotlight Trio -->
+<section class="py-space-xl px-margin-mobile lg:px-margin space-y-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-tertiary rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm tracking-wide text-on-surface">New Series Premieres</h3>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-widest">Added this week</span>
+</div>
+<!-- 3-Column Asymmetric Grid Showcase -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Titan Colony -->
+<div class="relative bg-surface-container rounded-xl overflow-hidden group shadow-lg flex flex-col justify-between">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Panoramic matte painting of an industrial human colony on Saturn's moon Titan, misty orange clouds, methane lakes, massive ringed planet hovering in sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJ4CioZZUZT4gHsAjG53iUzJflLRt_6u1gSz2IUm_ogUVYhpVoGaPQcIMkuY1NAykchvNdMXQJRdnDiKjQgZ7ov8jV6nq_cGWxr41zyUu4fwUy7iQI-_fUhou0IaLBdNBxcKFsS9_YRCb34IYPhBxLIjmggmM_ZtYqyGIwe0jLZIj__ExVA5fvXdZCIR9owvD-82ryjo1G1YO7kDIkAponYWp21pLs_crty0-846ky7BC-zxScCyXg1w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase">
+            Series Premiere
+          </span>
+<span class="absolute bottom-3 left-3 font-label-sm text-label-sm text-on-surface bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+            Season 1 · 8 Episodes
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">⭐ 9.4</span>
+<span class="text-outline text-label-sm">· 2025 · Sci-Fi Survival</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Titan Colony</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+              When a seismic anomaly breaches life-support dome 4, colonists discover that the methane ocean conceals an ancient terrestrial entity.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-90" onclick="openSeriesModal('Titan Colony', 'Season 1', '9.4', '16+', 'Hard Sci-Fi', '1 Season')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Stream Episode 1
+            </button>
+<button class="p-2.5 rounded bg-surface-container-high text-on-surface hover:text-primary" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Echo Chamber -->
+<div class="relative bg-surface-container rounded-xl overflow-hidden group shadow-lg flex flex-col justify-between">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Soundproofed interrogation studio with microphone equipment, solitary suspect sitting under stark white spotlight with acoustic foam wall patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEy8V4MsZT6oV8y1E2kaxqa07tz-0Scrrurl5xyqgT_YuyPXZFEj4W1wvIBjCj85obA_1d3RqZA9XHeCJlUqKMRPHF_IM1I9poa1RnJYW0fA9pjQ6bVJQu27IDZ9PYrbnHfWPR9zNDQfIEuiEkwhOuA6xr6TWi_PTbAuTcrBL6DuptnOSw4vfBXuz7tSCf1LdTEW9eFjuHzdj1TeEIQg2ryDDNU9hVnLlvWpMv6O3UDEezXx8i2wpcfw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold uppercase">
+            Exclusive
+          </span>
+<span class="absolute bottom-3 left-3 font-label-sm text-label-sm text-on-surface bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+            Season 1 · 6 Episodes
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">⭐ 9.1</span>
+<span class="text-outline text-label-sm">· 2025 · Psychological Thriller</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Echo Chamber</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+              An investigative audio archivist uncovers frequency messages embedded within thirty years of classified emergency dispatch calls.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-90" onclick="openSeriesModal('Echo Chamber', 'Season 1', '9.1', '18+', 'Psychological Thriller', '1 Season')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Stream Episode 1
+            </button>
+<button class="p-2.5 rounded bg-surface-container-high text-on-surface hover:text-primary" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Blackout 2030 -->
+<div class="relative bg-surface-container rounded-xl overflow-hidden group shadow-lg flex flex-col justify-between">
+<div class="relative h-56 w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Citywide total blackout over New York City skyline at dusk with only car headlights and handheld flares cutting through darkness, apocalyptic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvisyNJjBq4Z5wk09hzaoXLuTDlXKoIU40GK4XfEEMa-SWWdeTUam0kxDJDBMua3pkNI-M_t7lY_-T5JL4ub3vlbH0YoyrZu2dzNJE-aDg4VMsLyR3aVhmr5PkLlT1HL5Hkg1PM9sqqy6UTvX1S02ChENhBaHcz-NGt8EcLkDB49oG-Yfbmgh0gOYVcRdGYaCdWrevPMOWERL1x6-8OLGo-v9qx2IfAnSdbkIwmLM2Ddvpg6EarB4_Kg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"></div>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold uppercase">
+            Limited Series
+          </span>
+<span class="absolute bottom-3 left-3 font-label-sm text-label-sm text-on-surface bg-surface-container-lowest/80 px-2 py-0.5 rounded">
+            Season 1 · 5 Episodes
+          </span>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-tertiary font-label-sm text-label-sm font-bold">⭐ 9.3</span>
+<span class="text-outline text-label-sm">· 2025 · Political Drama</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface">Blackout 2030</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 leading-relaxed">
+              When an electromagnetic pulse wipes out the entire North American power grid, seven disparate citizens fight to keep municipal water running.
+            </p>
+</div>
+<div class="pt-4 flex items-center gap-space-sm">
+<button class="flex-1 py-2.5 rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-2 hover:opacity-90" onclick="openSeriesModal('Blackout 2030', 'Season 1', '9.3', '18+', 'Political Thriller', '1 Season')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Stream Episode 1
+            </button>
+<button class="p-2.5 rounded bg-surface-container-high text-on-surface hover:text-primary" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Horizontal Rail 4: Top Rated Masterpieces (Gold Rating Accents) -->
+<section class="py-space-xl px-margin-mobile lg:px-margin space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-tertiary rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm tracking-wide text-on-surface">Top Rated Masterpieces</h3>
+<span class="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-label-sm" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+          Prestige Television
+        </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Scroll left" class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRail('toprated-rail', -600)">
+<span class="material-symbols-outlined text-headline-sm">chevron_left</span>
+</button>
+<button aria-label="Scroll right" class="p-1.5 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="scrollRail('toprated-rail', 600)">
+<span class="material-symbols-outlined text-headline-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Masterpiece Rail -->
+<div class="flex gap-space-md overflow-x-auto no-scrollbar scroll-smooth pb-4 pt-2 -mx-2 px-2" id="toprated-rail">
+<!-- Masterpiece 1: The Silicon Syndicate -->
+<div class="group relative flex-none w-64 lg:w-72 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vertical prestige TV poster showing silhouette of a female chief executive against a massive glowing crimson holographic market ticker" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBng2Eu-w8vQixBZHPUhOjqkT7N-ZfKGougNssyhn9EIILBE7NfjaIqH56KmtgqWRE7UsekMOh5mkbRvdQL6iTaCCDwToaeOKo0FVo6GyCVXyt5crYsaWTXNo2mhpn8Vq9bQpRtyMo8tcErwKazRe9Tvxx4-U6Z3DvUseI8xe_bUz9f8JoSO0HGW6NFL9t7GQfN3KjHIaw3HMpQQMGR3tz3n48ClMraXsqO7fTtxJ_9vWIPuAUEYc59Zw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<!-- Gold Score Pill -->
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded bg-surface-container-lowest/90 text-tertiary font-label-sm text-label-sm font-bold backdrop-blur-md shadow-md">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span>
+            9.9
+          </div>
+<span class="absolute bottom-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest/80 text-on-surface font-label-sm text-label-sm font-semibold">
+            3 Seasons
+          </span>
+</div>
+<div class="p-space-md space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">HBO Max &amp; Pulse Original</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">The Silicon Syndicate</h4>
+<p class="font-body-sm text-body-sm text-outline">Season 3 · 30 Episodes</p>
+<div class="pt-3 flex items-center justify-between">
+<button class="text-primary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 font-bold" onclick="openSeriesModal('The Silicon Syndicate', 'Season 3', '9.9', '18+', 'Cyber-Thriller', '3 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span> View Series
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Masterpiece 2: Dynasty of Shadows -->
+<div class="group relative flex-none w-64 lg:w-72 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vertical TV show poster of a Victorian gothic mansion surrounded by eerie fog and crows with stained glass crimson lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZcGvZdM-V1WC4NqUX-_uorufOjXu-Do-Rw6Uo9XRZbU0lneWuWgibuhNJOcRuVht0Uy_gTPWIV6prxqSud12Lpv2ALjL87EkkA0ezsAR46b5y5-rCF5dpB-IRc9PgOW6GpQQpFLamFrKAGpM5Q_fnz1SwTTaGfW3YRuW4HAcyEmgl_jn2-WY77Zq4kdBZdh0r7lW3dkqUBlWoKRHeFgN_VSaCjhtbPv5eJIMcaGYL9sGyESXmE_uHA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded bg-surface-container-lowest/90 text-tertiary font-label-sm text-label-sm font-bold backdrop-blur-md shadow-md">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span>
+            9.8
+          </div>
+<span class="absolute bottom-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest/80 text-on-surface font-label-sm text-label-sm font-semibold">
+            2 Seasons
+          </span>
+</div>
+<div class="p-space-md space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Emmy Award Winner</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Dynasty of Shadows</h4>
+<p class="font-body-sm text-body-sm text-outline">Season 2 · 16 Episodes</p>
+<div class="pt-3 flex items-center justify-between">
+<button class="text-primary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 font-bold" onclick="openSeriesModal('Dynasty of Shadows', 'Season 2', '9.8', '18+', 'Gothic Drama', '2 Seasons')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span> View Series
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Masterpiece 3: Cerebral -->
+<div class="group relative flex-none w-64 lg:w-72 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vertical TV series poster depicting an artistic glass profile head filled with glowing electric memories and liquid mercury" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRvAAENskexxKS4XGGLQliusOOqWXWQgDZT7lC9XGFBXcwF5PLzuDRs2Hs3aSiL9m34KoSes4-ftvjJXUoCXK0AMt_gwqSJCAzofH6kjFDjBba95nGW9dd5gwsTZQ1HfR20Kablt1BmBs4GKnTaNQhP2sGjAdYU1wYR7hA4mAex4CQRJtE1oq_WSHWgkwV2gPzMDPX2vShBL1tfo1oJvqVk-8RTJHXN-69QW8wk8pURdQjdRxKMjP9KQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded bg-surface-container-lowest/90 text-tertiary font-label-sm text-label-sm font-bold backdrop-blur-md shadow-md">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span>
+            9.7
+          </div>
+<span class="absolute bottom-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest/80 text-on-surface font-label-sm text-label-sm font-semibold">
+            1 Season
+          </span>
+</div>
+<div class="p-space-md space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Golden Globe Winner</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Cerebral</h4>
+<p class="font-body-sm text-body-sm text-outline">Season 1 · 10 Episodes</p>
+<div class="pt-3 flex items-center justify-between">
+<button class="text-primary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 font-bold" onclick="openSeriesModal('Cerebral', 'Season 1', '9.7', '18+', 'Psychological Sci-Fi', '1 Season')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span> View Series
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Masterpiece 4: Subterfuge -->
+<div class="group relative flex-none w-64 lg:w-72 bg-surface-container rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl">
+<div class="relative aspect-[3/4] w-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vertical TV series poster of a female intelligence director standing inside a glass soundproofed chamber looking out at world map" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp6fzcuJfs5rOD5qDBojazSCRhTkmlg6SwtmCyHKLqtZ6-nzLUiRjsCdSOEtXlAPX8rBRaZrxjYxT1pLknjZgZF99y5G_cYs0W41KvP8IIbsoretHQpFqrzytu6NtbwQ8yZtf5ofacH_G-K3_D7AiEtPT_zq-njH4EArciw6GcIDOp98K4l2SXR905PAWpouyj-9Vlcz6ag2o2SzfvzoKgMkTxUmTBL3Bxg_AjTeDyELcO6x4so8Tk0w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded bg-surface-container-lowest/90 text-tertiary font-label-sm text-label-sm font-bold backdrop-blur-md shadow-md">
+<span class="material-symbols-outlined text-label-md" style="font-variation-settings: 'FILL' 1;">star</span>
+            9.6
+          </div>
+<span class="absolute bottom-3 left-3 px-2 py-0.5 rounded bg-surface-container-highest/80 text-on-surface font-label-sm text-label-sm font-semibold">
+            1 Season
+          </span>
+</div>
+<div class="p-space-md space-y-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Critical Acclaim</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Subterfuge</h4>
+<p class="font-body-sm text-body-sm text-outline">Season 1 · 8 Episodes</p>
+<div class="pt-3 flex items-center justify-between">
+<button class="text-primary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 font-bold" onclick="openSeriesModal('Subterfuge', 'Season 1', '9.6', '16+', 'Espionage Thriller', '1 Season')">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span> View Series
+            </button>
+<button class="p-1 rounded bg-surface-container-high text-on-surface-variant hover:text-on-surface" onclick="toggleCardList(this)">
+<span class="material-symbols-outlined text-headline-sm">bookmark_add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Detail Modal / Episode Explorer -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-xl" id="seriesModal">
+<div class="relative w-full max-w-4xl max-h-[90vh] bg-surface-container-low rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+<!-- Modal Header Banner -->
+<div class="relative h-64 sm:h-72 w-full bg-surface-container-high shrink-0">
+<img class="w-full h-full object-cover" data-alt="Wide panoramic cinematic shot of high-tech dark boardroom meeting with city skyline lit in red neon ambient glow" id="modalCoverImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6KXjmabEjPHPUZyjqWzOYAA1sd7q05vJf6iE-zvpAo02WomnY4d1IgoGvmtvwaM1EvQVEE_5kVyRRfJTzFiVFEIxax9udNEJQZKyqzft7PCWLhPHBoxnsD8WjXez4aCKT95b79MVogg2DkYBWBPMWmNxGiloYv1JrJBHUgnWEkYLt1Xld4YKYmQNwiaIs3rD70syOOHO7IKN_aQ5MigfL8g0zD6fYgwFLBwEhAtCP2E6FbTcbVVv1xQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/40 to-transparent"></div>
+<!-- Close Button -->
+<button aria-label="Close Series Details" class="absolute top-4 right-4 p-2 rounded-full bg-surface-container-lowest/80 text-on-surface hover:bg-surface-container-highest transition-colors" onclick="closeSeriesModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+<!-- Overlay Text in Banner -->
+<div class="absolute bottom-4 left-6 right-6">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold" id="modalRating">⭐ 9.6</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm" id="modalAge">18+</span>
+<span class="text-outline font-label-sm text-label-sm" id="modalGenre">Cyber-Thriller</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase tracking-tight" id="modalTitle">The Silicon Syndicate</h2>
+</div>
+</div>
+<!-- Modal Body (Season Picker + Episode Scroller) -->
+<div class="p-6 overflow-y-auto space-y-6 flex-1">
+<!-- Controls & Season Selector -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4">
+<div class="flex items-center gap-3">
+<label class="font-label-md text-label-md text-outline uppercase tracking-wider" for="seasonSelect">Select Season:</label>
+<div class="relative">
+<select class="appearance-none bg-surface-container-high text-on-surface font-headline-sm text-headline-sm py-1.5 pl-4 pr-10 rounded cursor-pointer focus:outline-none" id="seasonSelect" onchange="switchSeason(this.value)">
+<option value="1">Season 1 (10 Episodes)</option>
+<option value="2">Season 2 (10 Episodes)</option>
+<option selected="" value="3">Season 3 (10 Episodes - New)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 pointer-events-none text-outline text-headline-sm">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-space-md py-1.5 rounded bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider flex items-center gap-1.5 hover:opacity-90">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span> Resume Next Ep
+            </button>
+<button class="p-2 rounded bg-surface-container-high text-on-surface hover:text-primary">
+<span class="material-symbols-outlined text-headline-sm">share</span>
+</button>
+</div>
+</div>
+<!-- Episode Listing Container -->
+<div class="space-y-3" id="episodesList">
+<!-- Ep 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-4 p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group cursor-pointer">
+<span class="hidden sm:block font-headline-md text-headline-md text-outline font-bold w-8 text-center">01</span>
+<div class="relative aspect-video w-full sm:w-44 shrink-0 rounded overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Close up of a mainframe server rack with tangled illuminated optical fibers pulsing with bright blue light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPPXLRpr8U9fv7sgSB2iwxMK26woHbNT4OqR56gJR-OnjHrRlBWT0VXGP_Q2Qa5b7t6xC8CAz80JK6UzjoOw4-HCgr1-qiBB_JY4xWrA61z7EMa2mlIiqAxIm5aWC79qJPUD9_O92h36tpuijdRp_cFWQvxIFfQmosX_KAYAArFaHwPP4ZHI6L1RcqSRxspQZijwRcYYcuiOqjD_3B-7YeQXLuC2hq-Lmpd8iaxMjLmjFiGzbkjgzH1A"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm">54m</span>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-primary-container text-headline-md" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<h5 class="font-headline-sm text-headline-sm text-on-surface">1. Genesis Algorithm</h5>
+<span class="font-label-sm text-label-sm text-tertiary">9.5 ★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                A sudden latency spike in London triggers automated trading halts across all European sovereign exchanges. Kael suspects external infiltration.
+              </p>
+</div>
+</div>
+<!-- Ep 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-4 p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group cursor-pointer">
+<span class="hidden sm:block font-headline-md text-headline-md text-outline font-bold w-8 text-center">02</span>
+<div class="relative aspect-video w-full sm:w-44 shrink-0 rounded overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Dystopian neon rainy street market with umbrella silhouettes walking beneath holographic digital adverts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADpy3K-ndq462Y-0QRcWpAuh4tMZYuU52swyHPajpxnNSZcwoCso-cWbk6LLiEblzOGTL2fce3ruQ1_AEAP4d57RbESQyByiciupRPt-Ky95gXwW6_DWAymQ-g5N2L5oCAYSmrlB-LHpBjdSM8dJ6jBhMpFha0ydsK3lUEy2C2oNxqXLNb97DySztlAvEmDn18qXGGJwQ30H2SJIUoDjKQIl1E__3-uahEJZ_T9O7DfHOgjiP1YC4-PQ"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm">58m</span>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-primary-container text-headline-md" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<h5 class="font-headline-sm text-headline-sm text-on-surface">2. Ghost Liquidity</h5>
+<span class="font-label-sm text-label-sm text-tertiary">9.7 ★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Tracing the algorithmic signature leads the squad to an offshore container vessel running off-grid liquid-cooled servers in international waters.
+              </p>
+</div>
+</div>
+<!-- Ep 3 -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-4 p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors group cursor-pointer">
+<span class="hidden sm:block font-headline-md text-headline-md text-outline font-bold w-8 text-center">03</span>
+<div class="relative aspect-video w-full sm:w-44 shrink-0 rounded overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Glass office skyscraper penthouse at dusk overlooking foggy city with security guards standing at attention" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZaCfi0WTS8si-FmwN9qy6otdJVtSnS1KmAhSsQHvTUT2JSkpqeqhT6V3MeI82EQDCpXonjBzY-S3gFF9sTdfluN6XmbmMhNpZ2dI3gv_t4B6vJb3V8sOikNfFm_GgwEUyTj8Ixwn0kViDRw_GUtWRIqvKAnCBnGnWamrjd_3JYnDLSDOwiA23eDqCIIr0vJMkHBr2yqa4D2QwImzFvTiu4qIj6S0zgGvuQ5zMKkfbVNRfDQIst4NoNw"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-container-lowest/80 text-on-surface font-label-sm text-label-sm">51m</span>
+<div class="absolute inset-0 bg-primary-container/20 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+<span class="material-symbols-outlined text-on-primary-container text-headline-md" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+</div>
+<div class="flex-1 space-y-1">
+<div class="flex items-center justify-between">
+<h5 class="font-headline-sm text-headline-sm text-on-surface">3. Zero-Knowledge Proof</h5>
+<span class="font-label-sm text-label-sm text-tertiary">9.4 ★</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                An anonymous whistleblower requests extraction from Singapore, demanding sovereign immunity in exchange for the master encryption root key.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-Interactions & Modal Logic Script -->
+<script>
+  function scrollRail(id, distance) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollBy({ left: distance, behavior: 'smooth' });
+    }
+  }
+
+  function filterGenre(genreName, btnElement) {
+    document.querySelectorAll('.genre-pill').forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    btnElement.classList.add('bg-primary-container', 'text-on-primary-container');
+    btnElement.classList.remove('bg-surface-container', 'text-on-surface-variant');
+  }
+
+  function toggleMyList(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    const text = btn.querySelector('span:not(.material-symbols-outlined)');
+    if (icon.innerText === 'add') {
+      icon.innerText = 'check';
+      btn.classList.add('bg-primary-container', 'text-on-primary-container');
+      btn.classList.remove('bg-surface-container-high/80', 'text-on-surface');
+      if (text) text.innerText = 'Added to My List';
+    } else {
+      icon.innerText = 'add';
+      btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+      btn.classList.add('bg-surface-container-high/80', 'text-on-surface');
+      if (text) text.innerText = 'Add to My List';
+    }
+  }
+
+  function toggleCardList(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (icon.innerText === 'add' || icon.innerText === 'bookmark_add') {
+      icon.innerText = 'check';
+      btn.classList.add('text-primary');
+    } else {
+      icon.innerText = 'add';
+      btn.classList.remove('text-primary');
+    }
+  }
+
+  function openSeriesModal(title, season, rating, age, genre, totalSeasons) {
+    const modal = document.getElementById('seriesModal');
+    document.getElementById('modalTitle').innerText = title;
+    document.getElementById('modalRating').innerText = '⭐ ' + rating;
+    document.getElementById('modalAge').innerText = age;
+    document.getElementById('modalGenre').innerText = genre;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSeriesModal() {
+    const modal = document.getElementById('seriesModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+
+  function switchSeason(seasonNum) {
+    const list = document.getElementById('episodesList');
+    // Subtle visual change to indicate new episodes loaded
+    list.style.opacity = '0.4';
+    setTimeout(() => {
+      list.style.opacity = '1';
+    }, 150);
+  }
+
+  // Close modal on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeSeriesModal();
+    }
+  });
+
+  // Close modal when clicking outside box
+  document.getElementById('seriesModal')?.addEventListener('click', (e) => {
+    if (e.target.id === 'seriesModal') {
+      closeSeriesModal();
+    }
+  });
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-surface-variant py-space-xl text-on-surface-variant"><div class="w-full px-margin-mobile lg:px-margin mx-auto space-y-space-xl"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-lg pb-space-lg border-b border-surface-container-high"><div class="flex items-center gap-space-sm"><img alt="Cinematic Pulse Logo" class="h-7 w-auto object-contain opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1WJJaoIGPTYAFBP_38SVFFoFyxfgzdvl1LAtC8jd7vBeLU7tEGCC5WFjZL0-L3BVK3PtJ__zLcwj6ZFn5qkC6xfTX3JYHHI3MI7nPzcyB5X5aiORRZk6lSAV2uDBErg6rmEZyhaKyBoeqQZwXISjSKoFS0GsfW0iK-hcuapsNyik5Up9qOBHe3C_r9cjeaDraJe9P-AcAvE412agCi81J7MiCSrtnzRskgqfHorUd1jJBMZwpU-Qyrghms"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-wider uppercase">Cinematic Pulse</span></div><div class="flex flex-wrap items-center gap-space-md"><span class="font-label-sm text-label-sm tracking-widest text-outline uppercase">Download Apps</span><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">tv</span>Smart TV</a><a class="flex items-center gap-space-xs px-space-md py-space-xs rounded bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md" href="#"><span class="material-symbols-outlined text-headline-sm">phone_iphone</span>Mobile &amp; Tablet</a></div></div><div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-space-lg font-body-sm text-body-sm"><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Top Genres</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Action &amp; Adventure</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Sci-Fi &amp; Cyberpunk</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Documentary Exclusives</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Noir &amp; Crime Thrillers</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Award-Winning Dramas</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Audio &amp; Subtitles</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Dolby Atmos Calibration</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Spatial Audio Hub</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subtitles &amp; Closed Captions</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Descriptive Video Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Multi-Language Dubs</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Help Center</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Account &amp; Billing</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Supported Streaming Devices</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Speed &amp; Playback Diagnostic</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Parental Lock Controls</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Contact Support Desk</a></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface tracking-wider uppercase">Legal &amp; Privacy</span><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Terms of Service</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Subscriber Agreement</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Cookie Preferences</a><a class="text-on-surface-variant hover:text-on-surface transition-colors" href="#">Corporate Governance</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg border-t border-surface-container-high font-body-sm text-body-sm text-outline"><p>© 2025 Cinematic Pulse Entertainment, Inc. All rights reserved.</p><div class="flex items-center gap-space-md"><span class="inline-flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-tertiary"></span> Ultra 4K HDR Streaming Active</span></div></div></div></footer><div class="fixed inset-0 pointer-events-none z-[100]" id="modal-root"></div></body></html>
