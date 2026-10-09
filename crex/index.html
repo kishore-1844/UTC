@@ -1,0 +1,2706 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><link href="css/style.css" rel="stylesheet"/>
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-md"><div class="h-28 max-w-[1400px] mx-auto px-margin-desktop flex flex-col justify-between"><div class="h-16 flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><img alt="CREX Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VwAFDkaAyaerw_NXtFvDz2uN4TwyAz45xcRnB5kWrQkdJ75w4NVMLnuAje-jlJ_xKYxNNPDQItwkzfjqfrSCa5hxW_bDMf7CfjLi8TgP1oLrVEljSrtZ-w_4QrqVZQv3GE_z5p3iyVxwtyVwufmMQxN4G4WZuUWn6yS2S5g9X4RmdiMWjfexs8tM_pSv7s-6BZn8ILACY485gB_6QfDUfjC356Aire6mF26kx76PRktFXodvJdHiMh3A"/><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">CREX</span></div><div class="flex items-center gap-space-xs px-2 py-0.5 rounded-full bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-badge text-label-badge text-secondary uppercase">LIVE</span></div></div><nav class="hidden md:flex items-center gap-space-xs" data-active-classes="text-on-primary-container bg-primary-container font-label-lg text-label-lg rounded-lg shadow-sm"><a aria-current="page" class="px-space-md py-space-xs transition-colors text-on-primary-container bg-primary-container font-label-lg text-label-lg rounded-lg shadow-sm" data-path="home" href="#home">Home</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="matches" href="#match">Matches</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="series" href="#series">Series</a><a class="px-space-md py-space-xs rounded-lg font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors" data-path="players" href="#players">Players</a></nav><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-space-sm px-space-md py-1.5 rounded-lg bg-surface-container-high"><span class="material-symbols-outlined text-[18px] text-outline">search</span><span class="font-body-sm text-body-sm text-outline">Search matches, players...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-highest font-label-badge text-label-badge text-outline">Ctrl+K</kbd></div><div class="relative flex items-center justify-center p-2 rounded-lg bg-surface-container-high text-on-surface hover:text-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-primary-container ring-2 ring-surface"></span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="h-12 flex items-center overflow-x-auto gap-space-md py-1.5"><div class="flex items-center gap-space-sm shrink-0 px-space-sm py-1 rounded bg-surface-container-high"><span class="font-label-badge text-label-badge text-primary-container uppercase">LIVE</span><span class="font-label-mono-stat text-label-mono-stat text-on-surface">IND 187/5 (20.0)</span><span class="font-label-mono-stat text-label-mono-stat text-outline">vs</span><span class="font-label-mono-stat text-label-mono-stat text-on-surface">AUS 145/6 (17.2)</span><span class="font-body-sm text-body-sm text-secondary">(Req. 43 off 16)</span></div><div class="flex items-center gap-space-sm shrink-0 px-space-sm py-1 rounded bg-surface-container-high"><span class="font-label-badge text-label-badge text-outline uppercase">STUMPS</span><span class="font-label-mono-stat text-label-mono-stat text-on-surface">ENG 312/8</span><span class="font-label-mono-stat text-label-mono-stat text-outline">vs</span><span class="font-label-mono-stat text-label-mono-stat text-on-surface">SA 190/4 (54.0)</span><span class="font-body-sm text-body-sm text-outline">Day 2</span></div><div class="flex items-center gap-space-sm shrink-0 px-space-sm py-1 rounded bg-surface-container-high"><span class="font-label-badge text-label-badge text-tertiary uppercase">UPCOMING</span><span class="font-label-mono-stat text-label-mono-stat text-on-surface">NZ vs PAK</span><span class="font-body-sm text-body-sm text-outline">Today, 7:30 PM IST</span></div></div></div></header><main class="w-full bg-surface" id="one-page-content"><section class="w-full scroll-mt-28" data-page="home" id="home"><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1400px] mx-auto px-margin md:px-margin-desktop py-space-lg flex flex-col gap-space-xl">
+<!-- HERO FEATURED LIVE MATCH -->
+<div class="relative w-full rounded-[14px] bg-surface-container overflow-hidden p-space-md md:p-space-xl">
+<!-- Glow & Scrim overlay -->
+<div class="absolute -right-24 -top-24 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-lg">
+<!-- Tournament Sub-header & Status Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-label-badge text-label-badge uppercase px-2.5 py-1 rounded bg-surface-container-high text-on-surface-variant">ICC T20 World Cup</span>
+<span class="text-outline text-body-sm">•</span>
+<span class="font-label-md text-label-md text-on-surface">Super 8 • Match 42</span>
+<span class="text-outline text-body-sm">•</span>
+<div class="flex items-center gap-1 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">stadium</span>
+<span>Kensington Oval, Barbados</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-3 py-1 rounded-full bg-primary-container/15">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase tracking-wider">● LIVE • INNINGS 2 / CHASE</span>
+</div>
+</div>
+<!-- Scores Grid Display -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Team A (Batting 1st / Done) -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs p-space-md rounded-[14px] bg-surface-container-low">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-label-badge text-label-badge text-on-surface font-bold">IND</span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">India</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat px-2 py-0.5 rounded bg-surface-container-high text-outline">Innings 1</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-display-score-lg text-display-score-lg text-on-surface tracking-tight">187/5</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(20.0 ov)</span>
+</div>
+<div class="flex flex-col gap-1 mt-space-xs pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex justify-between items-center">
+<span>Rohit Sharma c Warner b Zampa</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">57 (34)</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Hardik Pandya not out</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">41* (19)</span>
+</div>
+</div>
+</div>
+<!-- Mid Match Center Telemetry -->
+<div class="lg:col-span-4 flex flex-col items-center justify-center text-center px-space-sm">
+<span class="font-label-badge text-label-badge uppercase tracking-widest text-primary-container px-3 py-1 rounded-full bg-primary-container/10">TARGET: 188</span>
+<div class="my-space-md flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-wide">Australia need 43 runs</span>
+<span class="font-label-mono-stat text-label-mono-stat text-primary-container mt-1">from 16 balls</span>
+</div>
+<!-- Rates Telemetry -->
+<div class="flex items-center gap-space-md py-1.5 px-space-md rounded-lg bg-surface-container-high font-label-mono-stat text-label-mono-stat">
+<div><span class="text-outline">CRR:</span> <span class="text-on-surface">8.36</span></div>
+<div class="w-px h-3 bg-surface-container-highest"></div>
+<div><span class="text-outline">RRR:</span> <span class="text-primary-container font-bold">16.12</span></div>
+</div>
+<!-- Recent Balls Track -->
+<div class="flex items-center gap-1.5 mt-space-md">
+<span class="font-label-badge text-label-badge text-outline uppercase mr-1">Over 17:</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center font-label-badge text-label-badge text-on-surface">1</span>
+<span class="w-7 h-7 rounded-full bg-tertiary/15 text-tertiary flex items-center justify-center font-label-badge text-label-badge font-bold">4</span>
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-badge text-label-badge font-black shadow-md shadow-primary-container/30">W</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center font-label-badge text-label-badge text-outline">0</span>
+<span class="w-7 h-7 rounded-full bg-primary-container/20 text-primary-container flex items-center justify-center font-label-badge text-label-badge font-black">6</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center font-label-badge text-label-badge text-on-surface">1</span>
+</div>
+</div>
+<!-- Team B (Chasing Now) -->
+<div class="lg:col-span-4 flex flex-col gap-space-xs p-space-md rounded-[14px] bg-surface-container-low">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-label-badge text-label-badge text-on-surface font-bold">AUS</span>
+<span class="font-headline-md text-headline-md text-on-surface uppercase tracking-wide">Australia</span>
+</div>
+<span class="flex items-center gap-1 font-label-mono-stat text-label-mono-stat px-2 py-0.5 rounded bg-primary-container/20 text-primary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> CHASE
+              </span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-display-score-lg text-display-score-lg text-on-surface tracking-tight">145/6</span>
+<span class="font-label-mono-stat text-label-mono-stat text-primary-container">(17.2 ov)</span>
+</div>
+<div class="flex flex-col gap-1 mt-space-xs pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex justify-between items-center text-outline">
+<span>Travis Head c Pant b Bumrah</span>
+<span class="font-label-mono-stat text-label-mono-stat">68 (38)</span>
+</div>
+<div class="flex justify-between items-center text-on-surface">
+<span>Marcus Stoinis not out</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">24* (14)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Actions -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md">
+<div class="flex items-center gap-space-sm text-outline font-label-mono-stat text-label-mono-stat">
+<span class="material-symbols-outlined text-[18px] text-secondary">sports_cricket</span>
+<span>Current Bowler: Jasprit Bumrah (3.2-0-24-3)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider hover:opacity-95 transition-opacity flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">scoreboard</span>
+<span>View Live Scorecard</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg uppercase tracking-wider hover:bg-surface-container-highest transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span>Ball-by-Ball Commentary</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 1: LIVE MATCHES CONCURRENT RAIL -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></div>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface tracking-wide">Live Matches in Play</h2>
+<span class="px-2 py-0.5 rounded bg-surface-container-high font-label-badge text-label-badge text-outline">2 ONGOING</span>
+</div>
+<a class="font-label-lg text-label-lg text-primary hover:underline flex items-center gap-1" href="#">
+<span>All Live Fixtures</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Live Match Card 1: ENG vs SA -->
+<div class="flex flex-col justify-between p-space-lg rounded-[14px] bg-surface-container hover:bg-surface-container-high/80 transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pb-space-xs">
+<span>3rd ODI • Lord's, London</span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase px-2 py-0.5 rounded bg-primary-container/10">LIVE • 2ND INNINGS</span>
+</div>
+<!-- Scores ENG vs SA -->
+<div class="flex flex-col gap-2 mt-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-center font-label-badge text-label-badge font-bold leading-6">ENG</span>
+<span class="font-label-lg text-label-lg text-on-surface">England</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-score-md text-display-score-md text-on-surface">312/8</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(50.0)</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-center font-label-badge text-label-badge font-bold leading-6">SA</span>
+<span class="font-label-lg text-label-lg text-on-surface">South Africa</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-score-md text-display-score-md text-secondary">198/4</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(34.2)</span>
+</div>
+</div>
+</div>
+<!-- Match Equation & Telemetry -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">South Africa need 115 runs in 94 balls</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">CRR: 5.76</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-1">
+<span>Bowler: Jofra Archer (7.2-0-41-2)</span>
+<span class="text-on-surface">H. Klaasen 62* (44)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1 font-label-mono-stat text-label-mono-stat text-outline">
+<span>Req RR: 7.34</span>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider hover:opacity-90 transition-opacity">
+              View Scorecard
+            </button>
+</div>
+</div>
+<!-- Live Match Card 2: SL vs NZ -->
+<div class="flex flex-col justify-between p-space-lg rounded-[14px] bg-surface-container hover:bg-surface-container-high/80 transition-colors">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pb-space-xs">
+<span>1st T20I • R. Premadasa Stadium, Colombo</span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase px-2 py-0.5 rounded bg-primary-container/10">LIVE • CHASE</span>
+</div>
+<!-- Scores SL vs NZ -->
+<div class="flex flex-col gap-2 mt-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-center font-label-badge text-label-badge font-bold leading-6">SL</span>
+<span class="font-label-lg text-label-lg text-on-surface">Sri Lanka</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-score-md text-display-score-md text-on-surface">164/7</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(20.0)</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-center font-label-badge text-label-badge font-bold leading-6">NZ</span>
+<span class="font-label-lg text-label-lg text-on-surface">New Zealand</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-display-score-md text-display-score-md text-secondary">110/3</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(13.1)</span>
+</div>
+</div>
+</div>
+<!-- Match Equation & Telemetry -->
+<div class="mt-space-sm p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface font-medium">New Zealand need 55 runs in 41 balls</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">CRR: 8.35</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-1">
+<span>Bowler: Wanindu Hasaranga (2.1-0-18-2)</span>
+<span class="text-on-surface">G. Phillips 34* (21)</span>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1 font-label-mono-stat text-label-mono-stat text-outline">
+<span>Req RR: 8.04</span>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider hover:opacity-90 transition-opacity">
+              View Scorecard
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2 & 3: UPCOMING & RECENT RESULTS SPLIT -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- UPCOMING FIXTURES (7 COLS) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface tracking-wide">Upcoming Matches</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high font-label-badge text-label-badge text-tertiary uppercase">TODAY &amp; TOMORROW</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Upcoming 1 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-[14px] bg-surface-container hover:bg-surface-container-high transition-colors gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase px-2 py-0.5 rounded bg-tertiary/15 text-tertiary">STARTS IN 2H 15M</span>
+<span class="text-body-sm font-body-sm text-outline">Today, 7:30 PM IST</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+                Pakistan <span class="text-outline font-normal">vs</span> West Indies
+              </div>
+<span class="text-body-sm font-body-sm text-outline">1st T20I • National Stadium, Karachi</span>
+</div>
+<div class="flex items-center gap-space-sm self-start sm:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span>Notify</span>
+</button>
+</div>
+</div>
+<!-- Upcoming 2 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-[14px] bg-surface-container hover:bg-surface-container-high transition-colors gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase px-2 py-0.5 rounded bg-surface-container-high text-outline">TOMORROW</span>
+<span class="text-body-sm font-body-sm text-outline">Tomorrow, 2:00 PM IST</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+                India Women <span class="text-outline font-normal">vs</span> Australia Women
+              </div>
+<span class="text-body-sm font-body-sm text-outline">2nd ODI • Wankhede Stadium, Mumbai</span>
+</div>
+<div class="flex items-center gap-space-sm self-start sm:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span>Notify</span>
+</button>
+</div>
+</div>
+<!-- Upcoming 3 -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between p-space-md rounded-[14px] bg-surface-container hover:bg-surface-container-high transition-colors gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge uppercase px-2 py-0.5 rounded bg-surface-container-high text-outline">TOMORROW</span>
+<span class="text-body-sm font-body-sm text-outline">Tomorrow, 7:30 PM IST</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-0.5">
+                Kolkata Knight Riders <span class="text-outline font-normal">vs</span> Mumbai Indians
+              </div>
+<span class="text-body-sm font-body-sm text-outline">T20 Warmup • Eden Gardens, Kolkata</span>
+</div>
+<div class="flex items-center gap-space-sm self-start sm:self-center">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+<span>Notify</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RECENT RESULTS (5 COLS) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface tracking-wide">Recent Results</h2>
+</div>
+<a class="font-label-md text-label-md text-outline hover:text-on-surface" href="#">Archive</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Recent 1: India Won Final -->
+<div class="p-space-md rounded-[14px] bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline">
+<span>ICC Men's T20 World Cup Final</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">RESULT</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">India</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface font-bold">176/7 (20.0)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-outline">South Africa</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">169/8 (20.0)</span>
+</div>
+</div>
+<div class="p-2 rounded bg-secondary-container/10 flex items-center justify-between mt-1">
+<span class="font-label-badge text-label-badge text-secondary font-bold uppercase tracking-wide">INDIA WON BY 7 RUNS</span>
+<span class="font-body-sm text-body-sm text-outline">POTM: V. Kohli 76(59)</span>
+</div>
+</div>
+<!-- Recent 2: Aus Won -->
+<div class="p-space-md rounded-[14px] bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline">
+<span>Super 8 • Group 1</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">RESULT</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-outline">England</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">199/6 (20.0)</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Australia</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface font-bold">201/5 (19.4)</span>
+</div>
+</div>
+<div class="p-2 rounded bg-secondary-container/10 flex items-center justify-between mt-1">
+<span class="font-label-badge text-label-badge text-secondary font-bold uppercase tracking-wide">AUSTRALIA WON BY 5 WICKETS</span>
+<span class="font-body-sm text-body-sm text-outline">POTM: T. Head 82(41)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: CRICKET NEWS & EDITORIAL INSIGHTS -->
+<div class="flex flex-col gap-space-md mt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-primary">feed</span>
+<h2 class="font-headline-md text-headline-md uppercase text-on-surface tracking-wide">Analysis &amp; Tournament Dispatch</h2>
+</div>
+<a class="font-label-lg text-label-lg text-outline hover:text-on-surface flex items-center gap-1" href="#">
+<span>Read All News</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- News Card 1 -->
+<div class="group flex flex-col rounded-[14px] bg-surface-container overflow-hidden hover:bg-surface-container-high transition-colors">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Action shot of a cricket batsman executing a powerful cover drive at sunset in an international cricket stadium with floodlights turning on, rich dark tones and green grass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDntlu3wdo-uhIlTdDmQE1secBoS9R4Q031DkiqG1S4kwCEEsx0VGTr-dWUG155dp8e_jW2gWxYZeXxUE8OdjM1NDjX062gB_pPYAXeO7otxj7-cSeQpEM9u_L_lze7Sf_vHSJwyWxogyGx2f4wsSjif9Sn3wJBEWbidT5jHc2N4YXwnhOGiiXIe2wFVnE1aImJ_p2WQZmIwmeWxM6Do7pWIesn3uz6utxJRfEUChkww-xsZ1i0GwOK"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface/80 backdrop-blur font-label-badge text-label-badge text-primary-container uppercase">ICC TOURNAMENT</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+              India announce 15-member squad for upcoming Champions Trophy with dual spin specialists
+            </h3>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-space-xs">
+<span>By CREX Telemetry Desk</span>
+<span class="font-label-mono-stat text-label-mono-stat">18 mins ago</span>
+</div>
+</div>
+</div>
+<!-- News Card 2 -->
+<div class="group flex flex-col rounded-[14px] bg-surface-container overflow-hidden hover:bg-surface-container-high transition-colors">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="A fast bowler in mid-air delivery stride, focused aggressive expression, chalk dust rising from the crease line, dramatic stadium lighting and high-contrast night aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcYk_8qVhy_Q8rDxBxhhh4BLGA2mv076Vo4zyZ8zXRYA20eZBhxRq1Lx9XHSpDdv0Uq8hQk38GFDv_8LCIRig7hAYu9MAX6eTfHh-sGEtO0O9ArmzPk6zNj12XOAqqAtETvaPjuOYBcZVt5ApzXPJK_pHNNMQlP4h6Yx5z9A-a8B88l4bfhghjuWpW8N8qDyXHCT5-7zvKnYnhUe4xUouCRdDKT6EHdkgT_a5JcNeErwajTiRCYCuE"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface/80 backdrop-blur font-label-badge text-label-badge text-tertiary uppercase">TACTICAL BREAKDOWN</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+              Why the 17th over boundary percentage is deciding high-stakes chases in Caribbean conditions
+            </h3>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-space-xs">
+<span>By Telemetry Data Lab</span>
+<span class="font-label-mono-stat text-label-mono-stat">42 mins ago</span>
+</div>
+</div>
+</div>
+<!-- News Card 3 -->
+<div class="group flex flex-col rounded-[14px] bg-surface-container overflow-hidden hover:bg-surface-container-high transition-colors">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Wicketkeeper diving full stretch horizontally behind the stumps with gloves outstretched to catch a white cricket ball in high definition sports photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdoYxr5AU2xfU7_zwYxhTcZVUA84Ofh4zv96JIjv3Ym-W72JEqznkCfzj4qfPapKsy1v6REAw6VIQZpfNtUcgpu6ewdTxGni2HJvaiS4L7P0EflhXlmgRYbEIF0R0DbUtdvHBa0as_UCfqeJfe56XjAtAsDq7BL5iGykgW6w_txk6CfRWnST6Y60w-kf5dM0Iu1DdE74HrQKcHpqgdH1cBYQWKfu-JrrklueCQli4IDYMOdfq5cqbf"/>
+<span class="absolute top-3 left-3 px-2 py-0.5 rounded bg-surface/80 backdrop-blur font-label-badge text-label-badge text-secondary uppercase">TEAM SQUAD</span>
+</div>
+<div class="p-space-md flex flex-col justify-between flex-1 gap-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+              South Africa reveal pace-heavy playing XI for the series decider at Lord's
+            </h3>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-outline pt-space-xs">
+<span>By Pitchside Reporter</span>
+<span class="font-label-mono-stat text-label-mono-stat">1 hour ago</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></section><section class="w-full scroll-mt-28" data-page="matches" id="match"><div class="h-px w-full bg-white/10"></div><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1400px] mx-auto px-margin md:px-margin-desktop py-space-md">
+<!-- BREADCRUMB & LIVE BROADCAST STRIP -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-outline">
+<a class="hover:text-on-surface transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-on-surface transition-colors" href="#">Matches</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface-variant font-medium">ICC T20 World Cup</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">IND vs AUS • Super 8</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs px-2.5 py-1 rounded-full bg-surface-container-high">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-badge text-label-badge text-primary-container uppercase">LIVE • 2ND INNINGS</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-outline font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">location_on</span>
+<span>Kensington Oval, Bridgetown, Barbados</span>
+<span class="text-outline-variant">•</span>
+<span>June 24, 2024</span>
+</div>
+</div>
+</div>
+<!-- MAIN HERO MATCH SCORECARD BANNER -->
+<div class="relative overflow-hidden rounded-[14px] bg-surface-container p-space-md md:p-space-xl mb-space-lg shadow-xl">
+<!-- Ambient stadium background accents -->
+<div class="absolute -top-24 -left-20 w-80 h-80 rounded-full bg-primary-container/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-20 w-80 h-80 rounded-full bg-secondary-container/10 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-md">
+<!-- Match Headline Details -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<!-- Team A: INDIA -->
+<div class="flex items-center gap-space-md flex-1">
+<div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-surface-container-high flex items-center justify-center p-2 shrink-0">
+<span class="font-headline-md text-headline-md font-bold text-tertiary">IND</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface tracking-wide">INDIA</span>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-surface-container-highest text-outline">1ST INN</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-score-md text-display-score-md text-on-surface">187/5</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(20.0 ov)</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">CRR: <span class="text-on-surface font-semibold">9.35</span></span>
+</div>
+</div>
+<!-- VS Division Badge -->
+<div class="flex lg:flex-col items-center justify-center px-space-md py-space-xs rounded-xl bg-surface-container-low shrink-0">
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-widest">VS</span>
+<span class="font-label-mono-stat text-label-mono-stat text-tertiary uppercase mt-0.5">T20I #2671</span>
+</div>
+<!-- Team B: AUSTRALIA (Chasing) -->
+<div class="flex items-center gap-space-md flex-1 justify-start lg:justify-end">
+<div class="flex flex-col items-start lg:items-end order-2 lg:order-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-primary-container text-on-primary-container animate-pulse">CHASING</span>
+<span class="font-headline-md text-headline-md text-on-surface tracking-wide">AUSTRALIA</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-score-md text-display-score-md text-primary-container">145/6</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(17.2 ov)</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Req RR: <span class="text-primary-container font-semibold">16.12</span> • Target: 188</span>
+</div>
+<div class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-surface-container-high flex items-center justify-center p-2 shrink-0 order-1 lg:order-2">
+<span class="font-headline-md text-headline-md font-bold text-secondary">AUS</span>
+</div>
+</div>
+</div>
+<!-- High-Impact Live Equation Callout -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-tertiary">sports_cricket</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">
+              Australia need <span class="text-primary-container font-bold">43 runs</span> from <span class="text-primary-container font-bold">16 balls</span> to win
+            </span>
+</div>
+<div class="flex items-center gap-space-lg text-outline font-label-mono-stat text-label-mono-stat">
+<div class="flex items-center gap-space-xs">
+<span class="text-outline">PARTNERSHIP:</span>
+<span class="text-secondary font-bold">34 (18b)</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs">
+<span class="text-outline">LAST 5 OVS:</span>
+<span class="text-on-surface font-semibold">48/2 (9.6)</span>
+</div>
+</div>
+</div>
+<!-- Telemetry & Ball Sequence Strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-sm overflow-x-auto py-1">
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">RECENT BALLS (OV 17):</span>
+<div class="flex items-center gap-space-xs">
+<!-- Ball 1 -->
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-mono-stat text-label-mono-stat">1</span>
+<!-- Ball 2 -->
+<span class="w-8 h-8 rounded-full bg-tertiary-container/30 text-tertiary flex items-center justify-center font-label-mono-stat text-label-mono-stat font-bold">4</span>
+<!-- Ball 3: Wicket -->
+<span class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-mono-stat text-label-mono-stat font-bold shadow-lg shadow-primary-container/40">W</span>
+<!-- Ball 4: Dot -->
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-outline flex items-center justify-center font-label-mono-stat text-label-mono-stat">•</span>
+<!-- Ball 5: Six -->
+<span class="w-8 h-8 rounded-full bg-primary-container/30 text-primary-container flex items-center justify-center font-label-mono-stat text-label-mono-stat font-bold">6</span>
+<!-- Ball 6 -->
+<span class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-mono-stat text-label-mono-stat">1</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="text-outline font-label-md text-label-md">Striker:</span>
+<span class="text-secondary font-label-md text-label-md font-bold">M. Stoinis 38* (18)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-outline font-label-md text-label-md">Bowler:</span>
+<span class="text-tertiary font-label-md text-label-md font-bold">J. Bumrah 2.2-0-18-2</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PRIMARY MATCH NAVIGATION TABS -->
+<div class="flex items-center justify-between overflow-x-auto gap-space-xs pb-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-space-md py-2 rounded-lg font-label-lg text-label-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="tab-btn-summary" onclick="switchTab('summary')">
+          Summary
+        </button>
+<button class="px-space-md py-2 rounded-lg font-label-lg text-label-lg bg-primary-container text-on-primary-container transition-colors shadow-sm" id="tab-btn-scorecard" onclick="switchTab('scorecard')">
+          Scorecard
+        </button>
+<button class="px-space-md py-2 rounded-lg font-label-lg text-label-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="tab-btn-commentary" onclick="switchTab('commentary')">
+          Commentary
+        </button>
+<button class="px-space-md py-2 rounded-lg font-label-lg text-label-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="tab-btn-squads" onclick="switchTab('squads')">
+          Squads &amp; Playing XI
+        </button>
+<button class="px-space-md py-2 rounded-lg font-label-lg text-label-lg text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors" id="tab-btn-points" onclick="switchTab('points')">
+          Points Table
+        </button>
+</div>
+<div class="hidden md:flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-badge text-label-badge text-secondary">TELEMETRY STREAM CONNECTED</span>
+</div>
+</div>
+<!-- 12-COLUMN MAIN CONTENT GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop">
+<!-- LEFT 8 COLUMNS: MAIN DATA DISPLAY (SCORECARD & INNINGS) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- SCORECARD INNINGS SELECTOR -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md bg-surface-container-highest text-on-surface font-bold transition-colors" id="inn-btn-ind" onclick="switchInnings('ind')">
+              India Innings (187/5)
+            </button>
+<button class="px-space-md py-2 rounded-lg font-label-md text-label-md text-outline hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5" id="inn-btn-aus" onclick="switchInnings('aus')">
+<span>Australia Innings (145/6)</span>
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs px-2 text-outline font-label-mono-stat text-label-mono-stat">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="cursor-pointer hover:text-on-surface">Export CSV</span>
+</div>
+</div>
+<!-- INDIA INNINGS SCORECARD CONTAINER -->
+<div class="flex flex-col gap-space-lg" id="innings-india">
+<!-- BATTING TABLE CARD -->
+<div class="rounded-[14px] bg-surface-container p-space-md md:p-space-lg overflow-hidden shadow-lg">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">sports_baseball</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Batting Scorecard</h3>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">20.0 OVERS ALLOCATED</span>
+</div>
+<!-- Batting Table Layout -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high text-outline font-label-mono-stat text-label-mono-stat h-9">
+<th class="px-space-md py-2 rounded-l-md font-semibold">BATTER</th>
+<th class="px-space-sm py-2 font-semibold">DISMISSAL</th>
+<th class="px-space-sm py-2 text-right font-semibold text-on-surface">R</th>
+<th class="px-space-sm py-2 text-right font-semibold">B</th>
+<th class="px-space-sm py-2 text-right font-semibold">4s</th>
+<th class="px-space-sm py-2 text-right font-semibold">6s</th>
+<th class="px-space-md py-2 text-right rounded-r-md font-semibold">SR</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<!-- Row 1: Rohit -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">
+                      Rohit Sharma <span class="font-label-badge text-label-badge text-outline">(c)</span>
+</td>
+<td class="px-space-sm py-3 text-outline font-body-sm text-body-sm">c Maxwell b Starc</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">57</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">34</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">7</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">3</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-bold">167.65</td>
+</tr>
+<!-- Row 2: Kohli -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Virat Kohli</td>
+<td class="px-space-sm py-3 text-outline font-body-sm text-body-sm">c Hazlewood b Cummins</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">12</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">9</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">1</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">133.33</td>
+</tr>
+<!-- Row 3: Pant -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">
+                      Rishabh Pant <span class="font-label-badge text-label-badge text-outline">(wk)</span>
+</td>
+<td class="px-space-sm py-3 text-outline font-body-sm text-body-sm">c Marsh b Zampa</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">36</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">24</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">3</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">2</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-bold">150.00</td>
+</tr>
+<!-- Row 4: Suryakumar -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Suryakumar Yadav</td>
+<td class="px-space-sm py-3 text-outline font-body-sm text-body-sm">c Wade b Stoinis</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">31</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">18</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">4</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">1</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-bold">172.22</td>
+</tr>
+<!-- Row 5: Hardik Pandya (Top Strike Rate Highlighting) -->
+<tr class="bg-surface-container-high/20 hover:bg-surface-container-high/50 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface flex items-center gap-space-xs">
+<span>Hardik Pandya</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</td>
+<td class="px-space-sm py-3 text-secondary font-body-sm text-body-sm font-semibold">not out</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-secondary">41</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">19</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">3</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">3</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-bold">215.79</td>
+</tr>
+<!-- Row 6: Dube -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Shivam Dube</td>
+<td class="px-space-sm py-3 text-outline font-body-sm text-body-sm">b Hazlewood</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">6</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">8</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">75.00</td>
+</tr>
+<!-- Row 7: Jadeja -->
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Ravindra Jadeja</td>
+<td class="px-space-sm py-3 text-secondary font-body-sm text-body-sm font-semibold">not out</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">4</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">2</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-bold">200.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Extras & Totals Breakdown -->
+<div class="mt-space-md pt-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm text-on-surface font-body-md text-body-md bg-surface-container-high/30 p-space-sm rounded-lg">
+<div class="flex items-center gap-space-xs text-outline">
+<span class="font-semibold text-on-surface">Extras:</span>
+<span>11 (b 1, lb 4, w 5, nb 1)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Total: 187/5</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">(20.0 Overs, RR: 9.35)</span>
+</div>
+</div>
+<!-- Did Not Bat -->
+<div class="mt-space-sm flex items-center gap-space-xs text-outline font-body-sm text-body-sm">
+<span class="font-semibold text-on-surface">Did not bat:</span>
+<span>Axar Patel, Kuldeep Yadav, Arshdeep Singh, Jasprit Bumrah</span>
+</div>
+<!-- Fall of Wickets Summary -->
+<div class="mt-space-md pt-space-md">
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider block mb-space-xs">FALL OF WICKETS</span>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs font-body-sm text-body-sm text-outline">
+<span><strong class="text-on-surface font-label-mono-stat">1-18</strong> (Kohli, 2.3 ov)</span>
+<span>•</span>
+<span><strong class="text-on-surface font-label-mono-stat">2-82</strong> (Pant, 9.4 ov)</span>
+<span>•</span>
+<span><strong class="text-on-surface font-label-mono-stat">3-127</strong> (Rohit, 14.1 ov)</span>
+<span>•</span>
+<span><strong class="text-on-surface font-label-mono-stat">4-152</strong> (Suryakumar, 16.4 ov)</span>
+<span>•</span>
+<span><strong class="text-on-surface font-label-mono-stat">5-171</strong> (Dube, 18.5 ov)</span>
+</div>
+</div>
+</div>
+<!-- BOWLING TABLE CARD -->
+<div class="rounded-[14px] bg-surface-container p-space-md md:p-space-lg overflow-hidden shadow-lg">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">sports_handball</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bowling Figures</h3>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">AUSTRALIA ATTACK</span>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high text-outline font-label-mono-stat text-label-mono-stat h-9">
+<th class="px-space-md py-2 rounded-l-md font-semibold">BOWLER</th>
+<th class="px-space-sm py-2 text-right font-semibold">O</th>
+<th class="px-space-sm py-2 text-right font-semibold">M</th>
+<th class="px-space-sm py-2 text-right font-semibold">R</th>
+<th class="px-space-sm py-2 text-right font-semibold text-primary">W</th>
+<th class="px-space-sm py-2 text-right font-semibold">ECON</th>
+<th class="px-space-md py-2 text-right rounded-r-md font-semibold">DOTS</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Mitchell Starc</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-on-surface">4.0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">38</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">1</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">9.50</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-semibold">11</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Josh Hazlewood</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-on-surface">4.0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">28</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">1</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-bold">7.00</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-semibold">14</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Pat Cummins</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-on-surface">4.0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">39</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">1</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">9.75</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-semibold">9</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Adam Zampa</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-on-surface">4.0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">36</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">1</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">9.00</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-semibold">8</td>
+</tr>
+<tr class="hover:bg-surface-container-high/40 transition-colors">
+<td class="px-space-md py-3 font-semibold text-on-surface">Marcus Stoinis</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-on-surface">4.0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">41</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat font-bold text-on-surface">1</td>
+<td class="px-space-sm py-3 text-right font-label-mono-stat text-label-mono-stat text-outline">10.25</td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-label-mono-stat text-secondary font-semibold">7</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- AUSTRALIA INNINGS PLACEHOLDER (Hidden initially for interactive toggle) -->
+<div class="hidden flex-col gap-space-lg" id="innings-australia">
+<div class="rounded-[14px] bg-surface-container p-space-md md:p-space-lg shadow-lg">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">sports_baseball</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Australia Batting (Live)</h3>
+</div>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-primary-container text-on-primary-container animate-pulse">IN PROGRESS</span>
+</div>
+<p class="font-body-md text-body-md text-outline mb-space-md">
+              Travis Head made 76 (43), Marsh made 37 (28). Currently Marcus Stoinis 38* (18) and Pat Cummins 1* (1) are at the crease.
+            </p>
+<div class="p-space-md rounded-xl bg-surface-container-high flex items-center justify-between">
+<span class="font-headline-md text-headline-md text-on-surface">Score: 145/6 (17.2)</span>
+<span class="text-secondary font-label-mono-stat text-label-mono-stat">Bumrah striking on 17.2</span>
+</div>
+</div>
+</div>
+<!-- PARTNERSHIP & RUN RATE VISUALIZATION CHART -->
+<div class="rounded-[14px] bg-surface-container p-space-md md:p-space-lg shadow-lg">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">analytics</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Manhattan &amp; Run Rate Worm</h3>
+</div>
+<div class="flex items-center gap-space-md font-label-badge text-label-badge">
+<div class="flex items-center gap-1.5"><span class="w-3 h-1 bg-tertiary rounded-full"></span> INDIA</div>
+<div class="flex items-center gap-1.5"><span class="w-3 h-1 bg-secondary rounded-full"></span> AUSTRALIA</div>
+</div>
+</div>
+<!-- Inline Telemetry SVG Comparative Chart -->
+<div class="w-full h-44 py-2">
+<svg class="w-full h-full" fill="none" preserveaspectratio="none" viewbox="0 0 600 160">
+<!-- Grid lines -->
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="600" y1="40" y2="40"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="600" y1="80" y2="80"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="4 4" x1="0" x2="600" y1="120" y2="120"></line>
+<!-- India Innings Worm (Yellow) -->
+<path class="text-tertiary" d="M 0 150 Q 50 140 100 125 T 200 95 T 300 70 T 400 48 T 500 28 T 600 12" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<!-- Australia Innings Worm (Green/Live) -->
+<path class="text-secondary" d="M 0 150 Q 50 135 100 120 T 200 88 T 300 68 T 400 52 T 516 42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="3"></path>
+<!-- Live Indicator Point on AUS curve -->
+<circle class="fill-primary-container animate-pulse" cx="516" cy="42" r="5"></circle>
+<circle class="text-primary-container/40" cx="516" cy="42" r="10" stroke="currentColor" stroke-width="1.5"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-outline font-label-mono-stat text-label-mono-stat pt-2">
+<span>OV 0</span>
+<span>OV 5</span>
+<span>OV 10</span>
+<span>OV 15</span>
+<span>OV 20</span>
+</div>
+</div>
+</div>
+<!-- RIGHT 4 COLUMNS: LIVE COMMENTARY FEED & VENUE TELEMETRY -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- LIVE WIN PROBABILITY TELEMETRY CARD -->
+<div class="rounded-[14px] bg-surface-container p-space-md shadow-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Win Probability</span>
+<span class="font-label-badge text-label-badge text-secondary">AI PREDICTOR</span>
+</div>
+<div class="flex items-baseline justify-between pt-1 pb-space-xs font-label-mono-stat text-label-mono-stat">
+<span class="text-tertiary font-bold">INDIA 78%</span>
+<span class="text-secondary font-bold">AUS 22%</span>
+</div>
+<!-- Split Win Probability Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="h-full bg-tertiary" style="width: 78%;"></div>
+<div class="h-full bg-secondary" style="width: 22%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-outline mt-space-xs">
+            Australia need 43 runs @ 16.12 RPO with 4 wickets in hand.
+          </p>
+</div>
+<!-- BALL-BY-BALL LIVE COMMENTARY STREAM -->
+<div class="rounded-[14px] bg-surface-container p-space-md md:p-space-lg shadow-lg flex flex-col">
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-container">stream</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Live Ball-by-Ball</h3>
+</div>
+<span class="font-label-badge text-label-badge text-outline">AUTO-REFRESH</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Ball 17.2: WICKET -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-high/40">
+<div class="flex flex-col items-center shrink-0">
+<span class="font-label-mono-stat text-label-mono-stat font-bold text-on-surface mb-1">17.2</span>
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-badge text-label-badge shadow-md shadow-primary-container/40">W</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-primary-container uppercase font-bold">OUT! CLEAN BOWLED!</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Bumrah delivers an unplayable yorker at 144 kph. Base of off-stump cartwheels out of the ground! Tim David departs for 12(9). Australia 145/6.
+                </p>
+</div>
+</div>
+<!-- Ball 17.1: Single -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl hover:bg-surface-container-high/30 transition-colors">
+<div class="flex flex-col items-center shrink-0">
+<span class="font-label-mono-stat text-label-mono-stat text-outline mb-1">17.1</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-badge text-label-badge">1</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<p class="font-body-sm text-body-sm text-outline">
+                  Jasprit Bumrah spears it full on middle, pushed firmly down to long-on for a brisk single.
+                </p>
+</div>
+</div>
+<!-- OVER 16 SUMMARY DIVIDER -->
+<div class="py-1 px-space-sm rounded bg-surface-container-low flex items-center justify-between text-outline font-label-mono-stat text-label-mono-stat">
+<span>END OF OVER 16</span>
+<span class="text-on-surface">14 runs • AUS 144/5</span>
+</div>
+<!-- Ball 16.6: SIX -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl bg-primary-container/10">
+<div class="flex flex-col items-center shrink-0">
+<span class="font-label-mono-stat text-label-mono-stat font-bold text-on-surface mb-1">16.6</span>
+<span class="w-7 h-7 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-label-badge text-label-badge font-bold">6</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-primary-container uppercase font-bold">MAXIMUM!</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Stoinis clears his front leg and launches Arshdeep deep into the stands over wide mid-wicket! 89 meters into the tropical Barbados breeze!
+                </p>
+</div>
+</div>
+<!-- Ball 16.5: FOUR -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl hover:bg-surface-container-high/30 transition-colors">
+<div class="flex flex-col items-center shrink-0">
+<span class="font-label-mono-stat text-label-mono-stat text-outline mb-1">16.5</span>
+<span class="w-7 h-7 rounded-full bg-tertiary-container/40 text-tertiary flex items-center justify-center font-label-badge text-label-badge font-bold">4</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md text-tertiary uppercase font-bold">CRACKING SHOT!</span>
+<p class="font-body-sm text-body-sm text-outline">
+                  Back of a length, pulled authoritatively through square leg for four. Picked up the slower delivery instantly.
+                </p>
+</div>
+</div>
+<!-- Ball 16.4: DOT BALL -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl hover:bg-surface-container-high/30 transition-colors">
+<div class="flex flex-col items-center shrink-0">
+<span class="font-label-mono-stat text-label-mono-stat text-outline mb-1">16.4</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-label-badge text-label-badge">•</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<p class="font-body-sm text-body-sm text-outline">
+                  Beaten outside off! Slower cutter pitches and grips away from the swinging blade. Vital dot ball.
+                </p>
+</div>
+</div>
+<!-- Ball 16.3: 2 RUNS -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl hover:bg-surface-container-high/30 transition-colors">
+<div class="flex flex-col items-center shrink-0">
+<span class="font-label-mono-stat text-label-mono-stat text-outline mb-1">16.3</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-label-badge text-label-badge">2</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<p class="font-body-sm text-body-sm text-outline">
+                  Driven through extra cover, good aggressive running between the wickets pushes the fielder under pressure.
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- VENUE, PITCH & MATCH OFFICIALS INFO CARD -->
+<div class="rounded-[14px] bg-surface-container p-space-md md:p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-tertiary">stadium</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Match Info &amp; Conditions</h3>
+</div>
+<!-- Editorial Venue Picture -->
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="High quality aerial shot of Kensington Oval cricket ground in Bridgetown Barbados with bright floodlights on, manicured grass outfield, packed grandstands under Caribbean twilight sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAp31_9GcgkX308RtxPoAv5WBV-7JeYazfRRcnYlqvFmuXbvLFhrWRL0k2rqf4E0FaLiplaKM8p86cGQw4ApsKxjj8jGZJwV5c9UESdw5TU-P2DKud8jj7CGWHC237bPQ2sQgRchdU9uzkyY2qH88I3Wx46eiVuk9zjtu0ElDlwW-9j86FL9KucsPXUeA-Bvht-RwUrEZa7KCssRcJJE2Oqy4T0rt91wVyQYq6_0i3BnKo35Lvg9lrq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 to-transparent flex items-end p-2.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kensington Oval, Bridgetown</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<div class="flex flex-col gap-0.5">
+<span class="text-outline uppercase font-label-badge text-label-badge">TOSS RESULT</span>
+<span class="text-on-surface font-medium">Australia won the toss and elected to bowl first</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-outline uppercase font-label-badge text-label-badge">PITCH REPORT</span>
+<p class="text-outline">
+                Dry surface with abrasive seam grip. Slight turn for wrist spinners in the middle phase. Low dew factor reported by ground staff.
+              </p>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-outline uppercase font-label-badge text-label-badge">MATCH OFFICIALS</span>
+<div class="text-outline flex flex-col gap-0.5">
+<span><strong class="text-on-surface">On-Field:</strong> Richard Illingworth, Chris Gaffaney</span>
+<span><strong class="text-on-surface">TV Umpire:</strong> Michael Gough</span>
+<span><strong class="text-on-surface">Referee:</strong> Ranjan Madugalle</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main></section><section class="w-full scroll-mt-28" data-page="series" id="series"><div class="h-px w-full bg-white/10"></div><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<!-- Series Header Hero Deck -->
+<section class="relative w-full bg-surface-container-low px-margin-mobile md:px-margin-desktop py-space-xl overflow-hidden">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-primary-container/10 blur-[100px] pointer-events-none"></div>
+<div class="absolute -bottom-24 right-1/4 w-80 h-80 rounded-full bg-secondary-container/10 blur-[100px] pointer-events-none"></div>
+<div class="max-w-[1400px] mx-auto flex flex-col gap-space-lg relative z-10">
+<!-- Breadcrumb & Live Tracker Meta -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-mono-stat text-label-mono-stat text-outline">
+<span class="text-on-surface hover:text-primary transition-colors cursor-pointer">TOURNAMENTS</span>
+<span>/</span>
+<span>ICC PREMIER EVENTS</span>
+<span>/</span>
+<span class="text-primary-container">T20WC-2024</span>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-high px-3 py-1 rounded-full">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-container"></span>
+</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider text-secondary">TELEMETRY SYNCED</span>
+<span class="text-outline text-body-sm font-label-mono-stat">• MATCH 48 OF 55</span>
+</div>
+</div>
+<!-- Main Tournament Branding Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-primary-container/20 text-primary-container font-label-badge text-label-badge uppercase tracking-widest">
+              OFFICIAL ICC SANCTIONED
+            </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-tertiary font-label-badge text-label-badge uppercase tracking-widest">
+              STAGE: SUPER EIGHTS (GROUP 1 &amp; 2)
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg md:text-[44px] md:leading-[48px] tracking-tight uppercase text-on-surface">
+            ICC MEN'S T20 WORLD CUP 2024
+          </h1>
+<div class="flex flex-wrap items-center gap-space-md text-outline font-body-md text-body-md pt-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">location_on</span>
+<span>West Indies &amp; USA</span>
+</div>
+<span class="text-surface-container-highest">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[18px]">groups</span>
+<span>20 Teams Competing</span>
+</div>
+<span class="text-surface-container-highest">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[18px]">sports_cricket</span>
+<span>55 Fixtures Total</span>
+</div>
+<span class="text-surface-container-highest">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+<span>Jun 01 – Jun 29, 2024</span>
+</div>
+</div>
+</div>
+<!-- Quick Tournament Key Metrics Snapshot -->
+<div class="lg:col-span-4 grid grid-cols-2 gap-space-sm bg-surface-container p-space-md rounded-[14px]">
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-high">
+<span class="font-label-badge text-label-badge text-outline uppercase">Current Stage</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">SUPER 8s</span>
+<span class="font-body-sm text-body-sm text-secondary">Final Week</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-high">
+<span class="font-label-badge text-label-badge text-outline uppercase">Semi-Final Slots</span>
+<span class="font-headline-sm text-headline-sm text-secondary">3/4 LOCKED</span>
+<span class="font-body-sm text-body-sm text-outline">1 Spot Open</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-high">
+<span class="font-label-badge text-label-badge text-outline uppercase">Tournament Runs</span>
+<span class="font-display-score-md text-display-score-md text-on-surface">14,289</span>
+<span class="font-body-sm text-body-sm text-tertiary">SR: 132.4</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-lg bg-surface-container-high">
+<span class="font-label-badge text-label-badge text-outline uppercase">Total Wickets</span>
+<span class="font-display-score-md text-display-score-md text-primary-container">648</span>
+<span class="font-body-sm text-body-sm text-outline">Econ: 7.42</span>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs Pill Bar -->
+<div class="flex items-center overflow-x-auto gap-space-xs pt-space-md">
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm">
+          STANDINGS / POINTS TABLE
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors">
+          FIXTURES &amp; SCHEDULE (55)
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors">
+          TOP RUN GETTERS
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors">
+          TOP WICKET TAKERS
+        </button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors">
+          PARTICIPATING SQUADS
+        </button>
+</div>
+</div>
+</section>
+<!-- Core Content Area: Bento Layout (Main Tables + Side Rail Fix/Leaders) -->
+<div class="max-w-[1400px] w-full mx-auto px-margin-mobile md:px-margin-desktop py-space-xl flex flex-col gap-space-xl">
+<!-- Top Analytical Leaders Strip -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-tertiary rounded-full"></span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-on-surface">Tournament Performance Leaders</h2>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-surface-container-high text-outline uppercase">Real-Time Opta Index</span>
+</div>
+<a class="font-label-lg text-label-lg text-primary hover:underline flex items-center gap-1" href="#">
+          Full Stat Hub <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Top Batter Card -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-tertiary/10 blur-2xl group-hover:bg-tertiary/20 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge uppercase text-tertiary tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">military_tech</span> TOP RUN SCORER
+              </span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">Travis Head</span>
+<span class="font-body-sm text-body-sm text-outline">Australia • Left-hand Batter</span>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Australian top order batsman in dark golden stadium lighting wearing national jersey looking focused and determined" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-ebULCJHrrw2iogGiVRroRYDANOYopSobrTO4Z4zS3GyLBPkF7Vfr_YiWLM01TVAf7fjeP4nQLEuWIiF-O8vo32mM4vibMKPcs2cXuLh1qg7CXOisRk-Hphd_s655yrKj8zfrSIxv4xDnykvfqtV69AYRZUSwK-P0SpxuHUspY5Y9hKuG7rK0UW5vyuxxOmjYVDysHejTOB2TOsh2z7GFRl_9sIwSuhfLXHZ1gza9lLb9BsacnbxK"/>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-md pt-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">RUNS</span>
+<span class="font-headline-md text-headline-md text-tertiary">255</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">AVERAGE</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface pt-1">42.50</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">STRIKE RATE</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary pt-1">158.38</span>
+</div>
+</div>
+</div>
+<!-- Top Bowler Card -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-primary-container/10 blur-2xl group-hover:bg-primary-container/20 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge uppercase text-primary-container tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sports_baseball</span> LEADING WICKET TAKER
+              </span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">Fazalhaq Farooqi</span>
+<span class="font-body-sm text-body-sm text-outline">Afghanistan • Left-arm Fast Medium</span>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="Dynamic portrait photo of Afghan fast bowler looking intense with dramatic sports arena backlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDupY3MYCAl96NEO9J6Sc9CRvvGbF4l49lxjzT2gNj5ZgWalAZtYOl2Cl0YfB742bvkmJEGaWBNn-iCYMYCwE68YbvrcMtyThIWcknQeNkHhJfgF6WCcnLMSBkwsBYJnXOmmXLSBoDEmQmI0ruchRFOLItW4_vjJzGa8I0uTzAUT5D3xFXt98mk4dx7HPiuEDVED9jegA92j_BR6lnMk8nXCwxdm_-quJZjX9wlp4n2mRN2-VjRnJY7"/>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-md pt-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">WICKETS</span>
+<span class="font-headline-md text-headline-md text-primary-container">17</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">ECONOMY</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary pt-1">6.31</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">BEST BOWL</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface pt-1">5/9 (vs UGA)</span>
+</div>
+</div>
+</div>
+<!-- Most Sixes Striker Card -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-32 h-32 rounded-full bg-secondary/10 blur-2xl group-hover:bg-secondary/20 transition-all"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge uppercase text-secondary tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> MAXIMUM POWER INDEX
+              </span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-1">Nicholas Pooran</span>
+<span class="font-body-sm text-body-sm text-outline">West Indies • Wicketkeeper Batter</span>
+</div>
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover" data-alt="High contrast professional sports headshot of West Indian power hitter in maroon sports jersey looking sharp" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAy9lvsmdekQlaniNCuzKBs3YQUoZMvBQGdciPxl06Vn0OXUiH4-fQeS-mKr9qan97QOfuQpB98DqlIdsKpQ3V8Sx49IRQn9ZQeuQS68tTfIHW1o4o3OrnEx40fJsTH3GvLRCNfpN9KkWl2SS7Ho32O2VH251I0GCZ1939JVXAAxoL-48gKvqA_-qvDtFmgD7A89tygKeQi-iX3EXn7zp3l_5l77wp8lXJauY3Fx-68yRUTC3CQZjbX"/>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs mt-space-md pt-space-md bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">TOTAL SIXES</span>
+<span class="font-headline-md text-headline-md text-secondary">17</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">BOUNDARY %</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface pt-1">64.8%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline">LONGEST SIX</span>
+<span class="font-label-mono-stat text-label-mono-stat text-tertiary pt-1">107 Meters</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Grid: Standings (8 cols) & Fixtures Schedule Rail (4 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Official Points Table (Group 1 & Group 2) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Group 1 Points Table -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Super Eight • Group 1</h3>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-surface-container-highest text-secondary uppercase">
+                Top 2 Qualify for Semi-Finals
+              </span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">3 of 3 Matches Played</span>
+</div>
+<!-- Responsive Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high h-9 font-label-mono-stat text-label-mono-stat text-outline uppercase tracking-wider text-[11px]">
+<th class="px-space-sm py-2 rounded-l-md w-12 text-center">Pos</th>
+<th class="px-space-md py-2 min-w-[160px]">Team</th>
+<th class="px-space-xs py-2 text-center">M</th>
+<th class="px-space-xs py-2 text-center">W</th>
+<th class="px-space-xs py-2 text-center">L</th>
+<th class="px-space-xs py-2 text-center">NR</th>
+<th class="px-space-sm py-2 text-center text-on-surface font-bold">Pts</th>
+<th class="px-space-md py-2 text-right">NRR</th>
+<th class="px-space-md py-2 text-center">Recent Form</th>
+<th class="px-space-sm py-2 text-right rounded-r-md">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm">
+<!-- Row 1: India -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-secondary">
+                    01
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#1b3a6b] flex items-center justify-center font-label-badge text-label-badge text-white font-bold">
+                        IND
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface uppercase">India</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: R. Sharma</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-secondary font-bold">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    6
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-secondary font-bold">
+                    +2.470
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Qualified (SF1)
+                    </span>
+</td>
+</tr>
+<!-- Row 2: Australia -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-secondary">
+                    02
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#ffcc00] flex items-center justify-center font-label-badge text-label-badge text-black font-bold">
+                        AUS
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface uppercase">Australia</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: M. Marsh</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-secondary font-bold">2</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-primary-container">1</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    4
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-secondary font-bold">
+                    +1.124
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Qualified (SF2)
+                    </span>
+</td>
+</tr>
+<!-- Row 3: Afghanistan -->
+<tr class="bg-surface-container hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-outline">
+                    03
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#0066cc] flex items-center justify-center font-label-badge text-label-badge text-white font-bold">
+                        AFG
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface-variant uppercase">Afghanistan</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: R. Khan</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">1</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-primary-container">2</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    2
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-primary-container">
+                    -0.383
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-outline font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Eliminated
+                    </span>
+</td>
+</tr>
+<!-- Row 4: Bangladesh -->
+<tr class="bg-surface-container hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-outline">
+                    04
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#006a4e] flex items-center justify-center font-label-badge text-label-badge text-white font-bold">
+                        BAN
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface-variant uppercase">Bangladesh</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: N. Shanto</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-primary-container">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    0
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-primary-container">
+                    -3.189
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-outline font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Eliminated
+                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Group 2 Points Table -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Super Eight • Group 2</h3>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-surface-container-highest text-secondary uppercase">
+                Top 2 Qualify for Semi-Finals
+              </span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">3 of 3 Matches Played</span>
+</div>
+<!-- Responsive Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-high h-9 font-label-mono-stat text-label-mono-stat text-outline uppercase tracking-wider text-[11px]">
+<th class="px-space-sm py-2 rounded-l-md w-12 text-center">Pos</th>
+<th class="px-space-md py-2 min-w-[160px]">Team</th>
+<th class="px-space-xs py-2 text-center">M</th>
+<th class="px-space-xs py-2 text-center">W</th>
+<th class="px-space-xs py-2 text-center">L</th>
+<th class="px-space-xs py-2 text-center">NR</th>
+<th class="px-space-sm py-2 text-center text-on-surface font-bold">Pts</th>
+<th class="px-space-md py-2 text-right">NRR</th>
+<th class="px-space-md py-2 text-center">Recent Form</th>
+<th class="px-space-sm py-2 text-right rounded-r-md">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm">
+<!-- Row 1: South Africa -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-secondary">
+                    01
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#007749] flex items-center justify-center font-label-badge text-label-badge text-[#ffb612] font-bold">
+                        SA
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface uppercase">South Africa</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: A. Markram</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-secondary font-bold">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    6
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-secondary font-bold">
+                    +0.599
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Qualified (SF2)
+                    </span>
+</td>
+</tr>
+<!-- Row 2: England -->
+<tr class="bg-surface-container-low hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-secondary">
+                    02
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#cc0000] flex items-center justify-center font-label-badge text-label-badge text-white font-bold">
+                        ENG
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface uppercase">England</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: J. Buttler</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-secondary font-bold">2</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-primary-container">1</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    4
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-secondary font-bold">
+                    +1.992
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Qualified (SF1)
+                    </span>
+</td>
+</tr>
+<!-- Row 3: West Indies -->
+<tr class="bg-surface-container hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-outline">
+                    03
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#7b002c] flex items-center justify-center font-label-badge text-label-badge text-white font-bold">
+                        WI
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface-variant uppercase">West Indies</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: R. Powell</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">1</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-primary-container">2</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    2
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-secondary">
+                    +0.963
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-secondary-container/20 text-secondary text-[10px] font-bold font-label-mono-stat">W</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-outline font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Eliminated
+                    </span>
+</td>
+</tr>
+<!-- Row 4: United States -->
+<tr class="bg-surface-container hover:bg-surface-container-high/60 transition-colors">
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-outline">
+                    04
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-[#002868] flex items-center justify-center font-label-badge text-label-badge text-white font-bold">
+                        USA
+                      </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface-variant uppercase">United States</span>
+<span class="font-body-sm text-[11px] text-outline">Captain: M. Patel</span>
+</div>
+</div>
+</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-on-surface">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-primary-container">3</td>
+<td class="px-space-xs py-3 text-center font-label-mono-stat text-outline">0</td>
+<td class="px-space-sm py-3 text-center font-display-score-md text-headline-sm text-on-surface font-bold bg-surface-container-high/40">
+                    0
+                  </td>
+<td class="px-space-md py-3 text-right font-label-mono-stat text-primary-container">
+                    -3.906
+                  </td>
+<td class="px-space-md py-3">
+<div class="flex items-center justify-center gap-1">
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+<span class="w-5 h-5 rounded flex items-center justify-center bg-primary-container/20 text-primary-container text-[10px] font-bold font-label-mono-stat">L</span>
+</div>
+</td>
+<td class="px-space-sm py-3 text-right">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-outline font-label-badge text-label-badge uppercase whitespace-nowrap">
+                      Eliminated
+                    </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Tie-breaker & NRR Protocol Note -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm pt-space-xs text-outline font-body-sm text-body-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">info</span>
+<span><strong>Tie-Breaker Hierarchy:</strong> Total Points &gt; Wins &gt; Net Run Rate (NRR) &gt; Head-to-Head Result.</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline shrink-0">DATA TELEMETRY: ICC-PRO-V2</span>
+</div>
+</div>
+<!-- Knockout Bracket Visual Architecture -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-primary-container rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Knockout Stage Pathway</h3>
+</div>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-surface-container-high text-primary-container uppercase">
+              SEMI-FINALS CONFIRMED
+            </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Semi Final 1 Card -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between text-outline font-label-badge text-label-badge">
+<span>SEMI-FINAL 1 • JUN 27</span>
+<span class="text-tertiary">TAROUBA, TRINIDAD</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-mono-stat text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-outline">1ST G2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">South Africa</span>
+</div>
+<span class="font-label-badge text-label-badge text-secondary uppercase">Qualified 1st</span>
+</div>
+<div class="flex items-center justify-center my-[-4px]">
+<span class="text-outline font-label-mono-stat text-body-sm">vs</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-mono-stat text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-outline">2ND G1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Afghanistan / AUS</span>
+</div>
+<span class="font-label-badge text-label-badge text-tertiary uppercase">Awaiting Result</span>
+</div>
+</div>
+<div class="pt-2 text-right">
+<span class="font-body-sm text-body-sm text-outline">Match 53 • 06:00 AM IST</span>
+</div>
+</div>
+<!-- Semi Final 2 Card -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex flex-col justify-between gap-space-md">
+<div class="flex items-center justify-between text-outline font-label-badge text-label-badge">
+<span>SEMI-FINAL 2 • JUN 27</span>
+<span class="text-tertiary">PROVIDENCE, GUYANA</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-mono-stat text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-outline">1ST G1</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">India</span>
+</div>
+<span class="font-label-badge text-label-badge text-secondary uppercase">Qualified 1st</span>
+</div>
+<div class="flex items-center justify-center my-[-4px]">
+<span class="text-outline font-label-mono-stat text-body-sm">vs</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-mono-stat text-[10px] px-1.5 py-0.5 rounded bg-surface-container text-outline">2ND G2</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">England</span>
+</div>
+<span class="font-label-badge text-label-badge text-secondary uppercase">Qualified 2nd</span>
+</div>
+</div>
+<div class="pt-2 text-right">
+<span class="font-body-sm text-body-sm text-outline">Match 54 • 08:00 PM IST</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Fixtures Timeline & Tournament Feed -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Schedule Rail Module -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-secondary rounded-full"></span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase">Fixtures</h3>
+</div>
+<span class="font-label-badge text-label-badge text-outline">LIVE SYNC</span>
+</div>
+<!-- Stage Filter Chips -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1">
+<button class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-badge text-label-badge whitespace-nowrap">
+              ALL DATES
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high text-outline hover:text-on-surface font-label-badge text-label-badge whitespace-nowrap">
+              SUPER 8
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high text-outline hover:text-on-surface font-label-badge text-label-badge whitespace-nowrap">
+              SEMI-FINALS
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high text-outline hover:text-on-surface font-label-badge text-label-badge whitespace-nowrap">
+              FINAL
+            </button>
+</div>
+<!-- Fixture Cards List -->
+<div class="flex flex-col gap-space-sm">
+<!-- Fixture 1: Recent Finished Match -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between text-outline font-label-mono-stat text-body-sm">
+<span>Match 51 • Super 8 Group 1</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-outline font-label-badge text-[10px] uppercase">
+                  RESULT
+                </span>
+</div>
+<div class="flex flex-col gap-1.5 py-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-[#1b3a6b] flex items-center justify-center text-[10px] text-white font-bold">IN</span>
+<span class="font-headline-sm text-[15px] text-on-surface">India</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface font-bold">205/5 (20.0)</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-[#ffcc00] flex items-center justify-center text-[10px] text-black font-bold">AU</span>
+<span class="font-headline-sm text-[15px] text-on-surface">Australia</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">181/7 (20.0)</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary pt-1">India won by 24 runs • Daren Sammy Stadium</span>
+</div>
+<!-- Fixture 2: Today's Crucial In-Play / Next Up Match -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex flex-col gap-space-xs relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between text-outline font-label-mono-stat text-body-sm">
+<span>Match 52 • Super 8 Group 1</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-badge text-[10px] uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                  TODAY, 6:00 AM IST
+                </span>
+</div>
+<div class="flex flex-col gap-1.5 py-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-[#0066cc] flex items-center justify-center text-[10px] text-white font-bold">AF</span>
+<span class="font-headline-sm text-[15px] text-on-surface">Afghanistan</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-tertiary">Yet to Bat</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-[#006a4e] flex items-center justify-center text-[10px] text-white font-bold">BD</span>
+<span class="font-headline-sm text-[15px] text-on-surface">Bangladesh</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-tertiary">Yet to Bat</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-body-sm text-body-sm text-outline">Arnos Vale Stadium, St Vincent</span>
+<span class="font-label-badge text-label-badge text-tertiary">SF Decider</span>
+</div>
+</div>
+<!-- Fixture 3: Semi Final 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between text-outline font-label-mono-stat text-body-sm">
+<span>Match 53 • Semi-Final 1</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-label-badge text-[10px] uppercase">
+                  JUN 27, 6:00 AM
+                </span>
+</div>
+<div class="flex flex-col gap-1.5 py-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-[#007749] flex items-center justify-center text-[10px] text-yellow-300 font-bold">SA</span>
+<span class="font-headline-sm text-[15px] text-on-surface">South Africa</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline font-bold">1st Group 2</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] text-outline font-bold">TBD</span>
+<span class="font-headline-sm text-[15px] text-outline">AFG or AUS</span>
+</div>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">2nd Group 1</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-outline pt-1">Brian Lara Cricket Academy, Trinidad</span>
+</div>
+<!-- Fixture 4: The Grand Final -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs hover:bg-surface-container-high transition-colors cursor-pointer">
+<div class="flex items-center justify-between text-outline font-label-mono-stat text-body-sm">
+<span>Match 55 • THE GRAND FINAL</span>
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-badge text-[10px] uppercase">
+                  JUN 29, 8:00 PM
+                </span>
+</div>
+<div class="flex flex-col gap-1.5 py-1">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[15px] text-on-surface">Winner Semi-Final 1</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">Finalist 1</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[15px] text-on-surface">Winner Semi-Final 2</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">Finalist 2</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-secondary pt-1">Kensington Oval, Bridgetown, Barbados</span>
+</div>
+</div>
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-colors flex items-center justify-center gap-1">
+<span>Download PDF Schedule (.ICS)</span>
+<span class="material-symbols-outlined text-[16px]">download</span>
+</button>
+</div>
+<!-- Venue Conditions & Pitch Telemetry Quick Card -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">stadium</span>
+<h4 class="font-label-lg text-label-lg uppercase text-on-surface">Tournament Ground Metrics</h4>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">AVG 1st Innings</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">158 Runs</span>
+<span class="font-body-sm text-body-sm text-secondary">Bat 1st Won: 56%</span>
+</div>
+<div class="bg-surface-container-high p-space-sm rounded-lg flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">Pace vs Spin</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">62% / 38%</span>
+<span class="font-body-sm text-body-sm text-outline">Wickets split</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Other Major Ongoing & Upcoming International Series Tiles -->
+<div class="flex flex-col gap-space-md pt-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-1.5 h-5 bg-tertiary rounded-full"></span>
+<h2 class="font-headline-sm text-headline-sm uppercase text-on-surface">Other Major Series &amp; Tours</h2>
+<span class="font-label-badge text-label-badge px-2 py-0.5 rounded bg-surface-container-high text-outline uppercase">Active Calendar</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-outline hover:text-on-surface">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Series Card 1 -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col justify-between gap-space-md hover:bg-surface-container-high/80 transition-all cursor-pointer">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-secondary uppercase">UPCOMING TOUR</span>
+<span class="font-label-mono-stat text-body-sm text-outline">5 T20Is</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-[20px] text-on-surface mt-1">
+              India Tour of Zimbabwe 2024
+            </h3>
+<span class="font-body-sm text-body-sm text-outline">Harare Sports Club, Zimbabwe</span>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-[#1b3a6b] text-[9px] font-bold text-white flex items-center justify-center">IND</span>
+<span class="text-outline font-label-mono-stat text-body-sm">vs</span>
+<span class="w-6 h-6 rounded-full bg-[#d40000] text-[9px] font-bold text-white flex items-center justify-center">ZIM</span>
+</div>
+<span class="font-label-mono-stat text-[12px] text-tertiary">Starts Jul 06</span>
+</div>
+</div>
+<!-- Series Card 2 -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col justify-between gap-space-md hover:bg-surface-container-high/80 transition-all cursor-pointer">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-tertiary uppercase">TEST SERIES</span>
+<span class="font-label-mono-stat text-body-sm text-outline">3 Tests</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-[20px] text-on-surface mt-1">
+              England vs West Indies (Wisden Trophy)
+            </h3>
+<span class="font-body-sm text-body-sm text-outline">Lord's, Trent Bridge, Edgbaston</span>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-[#cc0000] text-[9px] font-bold text-white flex items-center justify-center">ENG</span>
+<span class="text-outline font-label-mono-stat text-body-sm">vs</span>
+<span class="w-6 h-6 rounded-full bg-[#7b002c] text-[9px] font-bold text-white flex items-center justify-center">WI</span>
+</div>
+<span class="font-label-mono-stat text-[12px] text-tertiary">Starts Jul 10</span>
+</div>
+</div>
+<!-- Series Card 3 -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col justify-between gap-space-md hover:bg-surface-container-high/80 transition-all cursor-pointer">
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-badge text-label-badge text-primary-container uppercase">FRANCHISE LEAGUE</span>
+<span class="font-label-mono-stat text-body-sm text-outline">32 Matches</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-[20px] text-on-surface mt-1">
+              The Hundred Men &amp; Women 2024
+            </h3>
+<span class="font-body-sm text-body-sm text-outline">Across 8 City Franchises UK</span>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-1.5 font-label-badge text-label-badge text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">flash_on</span>
+<span>100-BALL CRICKET</span>
+</div>
+<span class="font-label-mono-stat text-[12px] text-tertiary">Starts Jul 23</span>
+</div>
+</div>
+<!-- Series Card 4 -->
+<div class="bg-surface-container rounded-[14px] p-space-md flex flex-col justify-between gap-space-md hover:bg-surface-container-high/80 transition-all cursor-pointer relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-tertiary/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-tertiary/20 text-tertiary font-label-badge text-label-badge uppercase font-bold">
+                ICC MAJOR UPCOMING
+              </span>
+<span class="font-label-mono-stat text-body-sm text-outline">ODI Format</span>
+</div>
+<h3 class="font-headline-sm text-[16px] leading-[20px] text-on-surface mt-1">
+              ICC Champions Trophy 2025
+            </h3>
+<span class="font-body-sm text-body-sm text-outline">Top 8 Global ODI Teams</span>
+</div>
+<div class="flex items-center justify-between pt-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<span class="font-label-badge text-label-badge text-tertiary uppercase">WORLD ODIs</span>
+<span class="font-label-mono-stat text-[12px] text-tertiary">Feb – Mar 2025</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></section><section class="w-full scroll-mt-28" data-page="players" id="players"><div class="h-px w-full bg-white/10"></div><main class="w-full bg-surface"><div class="flex flex-col w-full">
+<!-- SEARCH, TELEMETRY FILTER CONTROL BAR -->
+<div class="max-w-[1400px] w-full mx-auto px-margin-desktop py-space-lg flex flex-col gap-space-md">
+<!-- Breadcrumb & Real-time Index Stats -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-badge text-label-badge text-outline uppercase tracking-wider">ATHLETE REPOSITORY</span>
+<span class="text-outline">/</span>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest">GLOBAL CRICKET DATABASE</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-mono-stat text-[11px] ml-space-xs flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          2,490 TRACKED PROFILES
+        </span>
+</div>
+<div class="flex items-center gap-space-sm text-outline font-label-mono-stat text-label-mono-stat">
+<span class="material-symbols-outlined text-[16px] text-tertiary">database</span>
+<span>INDEX UPDATED: 48 SECONDS AGO</span>
+</div>
+</div>
+<!-- Main Filtering Toolbar -->
+<div class="bg-surface-container rounded-xl p-space-md flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md shadow-md">
+<!-- Search Bar -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full bg-surface-container-high pl-11 pr-24 py-2.5 rounded-lg text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-highest transition-colors" id="playerSearchInput" placeholder="Search cricket players by name, country, or IPL franchise..." type="text"/>
+<div class="absolute right-space-sm top-1/2 -translate-y-1/2 flex items-center gap-1 pointer-events-none">
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container font-label-badge text-label-badge text-outline">CMD</kbd>
+<kbd class="px-1.5 py-0.5 rounded bg-surface-container font-label-badge text-label-badge text-outline">K</kbd>
+</div>
+</div>
+<!-- Quick Role Pills -->
+<div class="flex items-center overflow-x-auto gap-space-xs scrollbar-none py-1">
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-high text-outline hover:text-on-surface whitespace-nowrap transition-colors">
+          ALL PLAYERS
+        </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary-container shadow-sm whitespace-nowrap">
+          BATTERS
+        </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-high text-outline hover:text-on-surface whitespace-nowrap transition-colors">
+          BOWLERS
+        </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-high text-outline hover:text-on-surface whitespace-nowrap transition-colors">
+          ALL-ROUNDERS
+        </button>
+<button class="px-space-md py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-high text-outline hover:text-on-surface whitespace-nowrap transition-colors">
+          WICKETKEEPERS
+        </button>
+</div>
+<!-- Country Dropdown Filter -->
+<div class="relative shrink-0 min-w-[160px]">
+<select class="w-full appearance-none bg-surface-container-high text-on-surface font-label-md text-label-md px-space-md py-2.5 rounded-lg pr-9 focus:outline-none cursor-pointer">
+<option value="all">All Nations ▾</option>
+<option selected="" value="ind">India (BCCI)</option>
+<option value="aus">Australia (CA)</option>
+<option value="eng">England (ECB)</option>
+<option value="sa">South Africa (CSA)</option>
+<option value="afg">Afghanistan (ACB)</option>
+<option value="nz">New Zealand (NZC)</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2.5 top-1/2 -translate-y-1/2 text-outline text-[18px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: SPOTLIGHT CRICKET PROFILE (VIRAT KOHLI TELEMETRY DASHBOARD) -->
+<div class="max-w-[1400px] w-full mx-auto px-margin-desktop py-space-sm">
+<div class="relative rounded-2xl bg-surface-container p-space-lg lg:p-space-xl overflow-hidden shadow-xl">
+<!-- Subtle Ambient Glow Orbs -->
+<div class="absolute -top-32 -right-32 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -left-20 w-80 h-80 bg-secondary/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Top Header Meta: Badges & Format Switcher -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-md pb-space-lg">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-tertiary font-label-badge text-label-badge flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+            ICC HALL OF FAME CONTENDER
+          </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-highest text-secondary font-label-badge text-label-badge flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">trophy</span>
+            T20 WORLD CUP PLAYER OF THE TOURNAMENT
+          </span>
+<span class="px-2.5 py-1 rounded bg-primary-container/20 text-primary font-label-badge text-label-badge">
+            LEGEND STATUS
+          </span>
+</div>
+<!-- Format Switcher -->
+<div class="flex items-center bg-surface-container-high p-1 rounded-lg">
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm">
+            T20I
+          </button>
+<button class="px-3 py-1 rounded text-outline hover:text-on-surface font-label-md text-label-md transition-colors">
+            ODI
+          </button>
+<button class="px-3 py-1 rounded text-outline hover:text-on-surface font-label-md text-label-md transition-colors">
+            TEST
+          </button>
+<button class="px-3 py-1 rounded text-outline hover:text-on-surface font-label-md text-label-md transition-colors">
+            IPL
+          </button>
+</div>
+</div>
+<!-- Main Profile Banner Grid -->
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left: Player Portrait, Identity, Bio details -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-[4/5] rounded-xl overflow-hidden bg-surface-container-high group">
+<img class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" data-alt="Intense high-definition sports portrait of Virat Kohli in dark blue Indian cricket kit, stadium lights casting dramatic cyan and crimson rim lighting, high contrast dynamic expression with sweat beads and focused eyes against deep stadium darkness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgg9i3KaK5l9ovG_7lkBy41BeQZp_e8BrAX9UHZ3UWRYfrHRi5pV3DeZBagVYG4aKb0JMk02mUFnBMaUbfAZlDyBLgIh8miKUHAX4oksrVq1VgDkpS2Xo1T-XfIg3i_TFcO8ltB5Z5HeyBrG7bHTNZ-TqkzwNYWUP3uzRTIOJ9O7AyC3Xvo_k2ZwnvC2unY6qy496us_y2KcdT1F6gNuVS4Ze8ebO1J2U0dfy2IxYZevFzl0MYgtB-"/>
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent"></div>
+<!-- Floating Jersey Callout -->
+<div class="absolute bottom-space-md left-space-md flex items-end gap-space-md">
+<span class="font-display-score-lg text-display-score-lg text-on-surface opacity-90 leading-none">#18</span>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-secondary uppercase tracking-widest">ACTIVE SQUAD</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">INDIA CRICKET</span>
+</div>
+</div>
+<!-- Nationality Badge -->
+<div class="absolute top-space-md right-space-md bg-surface-container-highest/90 backdrop-blur-md px-3 py-1.5 rounded-full flex items-center gap-space-xs shadow">
+<span class="text-[14px]">🇮🇳</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface uppercase">IND</span>
+</div>
+</div>
+<!-- Bio Specifics Matrix -->
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-high p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">ROLE</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-0.5 truncate">Top-Order</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">BATTING</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-0.5 truncate">Right-Hand</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">AGE</span>
+<span class="font-label-lg text-label-lg text-on-surface mt-0.5">35 yrs</span>
+</div>
+</div>
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-high rounded-xl text-outline font-label-mono-stat text-label-mono-stat">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+              CREX CERTIFIED PRO-DATA
+            </span>
+<span class="text-on-surface">ID: VK-IND-18</span>
+</div>
+</div>
+<!-- Right: Primary Stats Engine, Visual Telemetry & Recent Form -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Player Title Header -->
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge text-primary uppercase">RIGHT-HAND TOP-ORDER BATSMAN</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">T20I STATS SUMMARY</span>
+</div>
+<h1 class="font-display-score-lg text-display-score-lg text-on-surface uppercase tracking-tight mt-1">
+                VIRAT KOHLI
+              </h1>
+</div>
+<div class="text-right flex flex-col sm:items-end">
+<span class="font-label-badge text-label-badge text-outline uppercase">ICC T20I RANKING</span>
+<span class="font-display-score-md text-display-score-md text-tertiary">#4 <span class="font-body-sm text-body-sm text-outline font-normal">(PEAK: #1)</span></span>
+</div>
+</div>
+<!-- Primary Metric Bento Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<!-- Runs Metric (Emphasized Red/Primary) -->
+<div class="bg-surface-container-high p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-badge text-label-badge uppercase tracking-wider">CAREER RUNS</span>
+<span class="material-symbols-outlined text-[18px] text-primary">sports_cricket</span>
+</div>
+<div class="mt-space-md">
+<span class="font-display-score-lg text-display-score-lg text-primary tracking-tight">4,188</span>
+<span class="block font-label-mono-stat text-label-mono-stat text-outline mt-1">125 Matches • 117 Inngs</span>
+</div>
+</div>
+<!-- Average Metric (Emphasized Green) -->
+<div class="bg-surface-container-high p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-badge text-label-badge uppercase tracking-wider">BATTING AVG</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">trending_up</span>
+</div>
+<div class="mt-space-md">
+<span class="font-display-score-lg text-display-score-lg text-secondary tracking-tight">48.69</span>
+<span class="block font-label-mono-stat text-label-mono-stat text-secondary mt-1">ALL-TIME T20I ELITE</span>
+</div>
+</div>
+<!-- Strike Rate -->
+<div class="bg-surface-container-high p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-badge text-label-badge uppercase tracking-wider">STRIKE RATE</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">bolt</span>
+</div>
+<div class="mt-space-md">
+<span class="font-display-score-lg text-display-score-lg text-on-surface tracking-tight">137.04</span>
+<span class="block font-label-mono-stat text-label-mono-stat text-outline mt-1">3,056 Balls Faced</span>
+</div>
+</div>
+<!-- High Score / Centuries -->
+<div class="bg-surface-container-high p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-badge text-label-badge uppercase tracking-wider">100s / 50s</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface">star</span>
+</div>
+<div class="mt-space-md">
+<span class="font-display-score-lg text-display-score-lg text-on-surface tracking-tight">1 <span class="text-outline text-headline-lg font-normal">/</span> 38</span>
+<span class="block font-label-mono-stat text-label-mono-stat text-tertiary mt-1">HS: 122* vs AFG</span>
+</div>
+</div>
+</div>
+<!-- Secondary Metric Strips: Boundaries & Match Details -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="bg-surface-container-high p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">BOUNDARIES</span>
+<div class="flex items-center gap-space-md mt-1">
+<span class="font-headline-md text-headline-md text-tertiary">369 <span class="text-body-sm font-normal text-outline">Fours</span></span>
+<span class="font-headline-md text-headline-md text-primary">124 <span class="text-body-sm font-normal text-outline">Sixes</span></span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-tertiary">
+<span class="material-symbols-outlined text-[20px]">stadium</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">NOT OUTS &amp; FINISHES</span>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="font-headline-md text-headline-md text-on-surface">31 Inngs</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">(26.5% Record)</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+</div>
+<div class="bg-surface-container-high p-space-md rounded-xl flex items-center justify-between">
+<div>
+<span class="font-label-badge text-label-badge text-outline uppercase block">CATCHES &amp; DISMISSALS</span>
+<div class="flex items-center gap-space-sm mt-1">
+<span class="font-headline-md text-headline-md text-on-surface">54 Catches</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">0.43/Match</span>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-outline">
+<span class="material-symbols-outlined text-[20px]">front_hand</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Analytics Split: Matchups & Recent Form -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Pace vs Spin Analytics Bar Breakdown -->
+<div class="md:col-span-5 bg-surface-container-high p-space-md rounded-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface">Bowling Type Matchup</span>
+<span class="font-label-badge text-label-badge text-outline">T20I SPLIT</span>
+</div>
+<!-- Pace Telemetry Bar -->
+<div class="flex flex-col gap-1.5 mt-space-sm">
+<div class="flex items-center justify-between font-label-mono-stat text-label-mono-stat">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                      Vs Fast Bowlers (Pace)
+                    </span>
+<span class="text-secondary font-bold">AVG 54.2</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 78%"></div>
+</div>
+<div class="flex justify-between text-[11px] text-outline font-label-mono-stat">
+<span>Strike Rate: 141.6</span>
+<span>1,840 Balls</span>
+</div>
+</div>
+<!-- Spin Telemetry Bar -->
+<div class="flex flex-col gap-1.5 mt-space-md">
+<div class="flex items-center justify-between font-label-mono-stat text-label-mono-stat">
+<span class="text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                      Vs Spinners (Turn)
+                    </span>
+<span class="text-tertiary font-bold">AVG 42.1</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 61%"></div>
+</div>
+<div class="flex justify-between text-[11px] text-outline font-label-mono-stat">
+<span>Strike Rate: 129.8</span>
+<span>1,216 Balls</span>
+</div>
+</div>
+</div>
+<!-- Inline Quick SVG Sparkline -->
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-outline text-body-sm">
+<span>Phase Performance:</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">Powerplay 118 SR • Death 204 SR</span>
+</div>
+</div>
+<!-- Recent Form Guide (Last 5 T20 Innings) -->
+<div class="md:col-span-7 bg-surface-container-high p-space-md rounded-xl flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-lg text-label-lg text-on-surface">Recent Form Guide</span>
+<span class="font-label-badge text-label-badge text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  LAST 5 T20 INNINGS
+                </span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Innings 1: SA Final -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-secondary/15 text-secondary font-label-badge text-label-badge">W</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">vs SA (Final)</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-container/30 text-tertiary font-label-badge text-[10px]">POTM</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-secondary">76 <span class="text-body-sm text-outline font-normal">(59)</span></span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline hidden sm:inline">SR 128.8</span>
+</div>
+</div>
+<!-- Innings 2: ENG SF -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-secondary/15 text-secondary font-label-badge text-label-badge">W</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">vs ENG (Semi)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface">9 <span class="text-body-sm text-outline font-normal">(9)</span></span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline hidden sm:inline">SR 100.0</span>
+</div>
+</div>
+<!-- Innings 3: AUS Super 8 -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-secondary/15 text-secondary font-label-badge text-label-badge">W</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">vs AUS</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface">37 <span class="text-body-sm text-outline font-normal">(28)</span></span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline hidden sm:inline">SR 132.1</span>
+</div>
+</div>
+<!-- Innings 4: BAN -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-secondary/15 text-secondary font-label-badge text-label-badge">W</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">vs BAN</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface">24 <span class="text-body-sm text-outline font-normal">(16)</span></span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline hidden sm:inline">SR 150.0</span>
+</div>
+</div>
+<!-- Innings 5: USA -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container hover:bg-surface-container-highest transition-colors">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded flex items-center justify-center bg-secondary/15 text-secondary font-label-badge text-label-badge">W</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">vs USA</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="font-headline-sm text-headline-sm text-primary">0 <span class="text-body-sm text-outline font-normal">(1)</span></span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline hidden sm:inline">SR 0.0</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: TOP CRICKET PLAYERS DIRECTORY GRID -->
+<div class="max-w-[1400px] w-full mx-auto px-margin-desktop py-space-xl flex flex-col gap-space-lg">
+<!-- Directory Header with Sort Tools -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-badge text-label-badge text-primary uppercase">WORLD RANKINGS ROSTER</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">TELEMETRY VERIFIED</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight mt-1">
+          Top Cricket Profiles
+        </h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-outline">Sort By:</span>
+<div class="bg-surface-container px-3 py-1.5 rounded-lg flex items-center gap-2 cursor-pointer text-on-surface font-label-mono-stat text-label-mono-stat shadow-sm">
+<span>ICC Rating (Desc)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">swap_vert</span>
+</div>
+</div>
+</div>
+<!-- The 6-Player Interactive Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- CARD 1: JASPRIT BUMRAH -->
+<div class="bg-surface-container rounded-2xl p-space-lg flex flex-col justify-between group hover:bg-surface-container-high transition-colors shadow-md">
+<div>
+<!-- Header: Avatar, Flag, Role Badge -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover object-top" data-alt="Athletic action close up portrait of Indian fast bowler Jasprit Bumrah in training kit, intense focused expression, high contrast neon sports lighting with clean rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7yyzbqO4fdlF9_ZyEk7AmHQdZHmCkj0fBeW1J4rFjcDIu6Ce3VdBUhF6Fztqil1awGkZrokViufaucKgA9rh4_M77BLlNxdRWzdblAwBYSc06Hy4ZgdmcYK_Wi5qQJQwkAwFVDF6Xe0s-vc0wBD7aFGONUwRLBI7lyOVey25-Yit2O7hXhboeCT7WivaJJ96W9664q6MWrhmeWApa_67PzJc4H8ihxYYUOwfgxHyl1LoLdAkRwMDn"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-[14px]">🇮🇳</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">INDIA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Jasprit Bumrah
+                </h3>
+<span class="font-body-sm text-body-sm text-outline">Right-Arm Fast Bowler</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-badge text-label-badge shrink-0">
+              #1 BOWLER
+            </span>
+</div>
+<!-- Core Stat Metrics -->
+<div class="grid grid-cols-3 gap-space-xs my-space-lg bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">T20I WKTS</span>
+<span class="font-display-score-md text-display-score-md text-primary mt-0.5">89</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">70 Matches</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">ECONOMY</span>
+<span class="font-display-score-md text-display-score-md text-secondary mt-0.5">6.27</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">Elite &lt; 6.5</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">BBI</span>
+<span class="font-display-score-md text-display-score-md text-on-surface mt-0.5">3/7</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">vs ENG</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline px-1 mb-space-md">
+<span>Recent Form: 3/14, 2/12, 2/24</span>
+<span class="font-label-mono-stat text-label-mono-stat text-tertiary">POT Tournament</span>
+</div>
+</div>
+<!-- Action CTA -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1.5">
+<span>VIEW PROFILE TELEMETRY</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- CARD 2: TRAVIS HEAD -->
+<div class="bg-surface-container rounded-2xl p-space-lg flex flex-col justify-between group hover:bg-surface-container-high transition-colors shadow-md">
+<div>
+<!-- Header: Avatar, Flag, Role Badge -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover object-top" data-alt="Aggressive sports portrait of Australian batsman Travis Head with mustache in Australian yellow-and-green uniform, bright stadium lights, cinematic contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_zdY_QucYdJWDKZABczYI8nX9pXBzm5Oj7Ia9Av5mLbCEo1KOR2q852c-IHC4yO2RON-ENrAlGFaTNtI6_s7KjxniqnTkM_ZSC-aalrV6-4X_IYihei6mduNah6Tkv6W-Q5IrokShueyFoxPyyCTusinyr_JOUyX9UV88xAOvbyXdivJN7Z61Y3FTphVM82DuBtDeUGp9-JFs6NoDWe_scXdX2nFahIjbK5x-AN18hOz7gnac8Xz6"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-[14px]">🇦🇺</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">AUSTRALIA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Travis Head
+                </h3>
+<span class="font-body-sm text-body-sm text-outline">Left-Hand Opening Batter</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-badge text-label-badge shrink-0">
+              #1 T20I BAT
+            </span>
+</div>
+<!-- Core Stat Metrics -->
+<div class="grid grid-cols-3 gap-space-xs my-space-lg bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">T20I RUNS</span>
+<span class="font-display-score-md text-display-score-md text-on-surface mt-0.5">960</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">38 Matches</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">STRIKE RATE</span>
+<span class="font-display-score-md text-display-score-md text-secondary mt-0.5">158.4</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">Extreme &gt; 150</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">AVERAGE</span>
+<span class="font-display-score-md text-display-score-md text-tertiary mt-0.5">34.2</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">HS: 91 vs SA</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline px-1 mb-space-md">
+<span>Powerplay SR: 182.4</span>
+<span class="font-label-mono-stat text-label-mono-stat text-primary">Sunrisers Hyderabad</span>
+</div>
+</div>
+<!-- Action CTA -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1.5">
+<span>VIEW PROFILE TELEMETRY</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- CARD 3: HEINRICH KLAASEN -->
+<div class="bg-surface-container rounded-2xl p-space-lg flex flex-col justify-between group hover:bg-surface-container-high transition-colors shadow-md">
+<div>
+<!-- Header: Avatar, Flag, Role Badge -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover object-top" data-alt="Athletic portrait of South African power hitter Heinrich Klaasen, green jersey, intense glare, cinematic shadows and sharp focus, dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu4I4lQFTb2TOoEb2z6HiHeW5WqTnwfeY3QWg98pWlYGiqHwIFnf9tOKNpzhkjPnyPX3yiSZHi_bTvpEnDUf-YrJDnEfnva1sSKuYCO8TSfd2CP9M1X-RpK8IC8kDF3oLN4h5sBb55-2JwMTka4myrTsANmHa8wVTBjPW4Pi_6imYyJMPpEHqQE5kgIMk0lGuR0fXeF36rQ68o9X0PeNZfsECtJI6TnOeCqijudankfSXY5Dqq27IV"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-[14px]">🇿🇦</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">SOUTH AFRICA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Heinrich Klaasen
+                </h3>
+<span class="font-body-sm text-body-sm text-outline">Wicketkeeper Batter</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-label-badge text-label-badge shrink-0">
+              MIDDLE OVERS
+            </span>
+</div>
+<!-- Core Stat Metrics -->
+<div class="grid grid-cols-3 gap-space-xs my-space-lg bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">T20I RUNS</span>
+<span class="font-display-score-md text-display-score-md text-on-surface mt-0.5">912</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">52 Matches</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">STRIKE RATE</span>
+<span class="font-display-score-md text-display-score-md text-secondary mt-0.5">161.2</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">Best vs Spin</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">DISMISSALS</span>
+<span class="font-display-score-md text-display-score-md text-tertiary mt-0.5">42</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">35C / 7St</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline px-1 mb-space-md">
+<span>Vs Spin SR: 194.8</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">50s: 5</span>
+</div>
+</div>
+<!-- Action CTA -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1.5">
+<span>VIEW PROFILE TELEMETRY</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- CARD 4: RASHID KHAN -->
+<div class="bg-surface-container rounded-2xl p-space-lg flex flex-col justify-between group hover:bg-surface-container-high transition-colors shadow-md">
+<div>
+<!-- Header: Avatar, Flag, Role Badge -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover object-top" data-alt="Studio sports headshot of Afghan cricketer Rashid Khan, blue jersey, determined expression, sharp studio lighting with moody teal edge glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3_00hth8lczZ3DRNXkYrFKKJUPLDzrJV8C16seYVIVg8NxKLZEgl_IxEIpG0r4V8y7iam3w81IR0RvAVhPW2Jju93Kr-oD7Mq-NHaMaybaUqILEN0fvUBPmADV5hJBZAtd13Ij6LP55InmJ2s69LLkDAG5L1_WdSJVbjdsx7Inz-Idv9OK-GmRYEBVAMpUoAx-uPzZF_Cebwby68OdGvoenqOSXro0skof9iFSdnUpLvp8TPEjUFW"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-[14px]">🇦🇫</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">AFGHANISTAN</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Rashid Khan
+                </h3>
+<span class="font-body-sm text-body-sm text-outline">Leg-break Googly Bowler</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-tertiary font-label-badge text-label-badge shrink-0">
+              CAPTAIN
+            </span>
+</div>
+<!-- Core Stat Metrics -->
+<div class="grid grid-cols-3 gap-space-xs my-space-lg bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">T20I WKTS</span>
+<span class="font-display-score-md text-display-score-md text-primary mt-0.5">150</span>
+<span class="font-label-mono-stat text-label-mono-stat text-primary">Milestone Achieved</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">ECONOMY</span>
+<span class="font-display-score-md text-display-score-md text-secondary mt-0.5">6.08</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">All-Time Low</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">BBI</span>
+<span class="font-display-score-md text-display-score-md text-on-surface mt-0.5">5/3</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">vs IRE</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline px-1 mb-space-md">
+<span>Dot Ball %: 44.8%</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">Gujarat Titans</span>
+</div>
+</div>
+<!-- Action CTA -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1.5">
+<span>VIEW PROFILE TELEMETRY</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- CARD 5: JOS BUTTLER -->
+<div class="bg-surface-container rounded-2xl p-space-lg flex flex-col justify-between group hover:bg-surface-container-high transition-colors shadow-md">
+<div>
+<!-- Header: Avatar, Flag, Role Badge -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover object-top" data-alt="Editorial portrait of England cricket captain Jos Buttler in red T20 kit, helmet by side, strong confident gaze, dynamic sports lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVn2eKtnDv3ivPRjHQauiXLd6oPMhJfsoMhaVDnYuESpbQ55_ZrKnGRa4AJC_vqKowEvLCXmfDyvS_ppeHPjxU-3XaE7s7sSaPHLSaorxte7mkyGt5JMOC6QRdfRn-bb5dQK29dOX4Q7zToivpPtWeVCi0l6TcWeuP6oxbZIX-o4uIKp0FljAU8SC5osrwoMlcwz5C68wtLeAjJ-0DpGc6PcuVsgsEKa_fNU3j_3f__UquT2aiVcex"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-[14px]">🏴󠁧󠁢󠁥󠁮󠁧󠁿</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">ENGLAND</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Jos Buttler
+                </h3>
+<span class="font-body-sm text-body-sm text-outline">Wicketkeeper Batter</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-badge text-label-badge shrink-0">
+              WC WINNER
+            </span>
+</div>
+<!-- Core Stat Metrics -->
+<div class="grid grid-cols-3 gap-space-xs my-space-lg bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">T20I RUNS</span>
+<span class="font-display-score-md text-display-score-md text-on-surface mt-0.5">3,241</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">124 Matches</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">STRIKE RATE</span>
+<span class="font-display-score-md text-display-score-md text-secondary mt-0.5">144.6</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">100s / 50s: 1 / 24</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">AVERAGE</span>
+<span class="font-display-score-md text-display-score-md text-tertiary mt-0.5">35.6</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">HS: 101* vs SL</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline px-1 mb-space-md">
+<span>Sixes: 137</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">Rajasthan Royals</span>
+</div>
+</div>
+<!-- Action CTA -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1.5">
+<span>VIEW PROFILE TELEMETRY</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<!-- CARD 6: HARDIK PANDYA -->
+<div class="bg-surface-container rounded-2xl p-space-lg flex flex-col justify-between group hover:bg-surface-container-high transition-colors shadow-md">
+<div>
+<!-- Header: Avatar, Flag, Role Badge -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden bg-surface-container-highest shrink-0">
+<img class="w-full h-full object-cover object-top" data-alt="Intense high-definition sports portrait of Hardik Pandya celebrating a wicket in Indian cricket blue jersey, dramatic floodlights, triumphant expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKrLSMrDZJoNOOEu90jt79bmdFlNBqgK9TQZcR5cGr6dW_NF75L7AErxO_dT5FevD9qnAUlBvWDOLbzXY4ypnvr3qA_Tv79nBN-KPPxmwSVVLgVBxhqiya2qce7PW_8zgdil9AW2AtQz8_TJZkl95aDiBxCj7k27gMlSliquxtBdsG0wlWacDJ10V-kvelHKD4Zi0Q4iTHK43JPUYYEl-qhtPqIsaU__Fe1eHDCPO49PDmmvQXvGmW"/>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="text-[14px]">🇮🇳</span>
+<span class="font-label-badge text-label-badge text-outline uppercase">INDIA</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Hardik Pandya
+                </h3>
+<span class="font-body-sm text-body-sm text-outline">Fast-Bowling All-Rounder</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-badge text-label-badge shrink-0">
+              #1 ALL-ROUNDER
+            </span>
+</div>
+<!-- Core Stat Metrics -->
+<div class="grid grid-cols-3 gap-space-xs my-space-lg bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">RUNS / SR</span>
+<span class="font-display-score-md text-display-score-md text-on-surface mt-0.5">1,540</span>
+<span class="font-label-mono-stat text-label-mono-stat text-secondary">SR 140.2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">T20I WKTS</span>
+<span class="font-display-score-md text-display-score-md text-primary mt-0.5">84</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">Econ: 8.12</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-badge text-label-badge text-outline uppercase">BEST SPELL</span>
+<span class="font-display-score-md text-display-score-md text-tertiary mt-0.5">4/16</span>
+<span class="font-label-mono-stat text-label-mono-stat text-outline">vs ENG</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm text-outline px-1 mb-space-md">
+<span>Final Over Hero (T20 WC)</span>
+<span class="font-label-mono-stat text-label-mono-stat text-on-surface">Mumbai Indians</span>
+</div>
+</div>
+<!-- Action CTA -->
+<button class="w-full py-2.5 rounded-lg bg-surface-container-high group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container font-label-md text-label-md transition-all flex items-center justify-center gap-1.5">
+<span>VIEW PROFILE TELEMETRY</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Pagination & Directory Footer -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-lg pb-space-xl">
+<div class="flex items-center gap-space-sm text-outline font-label-mono-stat text-label-mono-stat">
+<span>SHOWING 1 - 6 OF 2,490 ATHLETES</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-outline hover:text-on-surface font-label-md text-label-md">
+          PREVIOUS
+        </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md shadow-sm">
+          1
+        </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md">
+          2
+        </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md">
+          3
+        </button>
+<span class="px-2 text-outline">...</span>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md">
+          415
+        </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-outline hover:text-on-surface font-label-md text-label-md">
+          NEXT
+        </button>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Filter Script -->
+
+</div></main></section></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1400px] mx-auto px-margin-desktop py-space-xl flex flex-col gap-space-lg"><div class="grid grid-cols-1 md:grid-cols-4 gap-space-lg"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm uppercase text-on-surface">CREX</span><span class="px-1.5 py-0.5 rounded bg-primary-container text-on-primary-container font-label-badge text-label-badge">PRO</span></div><p class="font-body-sm text-body-sm text-outline">Real-time cricket tracking engine with broadcast-grade telemetry, ball-by-ball analysis, and live win probabilities.</p><div class="flex items-center gap-space-xs text-secondary font-label-mono-stat text-label-mono-stat"><span class="material-symbols-outlined text-[16px]">bolt</span><span>Telemetry Latency &lt; 200ms</span></div></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface uppercase">Tournaments</span><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">ICC T20 World Cup 2024</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Indian Premier League (IPL)</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">The Ashes Series</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Big Bash League (BBL)</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface uppercase">Analytics &amp; Data</span><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Live Win Probability Index</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Player Fantasy Matchups</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Wagon Wheels &amp; Pitch Maps</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Partnership Breakdowns</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-lg text-label-lg text-on-surface uppercase">Platform</span><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Cricket Live API</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Editorial Guidelines</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Privacy &amp; Telemetry Notice</a><a class="font-body-sm text-body-sm text-outline hover:text-on-surface transition-colors" href="#">Community Guidelines</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md"><p class="font-body-sm text-body-sm text-outline">© 2024 CREX Sports Network. Live ball-by-ball telemetry provided for editorial &amp; tracking purposes.</p><div class="flex items-center gap-space-lg"><span class="font-label-mono-stat text-label-mono-stat text-outline">STATUS: OPERATIONAL</span><span class="font-label-mono-stat text-label-mono-stat text-outline">SYNC: AUTO (1.2s)</span></div></div></div></footer><script src="js/main.js" defer></script>
+</body></html>
