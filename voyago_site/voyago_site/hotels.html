@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>VoyageCraft - Hotels</title><link rel="stylesheet" href="css/fonts.css"/><link rel="stylesheet" href="css/base.css"/><link rel="stylesheet" href="css/tailwind.css"/></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1280px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><img alt="VoyageCraft Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XhTPD3JGBqDUZp6e9rDBOjqPO4IQ9_yKg8ldtHYUQOSp5VrZbR-74PSHDrLFCh5bH1JE9J2drtMTEJRIH5V1fhnsg7cAAPUe17wEqvH5EdigOoCOJ1B-o6KZ8iIrLT7mQOkYGjupYhSFWtK9B4Hq8NXynrNSLoZj_fPsWqa1-7axuajY3y31pH--BfEQOZW63ga_AXZ3QU3hKX2r-pKVPVdDE2GBZDqyH1-jYpkS_eNISge2HNETitwXI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">VoyageCraft</span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium tracking-wide mt-space-xs">Craft Your Journey</span></div></div><nav class="hidden xl:flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-full shadow-inner" data-active-classes="bg-primary-container text-on-primary font-semibold rounded-full"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all text-body-md-medium font-body-md-medium rounded-full" data-path="home" href="index.html">Home</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all text-body-md-medium font-body-md-medium rounded-full" data-path="flights" href="flights.html">Flights</a><a aria-current="page" class="px-space-md py-space-sm transition-all bg-primary-container text-on-primary font-semibold rounded-full" data-path="hotels" href="hotels.html">Hotels</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all text-body-md-medium font-body-md-medium rounded-full" data-path="trains" href="trains.html">Trains</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all text-body-md-medium font-body-md-medium rounded-full" data-path="buses" href="buses.html">Buses</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all text-body-md-medium font-body-md-medium rounded-full" data-path="cabs" href="cabs.html">Cabs</a><a class="relative px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all text-body-md-medium font-body-md-medium rounded-full flex items-center gap-1.5" data-path="offers" href="offers.html">Offers<span class="bg-tertiary text-on-tertiary font-label-sm text-[10px] leading-none px-1.5 py-0.5 rounded-full font-bold uppercase tracking-wider">HOT</span></a></nav><div class="flex items-center gap-space-md shrink-0"><button class="hidden md:flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors font-body-md-medium text-body-md-medium"><span class="material-symbols-outlined text-[18px]">language</span><span>USD / EN</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button><button class="hidden lg:flex items-center gap-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-body-md-medium text-body-md-medium"><span class="material-symbols-outlined text-[20px] text-primary-container">headset_mic</span><span>24x7 Support</span></button><a class="hidden sm:flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors font-body-md-medium text-body-md-medium" data-path="my-trips" href="#">My Trips</a><div class="flex items-center gap-space-sm pl-space-sm bg-surface-container-low py-1.5 pr-3 rounded-full"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-fixed" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyHN3suCTtDmAJ0HNv2_wZiMIBZLFtzdeEY27FKouphzsPezaET4P0qZYJpvKsSAwroh-i3i4XQ5pgLVx3xsGfZynisZjTZ9Vb8_sRIMsEoKlEf9GB6GxY3bMv61XRGz_OuRzEOUoxAb8GAQmaW0PhTvzoNyeGhNhfmmqURXqEJyPqmMIRKWjze5jOeTaQdXMqnRAWMpra4spTwt5SZmgAyWlwJ6HIT6TTO-A4swy8pjrvmElWesXKsw"/><div class="hidden md:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Elena Rostova</span><span class="font-label-sm text-[10px] leading-tight text-primary-container font-semibold uppercase tracking-wider">VoyageGold</span></div></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- Top Search Bar Container -->
+<section class="w-full bg-surface-container-lowest shadow-sm py-space-lg px-gutter relative z-20">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-md">
+<!-- Search Matrix Inputs -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center bg-surface-container-low p-space-xs rounded-xl shadow-inner">
+<!-- Location Input -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-lg p-space-sm flex items-center gap-space-sm shadow-sm transition-all hover:shadow-md cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Destination</span>
+<input class="font-headline-sm text-headline-sm text-on-surface bg-transparent focus:outline-none truncate w-full cursor-pointer font-semibold" type="text" value="Paris, France"/>
+</div>
+</div>
+<!-- Dates Input -->
+<div class="lg:col-span-3 bg-surface-container-lowest rounded-lg p-space-sm flex items-center gap-space-sm shadow-sm transition-all hover:shadow-md cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">calendar_month</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Stay Period</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate font-semibold">24 Oct – 28 Oct <span class="font-body-md text-body-md text-secondary font-normal">(4 Nights)</span></span>
+</div>
+</div>
+<!-- Rooms & Guests Input -->
+<div class="lg:col-span-3 bg-surface-container-lowest rounded-lg p-space-sm flex items-center gap-space-sm shadow-sm transition-all hover:shadow-md cursor-pointer group">
+<div class="w-10 h-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container shrink-0 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">group</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Occupancy</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate font-semibold">2 Adults • 1 Room</span>
+</div>
+</div>
+<!-- Search CTA Button -->
+<div class="lg:col-span-2">
+<button class="w-full h-[58px] bg-primary-container hover:bg-primary text-on-primary font-body-lg-medium text-body-lg-medium rounded-lg flex items-center justify-center gap-space-xs shadow-md transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[22px]">search</span>
+<span>Search Hotels</span>
+</button>
+</div>
+</div>
+<!-- Quick Amenity Filter Pills -->
+<div class="flex items-center justify-between gap-space-md flex-wrap pt-space-xs">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider mr-space-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary-container">tune</span> Quick Filters:
+          </span>
+<button class="amenity-pill px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary text-body-md-medium font-body-md-medium transition-all shadow-sm flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-container group-hover:text-on-primary">check_circle</span>
+<span>Free Cancellation</span>
+</button>
+<button class="amenity-pill px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary text-body-md-medium font-body-md-medium transition-all shadow-sm flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-container group-hover:text-on-primary">restaurant</span>
+<span>Breakfast Included</span>
+</button>
+<button class="amenity-pill px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary text-body-md-medium font-body-md-medium transition-all shadow-sm flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-container group-hover:text-on-primary">pool</span>
+<span>Pool</span>
+</button>
+<button class="amenity-pill px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary text-body-md-medium font-body-md-medium transition-all shadow-sm flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container group-hover:text-on-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>5 Star</span>
+</button>
+<button class="amenity-pill px-space-md py-1.5 rounded-full bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary text-body-md-medium font-body-md-medium transition-all shadow-sm flex items-center gap-1.5 group" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-container group-hover:text-on-primary">pets</span>
+<span>Pet Friendly</span>
+</button>
+</div>
+<div class="flex items-center gap-space-sm text-secondary font-label-md text-label-md">
+<span class="flex items-center gap-1 text-on-surface font-semibold">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+            142 luxury properties
+          </span>
+<span>available in Paris</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Exploration Hub: Sidebar & Listings Grid -->
+<section class="max-w-[1280px] mx-auto w-full px-gutter py-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Filters Sidebar (4 Columns) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg bg-surface-container-lowest p-space-lg rounded-xl shadow-md sticky top-24">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-container">filter_list</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Filter Stays</h3>
+</div>
+<button class="font-label-md text-label-md text-primary-container hover:underline font-semibold" onclick="resetFilters()" type="button">Reset All</button>
+</div>
+<!-- Mini Interactive Map Preview Card -->
+<div class="relative rounded-xl overflow-hidden shadow-sm group cursor-pointer" onclick="toggleMapModal()">
+<div class="w-full h-32 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-location="Paris, France" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxhsQt5jeDsnudA896FViMKDx5-wYk4Qs2WDxonovdDs9qkAo5KI2wIcZV8OskF8zHPrO3CzAaCYE3m9mHUMEnCXzjlAp9bhPLo5fV7vADwMIr1BQP02Bn9VyHAMXUMdrGNAiBxuJYTJ23HHVl84L9U2rWA2iqRQ8G6WzzXG-Y2MNnnLYHFqEVh8GCGB5olvYyviUaWc0P08tTzHqeiiRMjiumNJb1UQ4Na3GyQ5Dyk-XMvlQhvR1rsw')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-primary-fixed/80 via-transparent to-transparent flex items-end p-space-sm">
+<div class="flex items-center justify-between w-full text-surface-container-lowest">
+<span class="flex items-center gap-1 font-body-md-medium text-body-md-medium">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">map</span> Show on Map
+              </span>
+<span class="font-label-sm text-label-sm bg-primary-container px-2 py-0.5 rounded-full font-bold">142 Stays</span>
+</div>
+</div>
+</div>
+<!-- Price Range Slider -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-body-lg-medium font-semibold text-on-surface">Price per Night</span>
+<span class="font-headline-sm text-body-lg font-bold text-primary-container" id="priceDisplay">$100 – $1,200+</span>
+</div>
+<div class="relative w-full pt-2">
+<input class="w-full h-2 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary-container" max="1500" min="100" oninput="document.getElementById('priceDisplay').innerText = '$100 – $' + this.value + '+'" step="50" type="range" value="1200"/>
+<div class="flex justify-between text-secondary font-label-sm text-label-sm mt-1">
+<span>$100</span>
+<span>$750</span>
+<span>$1,500+</span>
+</div>
+</div>
+</div>
+<!-- Star Rating -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-body-lg-medium font-semibold text-on-surface">Star Rating</span>
+<div class="grid grid-cols-1 gap-space-xs font-body-md text-body-md text-on-surface">
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded text-primary-container accent-primary-container" type="checkbox"/>
+<span class="flex text-amber-500 text-[18px]">★★★★★</span>
+<span class="font-medium text-on-surface">5 Stars</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm">48</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded text-primary-container accent-primary-container" type="checkbox"/>
+<span class="flex text-amber-500 text-[18px]">★★★★<span class="text-surface-dim">★</span></span>
+<span class="font-medium text-on-surface">4 Stars</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm">76</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 rounded text-primary-container accent-primary-container" type="checkbox"/>
+<span class="flex text-amber-500 text-[18px]">★★★<span class="text-surface-dim">★★</span></span>
+<span class="font-medium text-on-surface">3 Stars</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm">18</span>
+</label>
+</div>
+</div>
+<!-- Guest Review Score -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-body-lg-medium font-semibold text-on-surface">Guest Review Score</span>
+<div class="flex flex-col gap-space-xs">
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 accent-primary-container" name="reviewScore" type="radio"/>
+<span class="bg-primary-container text-on-primary px-2 py-0.5 rounded text-label-sm font-bold">9+</span>
+<span class="font-body-md font-medium text-on-surface">Superb</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm">52 stays</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 accent-primary-container" name="reviewScore" type="radio"/>
+<span class="bg-secondary text-on-secondary px-2 py-0.5 rounded text-label-sm font-bold">8+</span>
+<span class="font-body-md font-medium text-on-surface">Very Good</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm">114 stays</span>
+</label>
+<label class="flex items-center justify-between p-2 rounded-lg hover:bg-surface-container-low cursor-pointer transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 accent-primary-container" name="reviewScore" type="radio"/>
+<span class="bg-surface-variant text-on-surface-variant px-2 py-0.5 rounded text-label-sm font-bold">7+</span>
+<span class="font-body-md font-medium text-on-surface">Good</span>
+</div>
+<span class="text-secondary font-label-sm text-label-sm">142 stays</span>
+</label>
+</div>
+</div>
+<!-- Popular Amenities -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-body-lg-medium font-semibold text-on-surface">Popular Amenities</span>
+<div class="flex flex-col gap-1.5 font-body-md text-body-md text-on-surface">
+<label class="flex items-center gap-space-sm p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Free High-speed WiFi</span>
+</label>
+<label class="flex items-center gap-space-sm p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Luxury Spa &amp; Wellness</span>
+</label>
+<label class="flex items-center gap-space-sm p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Airport Private Shuttle</span>
+</label>
+<label class="flex items-center gap-space-sm p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Beachfront / Riverfront</span>
+</label>
+<label class="flex items-center gap-space-sm p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Air Conditioning</span>
+</label>
+</div>
+</div>
+<!-- Neighborhood / District Filter -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-body-lg-medium font-semibold text-on-surface">District &amp; Landmarks</span>
+<div class="flex flex-col gap-1.5 font-body-md text-body-md text-on-surface">
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Le Marais</span>
+</div>
+<span class="text-secondary font-label-sm">34 stays</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Eiffel Tower View</span>
+</div>
+<span class="text-secondary font-label-sm">29 stays</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Montmartre Bohemian</span>
+</div>
+<span class="text-secondary font-label-sm">21 stays</span>
+</label>
+<label class="flex items-center justify-between p-1.5 rounded hover:bg-surface-container-low cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 rounded accent-primary-container" type="checkbox"/>
+<span>Saint-Germain-des-Prés</span>
+</div>
+<span class="text-secondary font-label-sm">41 stays</span>
+</label>
+</div>
+</div>
+</aside>
+<!-- Right Main Results (8 Columns) -->
+<main class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Sorting and Breadcrumbs Status -->
+<div class="flex items-center justify-between flex-wrap gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Paris Luxury Stays</h2>
+<p class="font-body-md text-body-md text-secondary">Showing handpicked boutique and five-star accommodations</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-secondary">Sort by:</span>
+<div class="relative">
+<select class="bg-surface-container-low font-body-md-medium text-body-md-medium text-on-surface py-2 px-space-md rounded-lg focus:outline-none cursor-pointer pr-8 shadow-inner">
+<option>Highest Rated &amp; Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Proximity to City Center</option>
+</select>
+</div>
+</div>
+</div>
+<!-- HOTEL CARD 1: Hôtel Plaza Athénée -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group">
+<!-- Card Image Gallery Container -->
+<div class="md:w-5/12 relative overflow-hidden min-h-[260px] md:min-h-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Grand entrance of luxury Parisian hotel with red geranium-draped balconies, classical Haussmann stone facade, warm evening architectural uplighting, elegant marble fountain foyer, and refined French courtyard in deep corporate blue and warm gold ambience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPpcfqPkpq-KewBucOMTE031_ZfcAmCNuNnUgFRrfXg7UsKe0rGkSIA1nz-1sB0h3LvfP7vxu94Tvs-5q_kAM1qYcenXozFsf4opkYEojpxzE7SM7CKgdc5Oiu489SeC12gJeAshyEeKncNjrb7fNYSQ7aaaYlGmISYayXrS-0QvnDkGaPOGlEjSzYA4ik1HI6IiV9ONx-7ioStR-yIdKQz7H8hQk5dwqlfcVght3cLs6dEqd2BS90nA"/>
+<!-- Urgent Discount Tag -->
+<div class="absolute top-space-sm left-space-sm z-10 bg-tertiary-container text-on-tertiary px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold tracking-wide uppercase shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+<span>EXCLUSIVE 30% OFF</span>
+</div>
+<!-- Favorite Heart Button -->
+<button class="absolute top-space-sm right-space-sm z-10 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-tertiary flex items-center justify-center transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Card Content Matrix -->
+<div class="md:w-7/12 p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-amber-500 mb-0.5">
+<span class="text-[14px]">★★★★★</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium ml-1">Haute Couture Palace</span>
+</div>
+<h3 class="font-headline-md text-headline-sm font-bold text-on-surface hover:text-primary-container transition-colors cursor-pointer">Hôtel Plaza Athénée &amp; Spa - Haute Couture Stay</h3>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1.5 bg-primary-container text-on-primary px-2.5 py-1 rounded-lg shadow-sm">
+<span class="font-headline-sm text-headline-sm font-bold">9.6</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Superb (1,420 reviews)</span>
+</div>
+</div>
+<!-- Location Metadata -->
+<p class="font-body-md text-body-md text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[18px] text-primary-container">near_me</span>
+<span>8th arr., Paris • 800m from Champs-Élysées</span>
+</p>
+<!-- Per-Room Highlights -->
+<div class="flex flex-wrap gap-space-xs mt-space-sm">
+<span class="bg-surface-container-low text-primary-container px-2.5 py-1 rounded text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Free Cancellation
+                </span>
+<span class="bg-surface-container-low text-secondary px-2.5 py-1 rounded text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">credit_card_off</span> No Prepayment Needed
+                </span>
+<span class="bg-surface-container-low text-secondary px-2.5 py-1 rounded text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">spa</span> Dior Spa Access
+                </span>
+</div>
+</div>
+<!-- Price Breakdown & Action Buttons -->
+<div class="pt-space-md mt-space-sm flex items-end justify-between flex-wrap gap-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="line-through text-outline font-body-md text-body-md">$850</span>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">$595</span>
+<span class="font-body-md text-body-md text-secondary">/ night</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">$2,380 total for 4 nights (taxes incl.)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-md-medium text-body-md-medium transition-colors shadow-sm" type="button">
+                  View Available Rooms
+                </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-md-medium text-body-md-medium transition-all shadow-md active:scale-95 flex items-center gap-1" type="button">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- HOTEL CARD 2: Le Grand Mazarin -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group">
+<!-- Card Image Gallery Container -->
+<div class="md:w-5/12 relative overflow-hidden min-h-[260px] md:min-h-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Chic Paris Le Marais boutique hotel interior showcasing pastel artistic frescoes, whimsical plush velvet armchairs, mosaic tile indoor swimming pool, soft warm recessed lighting, and historic Parisian high ceilings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6EvZANgMpBKpurza1JOuhLHeUWyfcnp-WaMMsUCdcsqpvI7anLPon9IJ5tpovutmcFYocKN6Z6Kf2culfTucqODYfNAcnZQAB87kwMbl6x4L5UqnMm5N1rn5irZA9aeOFB-VaFJBbYHhS9pvAR3-AJKV7RttNjksrlaW7J57PlCauDzxzUkUyY_3-nHK3ktOllf5HEVEqwRx_aCqAQiaGAy17bU4z9mtzVaENW5Resy8zIqi8oP10Vw"/>
+<!-- Top Rated Pill -->
+<div class="absolute top-space-sm left-space-sm z-10 bg-on-primary-fixed text-surface-container-lowest px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold tracking-wide uppercase shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">award_star</span>
+<span>Boutique Top Pick</span>
+</div>
+<!-- Favorite Heart Button -->
+<button class="absolute top-space-sm right-space-sm z-10 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-tertiary flex items-center justify-center transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Card Content Matrix -->
+<div class="md:w-7/12 p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-amber-500 mb-0.5">
+<span class="text-[14px]">★★★★★</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium ml-1">Marais Art District</span>
+</div>
+<h3 class="font-headline-md text-headline-sm font-bold text-on-surface hover:text-primary-container transition-colors cursor-pointer">Le Grand Mazarin Luxury Boutique Hotel</h3>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1.5 bg-primary-container text-on-primary px-2.5 py-1 rounded-lg shadow-sm">
+<span class="font-headline-sm text-headline-sm font-bold">9.3</span>
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Exceptional (890 reviews)</span>
+</div>
+</div>
+<!-- Location Metadata -->
+<p class="font-body-md text-body-md text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[18px] text-primary-container">near_me</span>
+<span>Le Marais, Paris • Historic District • 400m from Notre-Dame</span>
+</p>
+<!-- Amenities Matrix -->
+<div class="grid grid-cols-2 gap-2 my-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">pool</span> Heated Indoor Pool
+                </div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">room_service</span> Michelin Star Dining
+                </div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">wifi</span> Free High-speed WiFi
+                </div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary-container">fitness_center</span> Private Hammam
+                </div>
+</div>
+</div>
+<!-- Price Breakdown & Action Buttons -->
+<div class="pt-space-md mt-space-sm flex items-end justify-between flex-wrap gap-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">$420</span>
+<span class="font-body-md text-body-md text-secondary">/ night</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">$1,680 total for 4 nights (taxes incl.)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-md-medium text-body-md-medium transition-colors shadow-sm" type="button">
+                  View Rooms
+                </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-md-medium text-body-md-medium transition-all shadow-md active:scale-95 flex items-center gap-1" type="button">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- HOTEL CARD 3: Pullman Paris Tour Eiffel -->
+<article class="bg-surface-container-lowest rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col md:flex-row group">
+<!-- Card Image Gallery Container -->
+<div class="md:w-5/12 relative overflow-hidden min-h-[260px] md:min-h-full">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern upscale hotel balcony offering an unobstructed front view of the Eiffel Tower illuminated in dusk gold, with breakfast table set with champagne, freshly baked croissants, and clean contemporary glass railing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKL4vWJYWCCXZitFSWZy8Q1RYSOdWe2dVyfsrmB6Fpj6mu-uKQ8tTTHs2ilovCGaLbk7RBZe44QFvAwGuGNLKRiQXMW5sJWnZEJt5oy8UpXtB7iUGqdI9Q5uuMwUm5BE57WlcIerU-TOwKhvjbt3zR7JFLgZFX0nMbXh_bNj5U8FQveExHuz2yl8yrYPTXHyEkSZ6PMSgsPJ0e-Q1W7UbGx0Rekx1LPnY2XddHyfgte8EalRvdfxBD2g"/>
+<!-- Special Member Deal Pill -->
+<div class="absolute top-space-sm left-space-sm z-10 bg-tertiary-container text-on-tertiary px-space-sm py-1 rounded-full font-label-sm text-label-sm font-bold tracking-wide uppercase shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">hotel_class</span>
+<span>Free Gourmet Breakfast</span>
+</div>
+<!-- Favorite Heart Button -->
+<button class="absolute top-space-sm right-space-sm z-10 w-9 h-9 rounded-full bg-surface-container-lowest/80 backdrop-blur text-on-surface hover:text-tertiary flex items-center justify-center transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<!-- Card Content Matrix -->
+<div class="md:w-7/12 p-space-lg flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 text-amber-500 mb-0.5">
+<span class="text-[14px]">★★★★<span class="text-surface-dim">★</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium ml-1">Iconic Landmark View</span>
+</div>
+<h3 class="font-headline-md text-headline-sm font-bold text-on-surface hover:text-primary-container transition-colors cursor-pointer">Pullman Paris Tour Eiffel - Deluxe Skyline Suites</h3>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<div class="flex items-center gap-1.5 bg-primary-container text-on-primary px-2.5 py-1 rounded-lg shadow-sm">
+<span class="font-headline-sm text-headline-sm font-bold">9.1</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Wonderful (2,650 reviews)</span>
+</div>
+</div>
+<!-- Location Metadata -->
+<p class="font-body-md text-body-md text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[18px] text-primary-container">near_me</span>
+<span>15th arr. • Direct Eiffel Tower Balcony views (300m away)</span>
+</p>
+<!-- Per-Room Highlights -->
+<div class="flex flex-wrap gap-space-xs mt-space-sm">
+<span class="bg-surface-container-low text-tertiary-container px-2.5 py-1 rounded text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">stars</span> Member Special Deal
+                </span>
+<span class="bg-surface-container-low text-secondary px-2.5 py-1 rounded text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">balcony</span> Tower View Balcony
+                </span>
+<span class="bg-surface-container-low text-secondary px-2.5 py-1 rounded text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">fitness_center</span> 24/7 Panoramic Gym
+                </span>
+</div>
+</div>
+<!-- Price Breakdown & Action Buttons -->
+<div class="pt-space-md mt-space-sm flex items-end justify-between flex-wrap gap-space-sm bg-surface-container-low -mx-space-lg -mb-space-lg p-space-md rounded-b-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">$360</span>
+<span class="font-body-md text-body-md text-secondary">/ night</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">$1,440 total for 4 nights (taxes incl.)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-body-md-medium text-body-md-medium transition-colors shadow-sm" type="button">
+                  View Rooms
+                </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-md-medium text-body-md-medium transition-all shadow-md active:scale-95 flex items-center gap-1" type="button">
+<span>Book Now</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Pagination Bar -->
+<div class="flex items-center justify-between p-space-md bg-surface-container-lowest rounded-xl shadow-sm mt-space-sm">
+<span class="font-body-md text-body-md text-secondary">Showing 1 - 3 of 142 luxury properties</span>
+<div class="flex items-center gap-1">
+<button class="w-9 h-9 rounded-lg bg-surface-container text-secondary flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-label-md font-bold flex items-center justify-center shadow-sm">1</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface font-label-md font-medium flex items-center justify-center transition-colors">2</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface font-label-md font-medium flex items-center justify-center transition-colors">3</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface font-label-md font-medium flex items-center justify-center transition-colors">...</button>
+<button class="w-9 h-9 rounded-lg hover:bg-surface-container text-on-surface font-label-md font-medium flex items-center justify-center transition-colors">15</button>
+<button class="w-9 h-9 rounded-lg bg-surface-container text-secondary flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+</div>
+</section>
+<!-- Interactive Map View Floating Toggle Button -->
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40">
+<button class="bg-on-primary-fixed hover:bg-primary-container text-on-primary px-space-xl py-3.5 rounded-full shadow-2xl flex items-center gap-space-sm transition-all duration-300 hover:scale-105 active:scale-95 font-body-lg-medium text-body-lg-medium group" onclick="toggleMapModal()" type="button">
+<span class="material-symbols-outlined text-[24px] text-primary-fixed group-hover:rotate-12 transition-transform">map</span>
+<span>View on Interactive Map <span class="text-primary-fixed font-semibold">(142 Properties in Paris)</span></span>
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</button>
+</div>
+<!-- Traveler Trust & Verified Guest Comparison Section -->
+<section class="w-full bg-surface-container-low py-space-2xl px-gutter my-space-xl">
+<div class="max-w-[1280px] mx-auto flex flex-col gap-space-xl">
+<!-- Section Title & Score Header -->
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary-container uppercase font-bold tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified_user</span> Unbiased Traveler Feedback
+          </span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">What Guests Love About VoyageCraft Stays</h2>
+</div>
+<!-- Score Pill Widget -->
+<div class="flex items-center gap-space-md bg-surface-container-lowest px-space-lg py-space-sm rounded-xl shadow-sm">
+<div class="flex flex-col items-end">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">4.9 / 5.0 Overall</span>
+<span class="font-label-sm text-label-sm text-secondary">Based on 14,800+ verified Paris check-ins</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-md font-bold shadow-md">
+            9.8
+          </div>
+</div>
+</div>
+<!-- Testimonial Cards Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-500 text-[18px]">★★★★★</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-secondary font-semibold">Verified Stay: Oct 2024</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">“Breathtaking terrace breakfast!”</h4>
+<p class="font-body-md text-body-md text-secondary">
+              "Booking Plaza Athénée through VoyageCraft saved us nearly $800 on a 4-night stay. The instant confirmation and complimentary Dior spa pass made our anniversary trip unforgettable."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md mt-space-md">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Portrait of an elegant couple smiling on a Parisian hotel balcony with Paris skyline in the soft background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9JmhY7EWpZ7XGmLKKdxlQnSm24ZzwP7rczRUI8cSySTerypIjkjRZWFP6W1ylMzX8yf-Ai6yOJsyimerrp9zzNRjhWUi1_GkcQoljR--XdbWOLVNSvJZsFio0OJkabIpOtl7nJNMIBs2kGtML2hiRwGjtWe_wMjjFL9Q-veH4N_qBZwXDfPHBoE5492OgX6A-6aZvuV0YVFFxqc4617KA_VpvNREGj6mtK4n28PvGXiPeLiGOZGrBcg"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Marcus &amp; Claire Vance</span>
+<span class="font-label-sm text-label-sm text-secondary">San Francisco, CA • VoyageGold Member</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-500 text-[18px]">★★★★★</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-secondary font-semibold">Verified Stay: Sep 2024</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">“Flawless Eiffel Tower views”</h4>
+<p class="font-body-md text-body-md text-secondary">
+              "Pullman Paris was steps from the tower. We had morning espresso directly on our private balcony looking right at the iron icon. The 24/7 concierge took care of dinner reservations seamlessly."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md mt-space-md">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Portrait of an international solo traveler woman wearing sunglasses and casual luxury trench coat in Paris." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv_nadKa5cgHJexsdA_CRPez9p-RbR5gv5nqT8PC12YOPYbROtb2vNtsOEkb7paPSUJP-_AynyiTzr7QV3DP7nRpeHL9ZKFE7cxtfK44ghwWfzwYt1SBxVsGXpQ3HlUQLrRRYZu-Czln0PgzXyn_GIb0MYRS66hPtUZ6w2qKWlTRf6PNVgJXKEC6u5hQBS62CaKLN0uquv36qxdb6J00yguU_xvMp1YLgela2tNvcia7Obsc7yW5Dcog"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Sophia Lindqvist</span>
+<span class="font-label-sm text-label-sm text-secondary">Stockholm, Sweden • Frequent Flyer</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex text-amber-500 text-[18px]">★★★★★</div>
+<span class="font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded text-secondary font-semibold">Verified Stay: Sep 2024</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">“Le Grand Mazarin is pure art”</h4>
+<p class="font-body-md text-body-md text-secondary">
+              "In the center of Le Marais with the most exquisite boutique amenities. The free cancellation gave us peace of mind when our flight schedules shifted. Will rebook with VoyageCraft every time."
+            </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md mt-space-md">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm" data-alt="Portrait of a modern professional man smiling warmly outdoors in a European courtyard." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdZNSRL3iUMHuFUcFMqM8sjN23jcsm1sk_f27O9KuUIIyWNMpgQY97mI_GZc9uHZBk5NQcLkP7V-5Vx2MeC4sT6DvLl3_dlXl2635JVpHDruG8dCGrv7f5CjNBvS0XwAigWuKh2ZUHb0E9CnA-i3Nm-NC3D-q-yunAYrj8r4R-GuW-qJyHQZRbNWLIw7cECF8zlzjOr9k6DhH5GatiEw-gNOPIeeVPODpLdKfdXs5xL-S9EujrZtaYmg"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Julian Thorne</span>
+<span class="font-label-sm text-label-sm text-secondary">London, UK • Business Traveler</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-md">
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-primary-container">price_check</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Best Rate Guarantee</span>
+<span class="font-label-sm text-label-sm text-secondary">Find lower? We match + 10% back</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-primary-container">support_agent</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">24/7 Dedicated Concierge</span>
+<span class="font-label-sm text-label-sm text-secondary">Direct phone line for luxury bookings</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-primary-container">event_available</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Flexible Bookings</span>
+<span class="font-label-sm text-label-sm text-secondary">Instant cancellation &amp; date changes</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container-lowest rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[28px] text-primary-container">verified</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">100% Verified Reviews</span>
+<span class="font-label-sm text-label-sm text-secondary">Authenticated after room check-out</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Map Modal (Triggered by Button or Mini Map Preview) -->
+<div class="fixed inset-0 z-50 bg-on-primary-fixed/60 backdrop-blur-md hidden items-center justify-center p-space-md" id="mapModal">
+<div class="bg-surface-container-lowest w-full max-w-5xl h-[85vh] rounded-2xl shadow-2xl flex flex-col overflow-hidden relative">
+<!-- Modal Header -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-primary-container">explore</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Interactive Paris Hotel Explorer</h3>
+<span class="font-label-sm text-label-sm text-secondary">142 properties mapped • Click any pin to inspect pricing and room types</span>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-surface-container text-on-surface hover:bg-surface-container-highest flex items-center justify-center transition-colors" onclick="toggleMapModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Map Body & Floating Hotel Preview Card -->
+<div class="relative flex-1 w-full h-full">
+<!-- Interactive Map Pipeline Container -->
+<div class="w-full h-full bg-cover bg-center" data-location="Paris, France" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDxhsQt5jeDsnudA896FViMKDx5-wYk4Qs2WDxonovdDs9qkAo5KI2wIcZV8OskF8zHPrO3CzAaCYE3m9mHUMEnCXzjlAp9bhPLo5fV7vADwMIr1BQP02Bn9VyHAMXUMdrGNAiBxuJYTJ23HHVl84L9U2rWA2iqRQ8G6WzzXG-Y2MNnnLYHFqEVh8GCGB5olvYyviUaWc0P08tTzHqeiiRMjiumNJb1UQ4Na3GyQ5Dyk-XMvlQhvR1rsw')"></div>
+<!-- Simulated Hotel Interactive Map Pins -->
+<div class="absolute top-1/3 left-1/3 z-20 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 group">
+<div class="bg-primary-container text-on-primary font-label-md px-3 py-1 rounded-full font-bold shadow-xl flex items-center gap-1 group-hover:scale-110 group-hover:bg-primary transition-all ring-2 ring-surface-container-lowest">
+<span>$595</span>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2 z-20 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 group">
+<div class="bg-on-primary-fixed text-surface-container-lowest font-label-md px-3 py-1 rounded-full font-bold shadow-xl flex items-center gap-1 group-hover:scale-110 transition-all ring-2 ring-surface-container-lowest">
+<span>$420</span>
+</div>
+</div>
+<div class="absolute top-2/3 left-1/4 z-20 cursor-pointer transform -translate-x-1/2 -translate-y-1/2 group">
+<div class="bg-primary-container text-on-primary font-label-md px-3 py-1 rounded-full font-bold shadow-xl flex items-center gap-1 group-hover:scale-110 group-hover:bg-primary transition-all ring-2 ring-surface-container-lowest">
+<span>$360</span>
+</div>
+</div>
+<!-- Floating Spotlight Stay Card on Map -->
+<div class="absolute bottom-6 left-6 z-30 max-w-sm w-full bg-surface-container-lowest p-space-md rounded-xl shadow-2xl flex gap-space-sm items-center">
+<img class="w-20 h-20 rounded-lg object-cover shrink-0" data-alt="Hôtel Plaza Athénée miniature front view in daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvxCwkfTr8VIEYbgO-9YHeWMgEM0YRJAGlueHrT76ZUcg_LbNkkISHuyX-wKaRfZix-lRAZ36zEfkSuKqPsZ3e10vUGTvKTaxlHruIsey_caP52ruvi6Z4UziR4KEwbnxL7rOURy68-CsmT3sqNyVelEK-p-8o95zQ6NnYc2b7xupSFY_51oQfk5l3D79fxS01N-O2PNeAa2I3kd6LqpATdpt97cTPYdsWm1EIaO8E3TQOsLOfCIFxXQ"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold uppercase">Featured Palace</span>
+<h5 class="font-headline-sm text-body-lg-medium font-bold text-on-surface truncate">Hôtel Plaza Athénée</h5>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="font-headline-sm text-body-lg font-bold text-on-surface">$595</span>
+<span class="text-secondary font-label-sm">/ night</span>
+</div>
+<button class="mt-1 bg-primary-container text-on-primary py-1 px-space-sm rounded text-label-sm font-semibold hover:bg-primary transition-colors text-center">
+              Quick View
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Inline Script for UI Micro-Interactions -->
+<script src="js/hotels.js"></script>
+</div></main><footer class="w-full bg-on-primary-fixed text-surface-container-high"><div class="max-w-[1280px] mx-auto px-gutter pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl mb-space-2xl"><div class="lg:col-span-1"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest mb-space-md">Company</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-surface-dim"><li class="hover:text-surface-container-lowest transition-colors"><a data-path="about-us" href="#">About Us</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="careers" href="#">Careers</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="press" href="#">Press</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="sustainability" href="#">Sustainability</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="mobile-app" href="#">Mobile App</a></li></ul></div><div class="lg:col-span-1"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest mb-space-md">Support</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-surface-dim"><li class="hover:text-surface-container-lowest transition-colors"><a data-path="help-center" href="#">Help Center</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="cancellation-policy" href="#">Cancellation Policy</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="refund-status" href="#">Refund Status</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="travel-advisory" href="#">Travel Advisory</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="contact-us" href="#">Contact Us</a></li></ul></div><div class="lg:col-span-1"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest mb-space-md">Destinations</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-surface-dim"><li class="hover:text-surface-container-lowest transition-colors"><a data-path="flights" href="flights.html">New York to London</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="hotels" href="hotels.html">Tokyo Getaways</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="hotels" href="hotels.html">Paris Luxury Stays</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="trains" href="trains.html">Swiss Alpine Trains</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="hotels" href="hotels.html">Amalfi Coast</a></li></ul></div><div class="lg:col-span-1"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest mb-space-md">Legal</h4><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-surface-dim"><li class="hover:text-surface-container-lowest transition-colors"><a data-path="terms-of-service" href="#">Terms of Service</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="privacy-policy" href="#">Privacy Policy</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="cookie-settings" href="#">Cookie Settings</a></li><li class="hover:text-surface-container-lowest transition-colors"><a data-path="security" href="#">Security</a></li></ul></div><div class="lg:col-span-1"><h4 class="font-headline-sm text-headline-sm text-surface-container-lowest mb-space-sm">Stay Inspired</h4><p class="font-body-md text-body-md text-surface-dim mb-space-md">Exclusive curated deals and bespoke travel routes direct to your inbox.</p><form class="flex flex-col gap-space-sm"><input class="h-12 px-space-md rounded-lg bg-inverse-surface text-surface-container-lowest placeholder:text-outline text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" placeholder="Enter your work or personal email" type="email"/><button class="h-12 px-space-md rounded-lg bg-primary-container hover:bg-primary text-on-primary font-body-md-medium text-body-md-medium transition-colors flex items-center justify-center gap-space-xs shadow-md" type="button">Subscribe</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-surface-dim font-label-md text-label-md"><div class="flex items-center gap-space-md flex-wrap"><div class="flex items-center gap-1.5 text-surface-bright"><span class="material-symbols-outlined text-[20px] text-primary-fixed">lock</span><span>256-Bit SSL Encrypted</span></div><span class="text-outline">•</span><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px]">credit_card</span><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span class="material-symbols-outlined text-[20px]">payments</span></div></div><div class="flex items-center gap-space-lg"><a class="hover:text-surface-bright transition-colors" href="#"><span class="material-symbols-outlined text-[22px]">public</span></a><a class="hover:text-surface-bright transition-colors" href="#"><span class="material-symbols-outlined text-[22px]">share</span></a><a class="hover:text-surface-bright transition-colors" href="#"><span class="material-symbols-outlined text-[22px]">chat</span></a></div><div>© 2025 VoyageCraft Technologies Inc. All rights reserved.</div></div></div></footer></body></html>
