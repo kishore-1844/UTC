@@ -1,0 +1,6 @@
+{
+  "name": "Nova Cart - Vibrant E-Commerce Experience",
+  "description": "An e-commerce marketplace featuring fast deals, smart product discovery, seamless cart checkout, and personalized account management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
