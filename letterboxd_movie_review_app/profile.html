@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile — FilmLog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">filmlog<span>●</span></a>
+  <nav><a href="index.html">Home</a><a href="films.html">Films</a><a href="diary.html">Diary</a><a class="active" href="profile.html">Profile</a></nav>
+  <div class="header-actions"><button id="searchBtn" class="icon-btn">⌕</button><a href="login.html" class="login-link">Sign in</a></div>
+</header>
+<main class="container page">
+  <section class="profile-head">
+    <div class="profile-avatar">YC</div>
+    <div><p class="eyebrow">MEMBER PROFILE</p><h1>Yashwanth</h1><p class="muted">@yashwanth · Film enthusiast</p></div>
+    <button class="outline-btn" id="followBtn">Follow</button>
+  </section>
+  <div class="stats"><div><b>48</b><span>Films</span></div><div><b>31</b><span>Reviews</span></div><div><b>12</b><span>Lists</span></div><div><b>4.1</b><span>Avg rating</span></div></div>
+  <h2>Recent films</h2>
+  <div class="mini-grid">
+    <a href="film.html?id=dune" class="mini-poster poster-dune">DUNE: PART TWO</a>
+    <a href="film.html?id=past" class="mini-poster poster-past">PAST LIVES</a>
+    <a href="film.html?id=whip" class="mini-poster poster-whip">WHIPLASH</a>
+    <a href="film.html?id=spider" class="mini-poster poster-spider">SPIDER-VERSE</a>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
